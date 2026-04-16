@@ -1,11 +1,9 @@
-const MobileCTABar = () => {
-  return (
-    <div className="mobile-cta-bar sm:hidden">
-      <a href="#candidature" className="cta-primary">
-        Réserver l'Audit — Offert
-      </a>
-    </div>
-  );
-};
+const MobileCTABar = () => (
+  <div className="mobile-cta-bar sm:hidden">
+    <a href="#audit" className="btn-primary">
+      Candidater pour l'audit
+    </a>
+  </div>
+);
 
 export default MobileCTABar;

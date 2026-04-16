@@ -11,26 +11,21 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 h-[60px] flex items-center justify-between px-6 md:px-12 transition-all duration-300 ${
-        scrolled
-          ? "bg-n-bg border-b border-n-border"
-          : "bg-transparent"
+      className={`sticky top-0 z-50 backdrop-blur-md transition-colors ${
+        scrolled ? "bg-n-bg/90 border-b border-n-border" : "bg-transparent"
       }`}
     >
-      <a
-        href="#"
-        onClick={(e) => {
-          e.preventDefault();
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        }}
-        className="font-display text-xl tracking-wide text-n-text"
-      >
-        NOMOS
-      </a>
-
-      <a href="#candidature" className="cta-primary hidden sm:inline-flex !py-3 !px-8 !text-[11px]">
-        Réserver l'Audit
-      </a>
+      <div className="container-nomos flex items-center justify-between py-4">
+        <a
+          href="#hero"
+          className="font-body font-bold text-sm tracking-[0.2em] uppercase text-n-text"
+        >
+          NOMOS
+        </a>
+        <a href="#audit" className="btn-outline sm">
+          Réserver l'Audit
+        </a>
+      </div>
     </header>
   );
 }

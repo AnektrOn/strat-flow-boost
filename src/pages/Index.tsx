@@ -1,34 +1,42 @@
 import { Header } from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import MirrorSection from "@/components/MirrorSection";
-import TaxeSection from "@/components/TaxeSection";
-import FalseSolutionsSection from "@/components/FalseSolutionsSection";
-import SolutionSection from "@/components/SolutionSection";
-import ProofsSection from "@/components/ProofsSection";
-import ProjectionSection from "@/components/ProjectionSection";
-import OfferSection from "@/components/OfferSection";
-import QualificationSection from "@/components/QualificationSection";
-import CTAFormSection from "@/components/CTAFormSection";
-import FooterSection from "@/components/FooterSection";
+import SymptomsSection from "@/components/SymptomsSection";
+import MechanismSection from "@/components/MechanismSection";
+import SufferingSection from "@/components/SufferingSection";
+import SolutionsSection from "@/components/SolutionsSection";
+import ProtocolSection from "@/components/ProtocolSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import FutureSection from "@/components/FutureSection";
+import FounderSection from "@/components/FounderSection";
+import ROISection from "@/components/ROISection";
+import GuaranteeSection from "@/components/GuaranteeSection";
+import QualifySection from "@/components/QualifySection";
+import FAQSection from "@/components/FAQSection";
+import CTAFinalSection from "@/components/CTAFinalSection";
+import Footer from "@/components/Footer";
 import MobileCTABar from "@/components/MobileCTABar";
 
 const Index = () => {
   return (
-    <div className="grain-overlay overflow-x-hidden">
+    <div className="overflow-x-hidden">
       <Header />
-      <main className="pt-[60px]">
+      <main>
         <HeroSection />
-        <MirrorSection />
-        <TaxeSection />
-        <FalseSolutionsSection />
-        <SolutionSection />
-        <ProofsSection />
-        <ProjectionSection />
-        <OfferSection />
-        <QualificationSection />
-        <CTAFormSection />
+        <SymptomsSection />
+        <MechanismSection />
+        <SufferingSection />
+        <SolutionsSection />
+        <ProtocolSection />
+        <TestimonialsSection />
+        <FutureSection />
+        <FounderSection />
+        <ROISection />
+        <GuaranteeSection />
+        <QualifySection />
+        <FAQSection />
+        <CTAFinalSection />
       </main>
-      <FooterSection />
+      <Footer />
       <MobileCTABar />
     </div>
   );
