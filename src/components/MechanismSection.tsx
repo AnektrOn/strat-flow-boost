@@ -1,4 +1,5 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import AuditCTABlock, { AuditIntroHeader } from "@/components/AuditCTABlock";
 
 const grid = [
   { title: "Neurologique", items: ["Rumination nocturne", "Fatigue cognitive constante", "Brain fog malgré le repos", "Doutes malgré le succès"] },
@@ -102,13 +103,9 @@ const MechanismSection = () => {
           </p>
         </div>
 
-        <div className="reveal text-center mt-8">
-          <a
-            href="#audit"
-            className="inline-block border border-n-gold-dim text-n-gold px-6 py-3 rounded text-sm font-medium hover:bg-n-gold/10 hover:border-n-gold transition-colors"
-          >
-            Identifier mon mécanisme
-          </a>
+        <div className="mt-16">
+          <AuditIntroHeader />
+          <AuditCTABlock />
         </div>
       </div>
     </section>
