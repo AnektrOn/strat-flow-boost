@@ -15,11 +15,45 @@ const items = [
   },
 ];
 
+const offers = [
+  {
+    name: "Ascension",
+    price: "5 000€",
+    tagline: "Recalibration ciblée — 1 couche prioritaire.",
+    description:
+      "Intervention focalisée sur la couche identifiée comme bloquante. Pour les dirigeants qui ont besoin de débloquer un point précis sans embarquer le système complet.",
+    features: [
+      "Diagnostic complet (90 min)",
+      "3 sessions de recalibration ciblée",
+      "1 livrable opérationnel par session",
+      "Hotline vocale 30 jours",
+    ],
+    cta: "Candidater pour Ascension",
+    accent: "muted" as const,
+  },
+  {
+    name: "NOMOS",
+    price: "10 000€",
+    tagline: "Protocole APEX™ complet — 3 couches.",
+    description:
+      "Le protocole de Recalibration Tri-Couche™ intégral. Couche biologique, identitaire et décisionnelle. 6 sessions, 1:1, sans délégation. Garantie de Diagnostic Absolue.",
+    features: [
+      "Diagnostic complet (90 min)",
+      "6 sessions du Protocole APEX™",
+      "Dashboard AEGIS™ + Kill List + CEO Map",
+      "Hotline vocale 90 jours",
+      "Garantie de Diagnostic Absolue",
+    ],
+    cta: "Candidater pour NOMOS",
+    accent: "gold" as const,
+  },
+];
+
 const CTAFinalSection = () => {
   const ref = useScrollReveal();
   return (
     <section ref={ref} id="audit" className="section-pad text-center">
-      <div className="container-nomos narrow">
+      <div className="container-nomos">
         <h2 className="reveal h-section">
           Commencez par l'audit.<br />45 minutes. Garanti.
         </h2>
@@ -40,9 +74,68 @@ const CTAFinalSection = () => {
           ))}
         </div>
 
-        <p className="reveal text-sm text-n-teal mb-8">
+        <p className="reveal text-sm text-n-teal mb-12">
           Si le mécanisme exact n'est pas identifié — remboursement intégral. Sans conditions.
         </p>
+
+        {/* Two-card offer block */}
+        <div className="grid md:grid-cols-2 gap-6 max-w-[920px] mx-auto text-left mb-12">
+          {offers.map((o) => {
+            const isGold = o.accent === "gold";
+            return (
+              <div
+                key={o.name}
+                className={`reveal flex flex-col p-8 rounded-lg border bg-n-surface transition-colors ${
+                  isGold
+                    ? "border-n-gold-dim hover:border-n-gold"
+                    : "border-n-border hover:border-n-muted"
+                }`}
+              >
+                <div className="mb-6">
+                  <p
+                    className={`text-xs tracking-[0.15em] uppercase mb-3 ${
+                      isGold ? "text-n-gold" : "text-n-muted"
+                    }`}
+                  >
+                    {o.name}
+                  </p>
+                  <p className="font-display text-3xl text-n-text mb-2">
+                    {o.price}
+                  </p>
+                  <p className="text-sm text-n-muted">{o.tagline}</p>
+                </div>
+
+                <p className="text-sm text-n-muted mb-6">{o.description}</p>
+
+                <ul className="flex flex-col gap-3 mb-8 flex-1">
+                  {o.features.map((f) => (
+                    <li key={f} className="flex gap-3 text-sm text-n-text">
+                      <span
+                        className={`shrink-0 ${
+                          isGold ? "text-n-gold" : "text-n-teal"
+                        }`}
+                      >
+                        ✓
+                      </span>
+                      <span>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <a
+                  href="#audit"
+                  className={
+                    isGold
+                      ? "btn-primary text-center"
+                      : "btn-outline text-center"
+                  }
+                >
+                  {o.cta}
+                </a>
+              </div>
+            );
+          })}
+        </div>
 
         <div className="reveal inline-block p-6 bg-n-surface border border-n-border rounded-lg mb-8 text-left">
           <p className="text-sm text-n-text mb-2"><strong>Ce trimestre : 5 places disponibles.</strong></p>
@@ -53,18 +146,13 @@ const CTAFinalSection = () => {
           </p>
         </div>
 
-        <div className="reveal my-8">
-          <a href="#audit" className="btn-primary lg">
-            Candidater pour l'audit stratégique
-          </a>
-          <p className="text-xs text-n-faint mt-3">
-            Questionnaire de pré-qualification · Audit 45 min offert · Garantie de Diagnostic Absolue
-          </p>
-        </div>
+        <p className="reveal text-xs text-n-faint mb-12">
+          Questionnaire de pré-qualification · Audit 45 min offert · Garantie de Diagnostic Absolue
+        </p>
 
         <div className="reveal mt-12 pt-8 border-t border-n-border">
           <p className="text-sm text-n-muted mb-3">Pas encore prêt pour l'audit ?</p>
-          <p className="text-sm text-n-muted mb-4">
+          <p className="text-sm text-n-muted mb-4 mx-auto max-w-[60ch]">
             Téléchargez <strong className="text-n-text">"Le Bug Invisible™"</strong> — les 4 profils de Dérive
             Neuro-Opérationnelle qui bloquent les dirigeants 20k-150k€/mois.
           </p>
