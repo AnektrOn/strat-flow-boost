@@ -116,22 +116,6 @@ const ProtocolSection = () => {
           </div>
         </div>
 
-        <h3 className="reveal h-sub text-center mb-8">Timeline des résultats</h3>
-        <div className="flex flex-col mb-10">
-          {timeline.map((t) => (
-            <div
-              key={t.time}
-              className="reveal grid gap-6 py-4 border-b border-n-border"
-              style={{ gridTemplateColumns: "120px 1fr" }}
-            >
-              <span className="font-semibold text-sm text-n-teal whitespace-nowrap">
-                {t.time}
-              </span>
-              <span className="text-sm text-n-muted">{t.event}</span>
-            </div>
-          ))}
-        </div>
-
         <p className="reveal text-sm text-n-muted text-center mb-8">
           Ce protocole exige de vous : <strong className="text-n-text">2 à 3 heures par semaine.</strong>{" "}
           Nous en investissons 20 à 30 en parallèle. Le protocole se finance en

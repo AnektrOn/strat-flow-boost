@@ -1,5 +1,5 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import { Mail, ClipboardList, ArrowRight } from "lucide-react";
+import AuditCTABlock from "@/components/AuditCTABlock";
 
 const items = [
   {
@@ -16,30 +16,6 @@ const items = [
   },
 ];
 
-// TODO: remplacer par les vrais liens
-const WHATSAPP_URL = "https://wa.me/33600000000";
-const AUDIT_FORM_URL = "https://form.typeform.com/to/xxxxxx";
-
-const options = [
-  {
-    name: "Contact Direct",
-    icon: Mail,
-    description:
-      "Premier point de contact pour évaluer rapidement la pertinence d'un audit. Aucun diagnostic n'est réalisé à ce stade.",
-    cta: "Envoyer un message",
-    href: WHATSAPP_URL,
-    accent: "muted" as const,
-  },
-  {
-    name: "Audit Initial",
-    icon: ClipboardList,
-    description:
-      "Session de lecture stratégique. Objectif : déterminer si le système nécessite une intervention ou non.",
-    cta: "Réserver l'audit",
-    href: AUDIT_FORM_URL,
-    accent: "gold" as const,
-  },
-];
 
 const CTAFinalSection = () => {
   const ref = useScrollReveal();
@@ -71,51 +47,8 @@ const CTAFinalSection = () => {
         </p>
 
         {/* Two-card contact block */}
-        <div className="grid md:grid-cols-2 gap-6 max-w-[920px] mx-auto text-left mb-12">
-          {options.map((o) => {
-            const isGold = o.accent === "gold";
-            const Icon = o.icon;
-            return (
-              <div
-                key={o.name}
-                className={`reveal flex flex-col p-8 rounded-lg border bg-n-surface transition-colors ${
-                  isGold
-                    ? "border-n-gold-dim hover:border-n-gold"
-                    : "border-n-border hover:border-n-muted"
-                }`}
-              >
-                <div
-                  className={`w-12 h-12 rounded-full border flex items-center justify-center mb-6 ${
-                    isGold
-                      ? "border-n-gold text-n-gold"
-                      : "border-n-border text-n-muted"
-                  }`}
-                >
-                  <Icon className="w-5 h-5" />
-                </div>
-
-                <p className="font-display text-2xl text-n-text mb-3 tracking-[0.05em] uppercase">
-                  {o.name}
-                </p>
-
-                <p className="text-sm text-n-muted mb-8 flex-1">{o.description}</p>
-
-                <a
-                  href={o.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`inline-flex items-center justify-between gap-3 px-5 py-3 border text-xs tracking-[0.15em] uppercase transition-colors ${
-                    isGold
-                      ? "border-n-gold text-n-gold hover:bg-n-gold/10"
-                      : "border-n-border text-n-text hover:border-n-muted"
-                  }`}
-                >
-                  <span>{o.cta}</span>
-                  <ArrowRight className="w-4 h-4" />
-                </a>
-              </div>
-            );
-          })}
+        <div className="mb-12">
+          <AuditCTABlock />
         </div>
 
         <div className="reveal inline-block p-6 bg-n-surface border border-n-border rounded-lg mb-8 text-left">
