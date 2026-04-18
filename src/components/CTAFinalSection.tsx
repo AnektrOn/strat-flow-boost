@@ -127,9 +127,6 @@ const CTAFinalSection = () => {
           </p>
         </div>
 
-        <p className="reveal text-xs text-n-faint">
-          Questionnaire de pré-qualification · Audit 45 min offert · Garantie de Diagnostic Absolue
-        </p>
       </div>
     </section>
   );
