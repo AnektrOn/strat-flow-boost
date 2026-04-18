@@ -1,5 +1,5 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import { Mail, ClipboardList, ArrowRight } from "lucide-react";
+import AuditCTABlock from "@/components/AuditCTABlock";
 
 const items = [
   {
@@ -16,30 +16,6 @@ const items = [
   },
 ];
 
-// TODO: remplacer par les vrais liens
-const WHATSAPP_URL = "https://wa.me/33600000000";
-const AUDIT_FORM_URL = "https://form.typeform.com/to/xxxxxx";
-
-const options = [
-  {
-    name: "Contact Direct",
-    icon: Mail,
-    description:
-      "Premier point de contact pour évaluer rapidement la pertinence d'un audit. Aucun diagnostic n'est réalisé à ce stade.",
-    cta: "Envoyer un message",
-    href: WHATSAPP_URL,
-    accent: "muted" as const,
-  },
-  {
-    name: "Audit Initial",
-    icon: ClipboardList,
-    description:
-      "Session de lecture stratégique. Objectif : déterminer si le système nécessite une intervention ou non.",
-    cta: "Réserver l'audit",
-    href: AUDIT_FORM_URL,
-    accent: "gold" as const,
-  },
-];
 
 const CTAFinalSection = () => {
   const ref = useScrollReveal();
