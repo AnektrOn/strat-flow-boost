@@ -42,9 +42,6 @@ const CTAFinalSection = () => {
           ))}
         </div>
 
-        <p className="reveal text-sm text-n-teal mb-12">
-          Si le mécanisme exact n'est pas identifié — remboursement intégral. Sans conditions.
-        </p>
 
         {/* Two-card contact block */}
         <div className="mb-12">
