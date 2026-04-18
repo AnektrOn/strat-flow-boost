@@ -1,6 +1,6 @@
 const Footer = () => (
-  <footer className="py-10 border-t border-n-border text-center">
-    <div className="container-nomos">
+  <footer className="py-10 border-t border-n-border">
+    <div className="container-nomos flex flex-col items-center text-center">
       <p className="text-xs tracking-[0.15em] uppercase text-n-muted mb-2">
         NOMOS — Intervention Systémique Neuro-Opérationnelle
       </p>
