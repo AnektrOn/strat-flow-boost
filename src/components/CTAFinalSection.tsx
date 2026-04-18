@@ -1,4 +1,5 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { Mail, ClipboardList, ArrowRight } from "lucide-react";
 
 const items = [
   {
@@ -15,36 +16,27 @@ const items = [
   },
 ];
 
-const offers = [
+// TODO: remplacer par les vrais liens
+const WHATSAPP_URL = "https://wa.me/33600000000";
+const AUDIT_FORM_URL = "https://form.typeform.com/to/xxxxxx";
+
+const options = [
   {
-    name: "Ascension",
-    price: "5 000€",
-    tagline: "Recalibration ciblée — 1 couche prioritaire.",
+    name: "Contact Direct",
+    icon: Mail,
     description:
-      "Intervention focalisée sur la couche identifiée comme bloquante. Pour les dirigeants qui ont besoin de débloquer un point précis sans embarquer le système complet.",
-    features: [
-      "Diagnostic complet (90 min)",
-      "3 sessions de recalibration ciblée",
-      "1 livrable opérationnel par session",
-      "Hotline vocale 30 jours",
-    ],
-    cta: "Candidater pour Ascension",
+      "Premier point de contact pour évaluer rapidement la pertinence d'un audit. Aucun diagnostic n'est réalisé à ce stade.",
+    cta: "Envoyer un message",
+    href: WHATSAPP_URL,
     accent: "muted" as const,
   },
   {
-    name: "NOMOS",
-    price: "10 000€",
-    tagline: "Protocole APEX™ complet — 3 couches.",
+    name: "Audit Initial",
+    icon: ClipboardList,
     description:
-      "Le protocole de Recalibration Tri-Couche™ intégral. Couche biologique, identitaire et décisionnelle. 6 sessions, 1:1, sans délégation. Garantie de Diagnostic Absolue.",
-    features: [
-      "Diagnostic complet (90 min)",
-      "6 sessions du Protocole APEX™",
-      "Dashboard AEGIS™ + Kill List + CEO Map",
-      "Hotline vocale 90 jours",
-      "Garantie de Diagnostic Absolue",
-    ],
-    cta: "Candidater pour NOMOS",
+      "Session de lecture stratégique. Objectif : déterminer si le système nécessite une intervention ou non.",
+    cta: "Réserver l'audit",
+    href: AUDIT_FORM_URL,
     accent: "gold" as const,
   },
 ];
@@ -78,10 +70,11 @@ const CTAFinalSection = () => {
           Si le mécanisme exact n'est pas identifié — remboursement intégral. Sans conditions.
         </p>
 
-        {/* Two-card offer block */}
+        {/* Two-card contact block */}
         <div className="grid md:grid-cols-2 gap-6 max-w-[920px] mx-auto text-left mb-12">
-          {offers.map((o) => {
+          {options.map((o) => {
             const isGold = o.accent === "gold";
+            const Icon = o.icon;
             return (
               <div
                 key={o.name}
@@ -91,46 +84,34 @@ const CTAFinalSection = () => {
                     : "border-n-border hover:border-n-muted"
                 }`}
               >
-                <div className="mb-6">
-                  <p
-                    className={`text-xs tracking-[0.15em] uppercase mb-3 ${
-                      isGold ? "text-n-gold" : "text-n-muted"
-                    }`}
-                  >
-                    {o.name}
-                  </p>
-                  <p className="font-display text-3xl text-n-text mb-2">
-                    {o.price}
-                  </p>
-                  <p className="text-sm text-n-muted">{o.tagline}</p>
+                <div
+                  className={`w-12 h-12 rounded-full border flex items-center justify-center mb-6 ${
+                    isGold
+                      ? "border-n-gold text-n-gold"
+                      : "border-n-border text-n-muted"
+                  }`}
+                >
+                  <Icon className="w-5 h-5" />
                 </div>
 
-                <p className="text-sm text-n-muted mb-6">{o.description}</p>
+                <p className="font-display text-2xl text-n-text mb-3 tracking-[0.05em] uppercase">
+                  {o.name}
+                </p>
 
-                <ul className="flex flex-col gap-3 mb-8 flex-1">
-                  {o.features.map((f) => (
-                    <li key={f} className="flex gap-3 text-sm text-n-text">
-                      <span
-                        className={`shrink-0 ${
-                          isGold ? "text-n-gold" : "text-n-teal"
-                        }`}
-                      >
-                        ✓
-                      </span>
-                      <span>{f}</span>
-                    </li>
-                  ))}
-                </ul>
+                <p className="text-sm text-n-muted mb-8 flex-1">{o.description}</p>
 
                 <a
-                  href="#audit"
-                  className={
+                  href={o.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`inline-flex items-center justify-between gap-3 px-5 py-3 border text-xs tracking-[0.15em] uppercase transition-colors ${
                     isGold
-                      ? "btn-primary text-center"
-                      : "btn-outline text-center"
-                  }
+                      ? "border-n-gold text-n-gold hover:bg-n-gold/10"
+                      : "border-n-border text-n-text hover:border-n-muted"
+                  }`}
                 >
-                  {o.cta}
+                  <span>{o.cta}</span>
+                  <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
             );
