@@ -66,11 +66,6 @@ const MechanismSection = () => {
           problème mais je n'arrive pas à en sortir depuis l'intérieur."
         </blockquote>
 
-        <p className="reveal ref-note mt-8">
-          Un système ne peut pas être corrigé depuis le niveau de conscience qui
-          l'a créé.
-        </p>
-
         <div className="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 my-10 p-8 bg-n-surface-2 border border-n-border rounded-lg">
           {grid.map((col) => (
             <div key={col.title}>
@@ -91,6 +86,30 @@ const MechanismSection = () => {
           Si vous reconnaissez 6 lignes ou plus — vous avez une Dérive
           Neuro-Opérationnelle active.
         </p>
+
+        <div className="reveal bg-n-surface-2 border-l-[3px] border-n-gold rounded-r-lg p-8 my-10">
+          <p className="text-n-text font-semibold mb-3">
+            Si vous vous êtes reconnu dans cette grille — sachez une chose.
+          </p>
+          <p className="text-n-muted mb-3">
+            Ce n'est pas votre faute. Ce n'est pas un défaut de caractère. C'est un
+            mécanisme biologique précis qui a un nom, une cause identifiable, et un
+            protocole de correction.
+          </p>
+          <p className="text-n-muted">
+            Ce que vous vivez n'est pas unique — mais la combinaison exacte de votre
+            Dérive, elle, l'est.
+          </p>
+        </div>
+
+        <div className="reveal text-center mt-8">
+          <a
+            href="#audit"
+            className="inline-block border border-n-gold-dim text-n-gold px-6 py-3 rounded text-sm font-medium hover:bg-n-gold/10 hover:border-n-gold transition-colors"
+          >
+            Identifier mon mécanisme
+          </a>
+        </div>
       </div>
     </section>
   );
