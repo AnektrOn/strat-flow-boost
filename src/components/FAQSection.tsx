@@ -6,10 +6,6 @@ const faqs = [
     a: "Non. Le mot \"coaching\" n'apparaît pas dans le protocole. Le coaching travaille sur la couche consciente — vos pensées, vos croyances. Le Protocole APEX intervient sur la couche biologique (votre SNA), la couche identitaire (votre câblage) et la couche décisionnelle (votre architecture business). C'est la différence entre repeindre les murs et traiter les fondations.",
   },
   {
-    q: "\"15 000€ c'est beaucoup d'argent.\"",
-    a: "C'est 15 000€ versus 15 000€ à 50 000€ par mois que vous perdez en revenus non capturés. Sur 12 mois, votre bug vous coûte entre 180 000€ et 600 000€. Le protocole coûte 15 000€ une seule fois. La Garantie de Diagnostic Absolue signifie qu'à l'entrée, votre risque réel est 45 minutes.",
-  },
-  {
     q: "\"J'ai déjà essayé du coaching et du consulting. Ça n'a rien changé.\"",
     a: "C'est la raison pour laquelle le Protocole APEX existe. Ce que vous avez essayé traitait 2 couches sur 3 — et sans la couche biologique, les résultats ne tiennent pas. L'audit de 45 minutes démontre une profondeur diagnostique que les solutions précédentes n'avaient pas. Si elle n'est pas au rendez-vous — remboursement intégral.",
   },
@@ -20,6 +16,10 @@ const faqs = [
   {
     q: "\"Comment je sais que ça va marcher pour MON cas ?\"",
     a: "C'est exactement pourquoi l'audit existe. En 45 minutes, nous identifions votre bug précis parmi les 4 profils documentés de Dérive Neuro-Opérationnelle. Si votre bug n'est pas identifié avec précision : remboursement. C'est la garantie.",
+  },
+  {
+    q: "\"Qu'est-ce qui se passe concrètement pendant l'audit de 45 minutes ?\"",
+    a: "C'est un diagnostic en direct — pas un appel de vente. Vous décrivez votre situation, je pose des questions précises, et en temps réel je cartographie votre profil de Dérive parmi les 4 documentés. Vous repartez avec votre Kill List (les 3 comportements qui coûtent le plus) et une recommandation claire : soit le Protocole APEX est adapté, soit il ne l'est pas. Dans les deux cas, le diagnostic a de la valeur.",
   },
 ];
 

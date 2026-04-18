@@ -41,7 +41,7 @@ const CTAFinalSection = () => {
         </div>
 
         <p className="reveal text-sm text-n-teal mb-8">
-          Si le mécanisme exact n'est pas identifié à la fin de ces 45 minutes — remboursement intégral. Sans conditions.
+          Si le mécanisme exact n'est pas identifié — remboursement intégral. Sans conditions.
         </p>
 
         <div className="reveal inline-block p-6 bg-n-surface border border-n-border rounded-lg mb-8 text-left">

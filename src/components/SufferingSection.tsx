@@ -45,15 +45,9 @@ const levels: Level[] = [
       <>
         <blockquote className="bq">
           "Il y a six mois, je bossais 70 heures par semaine et j'en étais fier.
-          J'optimisais chaque minute. Puis j'ai réalisé que j'avais plus de
-          boulot que jamais et que mon business ne s'était pas développé d'un
-          centime de plus."
+          Puis j'ai réalisé que j'avais plus de boulot que jamais et que mon
+          business ne s'était pas développé d'un centime de plus."
         </blockquote>
-        <p className="mt-3">
-          <em>"C'est juste une mauvaise période. Ça va se débloquer."</em> — Vous
-          l'avez dit les 4 derniers trimestres. C'est un pattern, pas une
-          mauvaise période.
-        </p>
       </>
     ),
   },

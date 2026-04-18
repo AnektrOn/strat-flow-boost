@@ -27,14 +27,7 @@ const ROISection = () => {
             className="flex justify-between flex-col sm:flex-row gap-1 px-6 py-4 rounded mt-2"
             style={{ background: "hsl(var(--color-teal-glow))" }}
           >
-            <span className="font-semibold text-sm text-n-teal">Investissement Protocole APEX™</span>
-            <span className="text-sm text-n-teal text-right font-semibold">15 000€ — une seule fois</span>
-          </div>
-          <div
-            className="flex justify-between flex-col sm:flex-row gap-1 px-6 py-4 rounded mt-2"
-            style={{ background: "hsl(var(--color-teal-glow))" }}
-          >
-            <span className="font-semibold text-sm text-n-teal">ROI conservateur</span>
+            <span className="font-semibold text-sm text-n-teal">ROI conservateur du protocole</span>
             <span className="text-sm text-n-teal text-right font-semibold">12:1</span>
           </div>
         </div>
@@ -46,13 +39,22 @@ const ROISection = () => {
         <blockquote className="reveal bq-gold">
           "C'était tellement une douleur avant de me faire accompagner que quand
           vous m'avez dit le prix c'était 'où est-ce que je signe ?' Le coût
-          d'inaction pour moi est monstrueux." — Quentin, CEO
+          d'inaction pour moi est monstrueux." — CEO, B2B
         </blockquote>
 
         <p className="reveal text-sm text-n-muted text-center mt-6">
           Pendant que vous lisez ceci, votre bug actif vous coûte entre 500€ et
           1 600€ aujourd'hui. Pas en théorie. En revenus non capturés.
         </p>
+
+        <div className="reveal text-center mt-8">
+          <a
+            href="#audit"
+            className="inline-block border border-n-gold-dim text-n-gold px-6 py-3 rounded text-sm font-medium hover:bg-n-gold/10 hover:border-n-gold transition-colors"
+          >
+            Calculer mon coût d'inaction
+          </a>
+        </div>
       </div>
     </section>
   );

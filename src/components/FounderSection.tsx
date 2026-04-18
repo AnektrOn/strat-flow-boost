@@ -16,8 +16,19 @@ const FounderSection = () => {
           <p className="reveal"><strong className="text-n-text">La première observation critique :</strong> chaque fois qu'une solution traitait uniquement l'organisation ou uniquement la psychologie consciente, les résultats ne tenaient pas au-delà de 60-90 jours.</p>
           <p className="reveal"><strong className="text-n-text">La deuxième observation :</strong> les rares fois où un dirigeant sortait vraiment du plafond, il y avait toujours eu une intervention simultanée sur les 3 couches — biologique, identitaire, décisionnelle. Accidentellement.</p>
           <p className="reveal">Ce n'était pas de la chance. C'était mécanique. Et si c'était mécanique, c'était reproductible. C'est l'origine du Protocole de Recalibration Tri-Couche™.</p>
-          <p className="reveal">Reproduire ce mécanisme exige une compétence rare : maîtriser simultanément la neurophysiologie, l'ingénierie identitaire ET l'architecture opérationnelle business. Le marché du coaching n'a pas la première. Le marché du consulting n'a pas la deuxième. NOMOS existe à l'intersection des trois.</p>
           <p className="reveal">D'où la limitation à <strong className="text-n-text">5 dirigeants par trimestre</strong>. Ce n'est pas du marketing de rareté — c'est la contrainte physique d'une intervention 1:1 sans délégation. 20 à 30 heures de delivery par protocole.</p>
+
+          <div className="reveal flex items-center gap-6 mt-8 pt-8 border-t border-n-border">
+            <div className="w-16 h-16 rounded-full bg-n-surface-2 border-2 border-n-gold-dim flex items-center justify-center font-display text-xl text-n-gold shrink-0">
+              L
+            </div>
+            <div className="text-sm">
+              <div className="font-semibold text-n-text">Léo — Fondateur NOMOS</div>
+              <div className="text-n-muted">
+                Consultant systémique &amp; neuroscientifique · Intervention neuro-opérationnelle pour dirigeants en scaling
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

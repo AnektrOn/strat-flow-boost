@@ -1,10 +1,10 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const rows = [
-  { sol: "Coaching mindset", treat: "Pensées conscientes, croyances", ignore: "Couche biologique (SNA)", why: "\"4 mois de coaching certifié. Bilan : des insights sur mes croyances limitantes — et les mêmes patterns 6 mois plus tard.\"" },
+  { sol: "Coaching mindset", treat: "Pensées conscientes, croyances", ignore: "Couche biologique (SNA)", why: "\"4 mois de coaching certifié. Bilan : des insights — et les mêmes patterns 6 mois plus tard.\"" },
   { sol: "Consultants", treat: "Process, organigrammes, SOPs", ignore: "Mécanisme de sabotage interne", why: "\"Les outils étaient bons sur le papier. Trois mois plus tard, je m'étais réapproprié tout.\"" },
   { sol: "Masterminds", treat: "Sagesse collective, stratégie partagée", ignore: "Diagnostic individuel du bug", why: "Un pair brillant peut vous inspirer. Il ne peut pas diagnostiquer votre câblage individuel." },
-  { sol: "Livres & formations", treat: "Connaissance, frameworks", ignore: "Ancrage neurologique", why: "Vous avez déjà les frameworks. Vous les avez appliqués 3 semaines. Vous êtes revenu au point de départ." },
+  { sol: "Livres & formations", treat: "Connaissance, frameworks", ignore: "Ancrage neurologique", why: "Vous avez déjà les frameworks. Vous les avez appliqués 3 semaines. Retour au point de départ." },
   { sol: "Vacances / Biohacking", treat: "Symptômes de surcharge", ignore: "Architecture décisionnelle", why: "\"J'ai pris une semaine off. Le troisième jour, j'avais répondu à 40 mails.\"" },
 ];
 

@@ -46,13 +46,21 @@ const QualifySection = () => {
 
         <div className="reveal mt-12 p-8 border border-n-gold-dim rounded-lg">
           <h3 className="h-sub text-n-gold mb-4">Si vous hésitez à candidater...</h3>
-          <p className="text-n-muted mb-3">Cette hésitation mérite d'être nommée. Ce n'est pas de la prudence rationnelle — vous avez lu jusqu'ici, vous avez reconnu le mécanisme.</p>
           <p className="text-n-muted mb-3">
-            Ce que vous ressentez est peut-être la réponse exacte de votre SNA à
-            une proposition qui implique de lâcher le contrôle. C'est-à-dire :{" "}
-            <strong className="text-n-text">votre bug qui se protège lui-même.</strong>
+            Cette hésitation mérite d'être nommée. Elle peut être de la prudence
+            rationnelle — et dans ce cas, c'est sain.
           </p>
-          <p className="text-n-muted">Le fait que vous hésitiez ne prouve pas que ce n'est pas pour vous. Il prouve que c'est exactement pour vous.</p>
+          <p className="text-n-muted mb-3">
+            Mais elle peut aussi être la signature exacte du mécanisme que nous
+            traitons : un SNA qui résiste à toute proposition impliquant un
+            changement de contrôle.
+          </p>
+          <p className="text-n-muted">
+            La différence entre les deux ?{" "}
+            <strong className="text-n-text">
+              En 45 minutes d'audit, c'est la première chose que nous identifions.
+            </strong>
+          </p>
         </div>
       </div>
     </section>
