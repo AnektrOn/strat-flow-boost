@@ -127,18 +127,9 @@ const CTAFinalSection = () => {
           </p>
         </div>
 
-        <p className="reveal text-xs text-n-faint mb-12">
+        <p className="reveal text-xs text-n-faint">
           Questionnaire de pré-qualification · Audit 45 min offert · Garantie de Diagnostic Absolue
         </p>
-
-        <div className="reveal mt-12 pt-8 border-t border-n-border">
-          <p className="text-sm text-n-muted mb-3">Pas encore prêt pour l'audit ?</p>
-          <p className="text-sm text-n-muted mb-4 mx-auto max-w-[60ch]">
-            Téléchargez <strong className="text-n-text">"Le Bug Invisible™"</strong> — les 4 profils de Dérive
-            Neuro-Opérationnelle qui bloquent les dirigeants 20k-150k€/mois.
-          </p>
-          <a href="#" className="btn-outline">Télécharger le diagnostic gratuit</a>
-        </div>
       </div>
     </section>
   );
