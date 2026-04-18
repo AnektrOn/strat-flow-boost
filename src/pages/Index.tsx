@@ -9,7 +9,6 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import FutureSection from "@/components/FutureSection";
 import FounderSection from "@/components/FounderSection";
 import ROISection from "@/components/ROISection";
-import GuaranteeSection from "@/components/GuaranteeSection";
 import FAQSection from "@/components/FAQSection";
 import CTAFinalSection from "@/components/CTAFinalSection";
 import Footer from "@/components/Footer";
@@ -30,7 +29,6 @@ const Index = () => {
         <FutureSection />
         <FounderSection />
         <ROISection />
-        <GuaranteeSection />
         <FAQSection />
         <CTAFinalSection />
       </main>
