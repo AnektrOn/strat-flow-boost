@@ -9,9 +9,6 @@ const HeroSection = () => {
       className="min-h-[85vh] flex items-center text-center pt-32 pb-20"
     >
       <div className="container-nomos narrow w-full">
-        <span className="reveal eyebrow-bordered mb-8">
-          Réservé aux fondateurs · 20 000€ – 150 000€/mois
-        </span>
         <h1 className="reveal h-hero mb-6">
           Votre entreprise ne plafonne pas.<br />
           C'est <em>votre bande passante</em> qui plafonne.
