@@ -14,10 +14,6 @@ const faqs = [
     a: "Le \"moment idéal\" n'arrivera pas — parce que le système qui crée le manque de temps est précisément ce que le protocole corrige. Votre investissement : 2-3 heures par semaine. Dès la semaine 6, vous récupérez 5 à 10 heures nettes. Le protocole se finance en temps avant sa fin.",
   },
   {
-    q: "\"Comment je sais que ça va marcher pour MON cas ?\"",
-    a: "C'est exactement pourquoi l'audit existe. En 45 minutes, nous identifions votre bug précis parmi les 4 profils documentés de Dérive Neuro-Opérationnelle. Si votre bug n'est pas identifié avec précision : remboursement. C'est la garantie.",
-  },
-  {
     q: "\"Qu'est-ce qui se passe concrètement pendant l'audit de 45 minutes ?\"",
     a: "C'est un diagnostic en direct — pas un appel de vente. Vous décrivez votre situation, je pose des questions précises, et en temps réel je cartographie votre profil de Dérive parmi les 4 documentés. Vous repartez avec votre Kill List (les 3 comportements qui coûtent le plus) et une recommandation claire : soit le Protocole APEX est adapté, soit il ne l'est pas. Dans les deux cas, le diagnostic a de la valeur.",
   },
