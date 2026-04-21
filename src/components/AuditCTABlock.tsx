@@ -1,8 +1,7 @@
 import { Mail, ClipboardList, ArrowRight } from "lucide-react";
 
-// TODO: remplacer par les vrais liens
-export const WHATSAPP_URL = "https://wa.me/33600000000";
-export const AUDIT_FORM_URL = "https://form.typeform.com/to/xxxxxx";
+export const WHATSAPP_URL = "https://wa.me/33621525841";
+export const AUDIT_FORM_URL = "https://calendly.com/nomos-support/30min";
 
 const options = [
   {
