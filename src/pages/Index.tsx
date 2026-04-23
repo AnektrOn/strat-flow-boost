@@ -5,7 +5,7 @@ import MechanismSection from "@/components/MechanismSection";
 import SufferingSection from "@/components/SufferingSection";
 import SolutionsSection from "@/components/SolutionsSection";
 import ProtocolSection from "@/components/ProtocolSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
+
 import FutureSection from "@/components/FutureSection";
 import FounderSection from "@/components/FounderSection";
 import ROISection from "@/components/ROISection";
@@ -25,7 +25,7 @@ const Index = () => {
         <SufferingSection />
         <SolutionsSection />
         <ProtocolSection />
-        <TestimonialsSection />
+        
         <FutureSection />
         <FounderSection />
         <ROISection />
