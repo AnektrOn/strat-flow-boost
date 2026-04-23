@@ -1,7 +1,7 @@
 import { Mail, ClipboardList, ArrowRight } from "lucide-react";
 
-export const WHATSAPP_URL = "https://wa.me/33621525841";
-export const AUDIT_FORM_URL = "https://calendly.com/nomos-support/30min";
+export const WHATSAPP_URL = "mailto:contact.nomosprotocol.com";
+export const AUDIT_FORM_URL = "https://form.typeform.com/to/p5bvUgrf";
 
 const options = [
   {
