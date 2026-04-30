@@ -55,6 +55,7 @@ export default {
         "n-faint": "hsl(var(--color-text-faint))",
         "n-gold": "hsl(var(--color-gold))",
         "n-gold-dim": "hsl(var(--color-gold-dim))",
+        "n-gold-warm": "hsl(var(--color-gold-warm))",
         "n-teal": "hsl(var(--color-teal))",
         "n-teal-hover": "hsl(var(--color-teal-hover))",
         "n-border": "hsl(var(--color-border))",

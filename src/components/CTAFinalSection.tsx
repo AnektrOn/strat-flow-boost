@@ -42,6 +42,9 @@ const CTAFinalSection = () => {
           ))}
         </div>
 
+        <p className="reveal guarantee-reminder text-sm text-n-teal mb-8">
+          Si le mécanisme exact n'est pas identifié — remboursement intégral. Sans conditions.
+        </p>
 
         {/* Two-card contact block */}
         <div className="mb-12">
@@ -55,6 +58,17 @@ const CTAFinalSection = () => {
             êtes sélectionné et choisissez de ne pas avancer — la place revient
             au prochain sur liste d'attente.
           </p>
+        </div>
+
+        <div className="reveal mt-12 pt-8 border-t border-n-border max-w-lg mx-auto">
+          <p className="text-sm text-n-muted mb-3">Pas encore prêt pour l'audit ?</p>
+          <p className="text-sm text-n-muted mb-6">
+            Téléchargez <strong className="text-n-text">« Le Bug Invisible™ »</strong> — les 4 profils de Dérive
+            Neuro-Opérationnelle qui bloquent les dirigeants 20k-150k€/mois.
+          </p>
+          <a href="#" className="btn-outline">
+            Télécharger le diagnostic gratuit
+          </a>
         </div>
 
       </div>
