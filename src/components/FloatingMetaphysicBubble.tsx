@@ -426,20 +426,19 @@ const FloatingMetaphysicBubble = () => {
       }}
     >
       <p className="font-display text-base italic text-n-gold mb-2 leading-snug">
-        Ce qui ne figure sur aucun funnel.
+        Vous avez trouvé la backdoor.
       </p>
       <p className="text-xs text-n-muted leading-relaxed mb-3">
-        Ni audit, ni devis : un détour volontaire dans l&apos;expérience. Quelques secondes où la porte vous esquive —
-        puis, lorsqu&apos;elle se tient, <strong className="text-n-text">un geste</strong> suffit pour voir ce qui se
-        cache derrière.
+        Elle ne figure sur aucun menu. Aucun funnel ne mène ici. La plupart passent à côté — par distraction, ou parce
+        qu&apos;ils n&apos;ont pas le réflexe de{" "}
+        <strong className="text-n-text">poursuivre ce qui fuit</strong>. Vous, si. Ce détail dit déjà quelque chose.
       </p>
       <p className="text-[11px] text-n-muted leading-relaxed mb-3 border-t border-n-border/60 pt-3">
-        <span className="text-n-faint uppercase tracking-wider">Ordinateur</span> — La porte fuit le curseur environ{" "}
-        <strong className="text-n-text">trois secondes</strong>, puis s&apos;immobilise ; cliquez le sigle{" "}
-        <strong className="text-n-text">ou ce panneau</strong>.
+        <span className="text-n-faint uppercase tracking-wider">Ordinateur</span> — Cliquez le sigle{" "}
+        <strong className="text-n-text">ou ce panneau</strong> pour passer de l&apos;autre côté.
         <br />
-        <span className="text-n-faint uppercase tracking-wider mt-2 inline-block">Mobile</span> — Inclinez fermement
-        l&apos;appareil pour hâter la fin de cette phase, puis touchez le sigle.
+        <span className="text-n-faint uppercase tracking-wider mt-2 inline-block">Mobile</span> — Touchez le sigle ou ce
+        panneau.
       </p>
       <p className="text-[11px] text-n-faint">
         {phase === "chasing"
