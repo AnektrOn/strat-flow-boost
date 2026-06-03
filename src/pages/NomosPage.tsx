@@ -16,8 +16,13 @@ import FAQSection from "@/components/FAQSection";
 import CTAFinalSection from "@/components/CTAFinalSection";
 import Footer from "@/components/Footer";
 import MobileCTABar from "@/components/MobileCTABar";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 const NomosPage = () => {
+  const { t } = useLanguage();
+  usePageMeta("nomos");
+
   return (
     <div className="overflow-x-hidden pb-24 sm:pb-0">
       <Header mode="nomos" />
@@ -38,8 +43,8 @@ const NomosPage = () => {
         <CTAFinalSection />
         <section className="cross-link">
           <div className="container-nomos narrow">
-            <p>Vous pensez être plutôt en level up qu&apos;en crise ?</p>
-            <Link to="/ascension">Découvrir le Protocole ASCENSION →</Link>
+            <p>{t("common.crossLink.nomos.prompt")}</p>
+            <Link to="/ascension">{t("common.crossLink.nomos.link")}</Link>
           </div>
         </section>
       </main>

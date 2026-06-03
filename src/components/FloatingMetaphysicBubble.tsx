@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { useLocation, useNavigate } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const METAPHYSIQUE_PATH = "/metaphysique";
 
@@ -89,9 +90,14 @@ function computePopoverRect(trigger: DOMRect, popHeight: number, popWidth: numbe
   return { top, left, width: w };
 }
 
+function interp(template: string, seconds: string) {
+  return template.replace(/\{seconds\}/g, seconds);
+}
+
 const FloatingMetaphysicBubble = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   const [phase, setPhase] = useState<"chasing" | "calm">("chasing");
   const [msLeft, setMsLeft] = useState(CHASE_MS);
@@ -409,11 +415,13 @@ const FloatingMetaphysicBubble = () => {
     return Boolean(moverRef.current?.contains(next));
   };
 
+  const secondsStr = (msLeft / 1000).toFixed(1);
+
   const popoverContent = (
     <div
       ref={popoverInnerRef}
       role="dialog"
-      aria-label="Seuil métaphysique — explication et consignes"
+      aria-label={t("floatingBubble.popover.ariaLabel")}
       className="rounded-lg border border-n-border bg-n-bg/95 p-4 text-left shadow-xl backdrop-blur-md cursor-pointer"
       onPointerDown={onCatch}
       onPointerEnter={() => {
@@ -426,24 +434,55 @@ const FloatingMetaphysicBubble = () => {
       }}
     >
       <p className="font-display text-base italic text-n-gold mb-2 leading-snug">
-        Vous avez trouvé la backdoor.
+        {t("floatingBubble.popover.title")}
       </p>
       <p className="text-xs text-n-muted leading-relaxed mb-3">
-        Elle ne figure sur aucun menu. Aucun funnel ne mène ici. La plupart passent à côté — par distraction, ou parce
-        qu&apos;ils n&apos;ont pas le réflexe de{" "}
-        <strong className="text-n-text">poursuivre ce qui fuit</strong>. Vous, si. Ce détail dit déjà quelque chose.
+        {(() => {
+          const full = t("floatingBubble.popover.body");
+          const strong = t("floatingBubble.popover.bodyStrong");
+          const parts = full.split(strong);
+          if (parts.length === 2) {
+            return (
+              <>
+                {parts[0]}
+                <strong className="text-n-text">{strong}</strong>
+                {parts[1]}
+              </>
+            );
+          }
+          return full;
+        })()}
       </p>
       <p className="text-[11px] text-n-muted leading-relaxed mb-3 border-t border-n-border/60 pt-3">
-        <span className="text-n-faint uppercase tracking-wider">Ordinateur</span> — Cliquez le sigle{" "}
-        <strong className="text-n-text">ou ce panneau</strong> pour passer de l&apos;autre côté.
+        <span className="text-n-faint uppercase tracking-wider">
+          {t("floatingBubble.popover.instructionsDesktopLabel")}
+        </span>{" "}
+        —{" "}
+        {(() => {
+          const full = t("floatingBubble.popover.instructionsDesktop");
+          const strong = t("floatingBubble.popover.instructionsDesktopStrongPanel");
+          const parts = full.split(strong);
+          if (parts.length === 2) {
+            return (
+              <>
+                {parts[0]}
+                <strong className="text-n-text">{strong}</strong>
+                {parts[1]}
+              </>
+            );
+          }
+          return full;
+        })()}
         <br />
-        <span className="text-n-faint uppercase tracking-wider mt-2 inline-block">Mobile</span> — Touchez le sigle ou ce
-        panneau.
+        <span className="text-n-faint uppercase tracking-wider mt-2 inline-block">
+          {t("floatingBubble.popover.instructionsMobileLabel")}
+        </span>{" "}
+        — {t("floatingBubble.popover.instructionsMobile")}
       </p>
       <p className="text-[11px] text-n-faint">
         {phase === "chasing"
-          ? `Seuil instable · encore ~${(msLeft / 1000).toFixed(1)} s`
-          : "Seuil stable — vous pouvez franchir."}
+          ? interp(t("floatingBubble.popover.thresholdUnstable"), secondsStr)
+          : t("floatingBubble.popover.thresholdStable")}
       </p>
     </div>
   );
@@ -475,8 +514,8 @@ const FloatingMetaphysicBubble = () => {
             } ${nudge ? "ring-2 ring-n-gold/90 scale-95" : ""}`}
             aria-label={
               phase === "chasing"
-                ? `Seuil métaphysique — instable encore ${(msLeft / 1000).toFixed(1)} secondes`
-                : "Seuil métaphysique — stable, prêt à être franchi"
+                ? interp(t("floatingBubble.bubble.ariaUnstable"), secondsStr)
+                : t("floatingBubble.bubble.ariaStable")
             }
             aria-live="polite"
           >
@@ -491,17 +530,15 @@ const FloatingMetaphysicBubble = () => {
               onClick={requestOrientation}
               className="mb-2 w-full rounded border border-n-border bg-n-surface px-3 py-2 text-[10px] uppercase tracking-widest text-n-muted hover:border-n-teal hover:text-n-teal"
             >
-              Activer l&apos;inclinaison (iOS)
+              {t("floatingBubble.mobile.enableTiltIos")}
             </button>
           ) : orientationGranted === false ? (
-            <p className="mb-2 text-[10px] text-n-faint">
-              Inclinaison refusée — le seuil se stabilise tout seul au bout du temps prévu.
-            </p>
+            <p className="mb-2 text-[10px] text-n-faint">{t("floatingBubble.mobile.tiltDenied")}</p>
           ) : null}
           <p className="pointer-events-none text-center text-[10px] uppercase tracking-widest text-n-faint leading-relaxed">
             {phase === "chasing"
-              ? `Seuil instable · ${(msLeft / 1000).toFixed(1)}s — inclinez pour hâter`
-              : "Seuil stable — touchez le sigle"}
+              ? interp(t("floatingBubble.mobile.hintUnstable"), secondsStr)
+              : t("floatingBubble.mobile.hintStable")}
           </p>
         </div>
       </div>

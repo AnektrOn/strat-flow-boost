@@ -1,14 +1,36 @@
+import { useLanguage } from "@/contexts/LanguageContext";
+import { useEmailDialog } from "@/contexts/EmailDialogContext";
+import type { AuditProtocol } from "@/lib/contactEmail";
+
+type MobileCTAVariant = "default" | "ascension" | "metaphysique";
+
 type MobileCTABarProps = {
-  href?: string;
-  label?: string;
+  variant?: MobileCTAVariant;
 };
 
-const MobileCTABar = ({ href = "#audit", label = "Candidater pour l'audit" }: MobileCTABarProps) => (
-  <div className="mobile-cta-bar sm:hidden">
-    <a href={href} className="btn-primary">
-      {label}
-    </a>
-  </div>
-);
+const labelKey: Record<MobileCTAVariant, string> = {
+  default: "common.mobileCta.default",
+  ascension: "common.mobileCta.ascension",
+  metaphysique: "common.mobileCta.metaphysique",
+};
+
+const protocolByVariant: Record<MobileCTAVariant, AuditProtocol> = {
+  default: "nomos",
+  ascension: "ascension",
+  metaphysique: "metaphysique",
+};
+
+const MobileCTABar = ({ variant = "default" }: MobileCTABarProps) => {
+  const { t } = useLanguage();
+  const { openAudit } = useEmailDialog();
+
+  return (
+    <div className="mobile-cta-bar sm:hidden">
+      <button type="button" className="btn-primary w-full" onClick={() => openAudit(protocolByVariant[variant])}>
+        {t(labelKey[variant])}
+      </button>
+    </div>
+  );
+};
 
 export default MobileCTABar;

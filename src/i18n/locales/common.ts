@@ -1,0 +1,507 @@
+export const fr = {
+  common: {
+    header: {
+      homeAria: "NOMOS — Accueil",
+      auditDefault: "Réserver l'Audit",
+      auditAscension: "Réserver l'Audit ASCENSION",
+      auditMetaphysique: "Candidater — Avant-garde",
+      auditHub: "Réserver l'Audit",
+    },
+    footer: {
+      nomos: {
+        brand: "NOMOS — Intervention Systémique Neuro-Opérationnelle",
+        meta: "5 dirigeants par trimestre · 1:1 sans délégation · Garantie de Diagnostic Absolue",
+      },
+      ascension: {
+        brand: "NOMOS — Intervention Systémique · ASCENSION — Élévation Identitaire",
+        meta: "Fondé et conduit par Léo · 5 dirigeants par semestre · 1:1 sans délégation · Garantie de Diagnostic Absolue",
+      },
+      hub: {
+        brand: "NOMOS — Système Neuro-Opérationnel pour Dirigeants",
+        meta: "Fondé par Léo · Intervention 1:1 · Garantie de Diagnostic Absolue",
+      },
+      metaphysique: {
+        brand: "NOMOS — Dimension Métaphysique · Avant-Gardisme Stratégique",
+        meta: "Fondé par Léo · Réservé à une poignée de dirigeants · 1:1 sans délégation",
+      },
+    },
+    mobileCta: {
+      default: "Candidater pour l'audit",
+      ascension: "Candidater pour l'audit ASCENSION",
+      metaphysique: "Candidater — Avant-garde",
+    },
+    auditCta: {
+      contactDirect: {
+        name: "Contact Direct",
+        description:
+          "Premier point de contact pour évaluer rapidement la pertinence d'un audit. Aucun diagnostic n'est réalisé à ce stade.",
+        cta: "Envoyer un message",
+      },
+      auditInitial: {
+        name: "Audit Initial",
+        description:
+          "Session de lecture stratégique. Objectif : déterminer si le système nécessite une intervention ou non.",
+        cta: "Réserver l'audit",
+      },
+    },
+    auditForm: {
+      title: "Candidature audit stratégique",
+      subtitle:
+        "Quelques informations — votre messagerie s'ouvrira avec un message détaillé en français (audit 45 min offert).",
+      companyName: "Nom de l'entreprise",
+      companyNamePlaceholder: "Ex. Acme SAS",
+      referral: "Comment nous avez-vous connus ?",
+      referralPlaceholder: "Recommandation, LinkedIn, conférence…",
+      expectation: "Votre attente",
+      expectationOptions: {
+        message: "Message",
+        email: "E-mail",
+        call: "Appel",
+      },
+      messengerLabel: "Comment vous joindre ?",
+      messengerAppWhatsapp: "WhatsApp",
+      messengerAppTelegram: "Telegram",
+      messengerContact: "Numéro ou identifiant",
+      messengerContactPlaceholder: "+33 6 12 34 56 78 ou @pseudo",
+      validationMessengerRequired: "Indiquez votre WhatsApp ou Telegram.",
+      submit: "Ouvrir ma messagerie",
+      submitSending: "Préparation…",
+      cancel: "Annuler",
+      validationRequired: "Veuillez renseigner tous les champs.",
+      successTitle: "Messagerie ouverte",
+      successDescription:
+        "Le message détaillé est prérempli en français — cliquez sur Envoyer dans votre application mail.",
+      sendErrorTitle: "Ouverture impossible",
+      sendErrorDescription:
+        "Configurez une application mail ou écrivez à contact@protocolenomos.com",
+    },
+    contactForm: {
+      title: "Contact NOMOS",
+      subtitle:
+        "Quelques informations — votre messagerie s'ouvrira avec un message détaillé en français.",
+      companyName: "Nom de l'entreprise",
+      companyNamePlaceholder: "Ex. Acme SAS",
+      referral: "Comment nous avez-vous connus ?",
+      referralPlaceholder: "Recommandation, LinkedIn, conférence…",
+      expectation: "Votre attente",
+      expectationOptions: {
+        message: "Message",
+        email: "E-mail",
+        call: "Appel",
+      },
+      messengerLabel: "Comment vous joindre ?",
+      messengerAppWhatsapp: "WhatsApp",
+      messengerAppTelegram: "Telegram",
+      messengerContact: "Numéro ou identifiant",
+      messengerContactPlaceholder: "+33 6 12 34 56 78 ou @pseudo",
+      validationMessengerRequired: "Indiquez votre WhatsApp ou Telegram.",
+      submit: "Ouvrir ma messagerie",
+      submitSending: "Préparation…",
+      cancel: "Annuler",
+      validationRequired: "Veuillez renseigner tous les champs.",
+      successTitle: "Messagerie ouverte",
+      successDescription:
+        "Le message détaillé est prérempli en français — cliquez sur Envoyer dans votre application mail.",
+      sendErrorTitle: "Ouverture impossible",
+      sendErrorDescription:
+        "Configurez une application mail ou écrivez à contact@protocolenomos.com",
+    },
+    auditIntro: {
+      title: "Initier l'audit stratégique",
+      duration: "(45 min)",
+      deliverablesLabel: "Vous repartez avec :",
+      deliverables: [
+        "Lecture des 3 frictions systémiques majeures",
+        "Identification des écarts décision / exécution",
+        "Clarté sur le niveau réel de désalignement",
+        "Décision : intervention NOMOS pertinente ou non",
+      ],
+    },
+    notFound: {
+      code: "404",
+      message: "Oops! Page not found",
+      back: "Retour à l'accueil",
+    },
+    crossLink: {
+      nomos: {
+        prompt: "Vous pensez être plutôt en level up qu'en crise ?",
+        link: "Découvrir le Protocole ASCENSION →",
+      },
+      ascension: {
+        prompt: "Vous pensez être plutôt en crise ?",
+        link: "Découvrir le Protocole NOMOS →",
+      },
+      metaphysique: {
+        prompt: "Vous êtes en crise ou cherchez à passer un palier concret ?",
+        linkCrisis: "Protocole CRISIS →",
+        linkLevelUp: "Protocole LEVEL UP →",
+        separator: "·",
+      },
+    },
+    language: {
+      aria: "Choisir la langue",
+      fr: "Français",
+      en: "English",
+    },
+    qualify: {
+      noLabel: "Ne candidatez pas si :",
+      yesLabel: "Candidatez si :",
+      nomos: {
+        title: "Ce protocole n'est pas pour tout le monde.",
+        no: [
+          "Vous générez moins de 20 000€/mois ou n'avez pas d'équipe",
+          "Vous cherchez encore \"la bonne formation\" ou \"le bon système de productivité\"",
+          "Vous pensez que votre problème est entièrement externe",
+          "Vous n'êtes pas disposé à investir 2-3 heures hebdomadaires sur 90 jours",
+        ],
+        yes: [
+          "Vous générez entre 20 000€ et 150 000€/mois avec une équipe de 3 à 12 personnes",
+          "Vous avez déjà essayé coaching, consulting, formations — et rien n'a tenu plus de 3 mois",
+          "Vous savez ce qu'il faudrait faire — et vous n'arrivez pas à tenir les changements",
+          "Vous êtes prêt à traiter le problème réel, pas ses conséquences visibles",
+        ],
+        hesitation: {
+          title: "Si vous hésitez à candidater...",
+          p1: "Cette hésitation mérite d'être nommée. Elle peut être de la prudence rationnelle — et dans ce cas, c'est sain.",
+          p2: "Mais elle peut aussi être la signature exacte du mécanisme que nous traitons : un SNA qui résiste à toute proposition impliquant un changement de contrôle.",
+          p3: "La différence entre les deux ? En 45 minutes d'audit, c'est la première chose que nous identifions.",
+          p3Strong: "En 45 minutes d'audit, c'est la première chose que nous identifions.",
+        },
+      },
+      ascension: {
+        title: "ASCENSION n'est pas pour tout le monde.",
+        titleLine2: "Délibérément.",
+        no: [
+          "Vous êtes en crise active : équipe en tension, cashflow sous pression, opérations instables — NOMOS est le bon protocole pour vous",
+          "Votre business génère moins de 45 000€/mois ou ne dispose pas encore de systèmes opérationnels en place",
+          "Vous cherchez des recettes rapides, un nouveau framework de productivité, ou une méthode opérationnelle",
+          "Vous n'êtes pas prêt à remettre en jeu votre positionnement actuel et certaines certitudes identitaires",
+          "Vous ne disposez pas de 6 mois de disponibilité régulière pour un travail structuré",
+        ],
+        yes: [
+          "Votre business est stable, vos systèmes tiennent, et vous avez passé le stade où tout reposait sur vous",
+          "Vous avez une vision à déployer mais elle n'est pas encore assez précise, partagée ou directrice",
+          "Vous êtes prêt à refondre votre positionnement public pour qu'il corresponde à ce que vous êtes réellement devenu",
+          "Vous voulez structurer votre autorité publique comme levier stratégique — pas pour la visibilité en soi",
+          "Vous avez 6 mois disponibles pour un travail progressif, en profondeur, qui ne se fait pas en sprint",
+        ],
+      },
+      metaphysique: {
+        title: "La dimension métaphysique n'est pas pour tout le monde.",
+        titleLine2: "Et c'est exactement ce qui en fait la valeur.",
+        intro:
+          "Vous n'avez pas besoin d'être en crise pour candidater. Vous avez besoin de sentir qu'il y a un palier au-dessus — et que vous ne savez pas encore comment le lire.",
+        no: [
+          "Vous cherchez une méthode de plus, un système, un framework — l'avant-garde ne se réduit pas à une tactique",
+          "Vous n'êtes pas prêt à remettre en question vos certitudes sur ce qui crée de la valeur dans votre business",
+          "Vous voulez des résultats en 30 jours sans transformation de fond",
+          "Vous pensez que la stratégie se limite à ce qui est mesurable et visible",
+        ],
+        yes: [
+          "Vous avez épuisé les outils classiques et sentez qu'il manque une couche de lecture que vous n'avez pas encore",
+          "Vous êtes prêt à travailler les dimensions invisibles : intention, timing, positionnement de fréquence",
+          "Vous voulez prendre vingt ans d'avance sur votre marché — pas juste un trimestre",
+          "Vous comprenez que certains avantages compétitifs ne se copient pas parce qu'ils ne se voient pas",
+        ],
+        hesitation: {
+          title: "Si vous hésitez...",
+          p1: "Cette hésitation est souvent le signe que vous êtes exactement au bon endroit. Ce qui résiste à l'avant-garde, c'est précisément ce qui vous maintient dans l'ère précédente.",
+          p2: "La lecture métaphysique commence là : dans les 45 premières minutes, nous nommons ce qui résiste — et pourquoi.",
+          p2Strong: "dans les 45 premières minutes, nous nommons ce qui résiste — et pourquoi.",
+        },
+      },
+    },
+    guarantee: {
+      eyebrow: "La Garantie de Diagnostic Absolue",
+      nomos: {
+        title: "Si le mécanisme exact n'est pas identifié —",
+        titleLine2: "remboursement intégral.",
+        p1: "Si, à la fin de l'Audit Stratégique de 45 minutes, le mécanisme exact qui bloque votre expansion n'est pas identifié avec précision — l'acompte est remboursé intégralement. Sans conditions. Sans questions.",
+        p2: "Cette garantie n'est pas du marketing. C'est une preuve en acte : si le diagnostic est si précis que nous pouvons le garantir, c'est que le mécanisme est réel, mesurable et identifiable.",
+        p3: "Aucun coaching, aucun consultant, aucune formation ne peut proposer cette garantie.",
+        riskLabel: "Ce que vous risquez :",
+        risk: "45 minutes de votre temps.",
+        gainLabel: "Ce que vous gagnez :",
+        gain: "une carte précise de votre bug — même si vous ne continuez pas.",
+      },
+      ascension: {
+        title: "Si le diagnostic identitaire n'est pas plus précis —",
+        titleLine2: "remboursement intégral.",
+        p1: "Dans les 21 premiers jours du protocole, un audit identitaire complet est conduit : cartographie de votre Plafond de Cohérence Identitaire™, identification précise des zones de désalignement, diagnostic des décisions bloquées et de leur cause réelle.",
+        p2: "Si, à l'issue de ces 21 jours, le diagnostic produit n'est pas significativement plus précis que ce que vous pouviez formuler seul avant de commencer — remboursement intégral. Sans conditions. Sans questions. Sans délai.",
+        p3: "Cette garantie n'est pas du marketing. C'est une preuve en acte : si le diagnostic est assez précis pour être garanti, c'est que le mécanisme est réel, mesurable, identifiable — et que le protocole qui en découle a une base solide.",
+        p4: "Aucun consultant, aucun coach, aucune formation ne peut proposer cette garantie. ASCENSION, si.",
+        p4Strong: "Aucun consultant, aucun coach, aucune formation ne peut proposer cette garantie. ASCENSION, si.",
+        riskLabel: "Ce que vous risquez :",
+        risk: "21 jours et 15 000€.",
+        gainLabel: "Ce que vous gagnez au minimum :",
+        gain: "la cartographie la plus précise de votre identité de dirigeant que vous ayez jamais eue — même si vous ne continuez pas.",
+      },
+      metaphysique: {
+        title: "Si l'angle métaphysique n'ouvre pas",
+        titleLine2: "une perspective radicalement nouvelle — remboursement intégral.",
+        p1: "Dans les 21 premiers jours, un audit de lecture stratégique est conduit : identification des leviers invisibles actifs dans votre trajectoire, cartographie des angles morts décisionnels, diagnostic de l'écart entre ce que vous pilotez et ce qui vous pilote réellement.",
+        p2: "Si ce diagnostic ne vous donne pas une lecture de votre situation plus précise et plus actionnaire que tout ce que vous avez eu jusqu'ici — remboursement intégral. Sans conditions. Sans délai.",
+        p2Strong: "remboursement intégral. Sans conditions. Sans délai.",
+        riskLabel: "Ce que vous risquez :",
+        risk: "21 jours et une remise en question.",
+        gainLabel: "Ce que vous gagnez au minimum :",
+        gain: "la carte la plus précise de ce qui vous retient — même si vous ne continuez pas.",
+      },
+    },
+  },
+};
+
+export const en = {
+  common: {
+    header: {
+      homeAria: "NOMOS — Home",
+      auditDefault: "Book the Audit",
+      auditAscension: "Book the ASCENSION Audit",
+      auditMetaphysique: "Apply — Avant-garde",
+      auditHub: "Book the Audit",
+    },
+    footer: {
+      nomos: {
+        brand: "NOMOS — Neuro-Operational Systemic Intervention",
+        meta: "5 leaders per quarter · 1:1 with no delegation · Absolute Diagnostic Guarantee",
+      },
+      ascension: {
+        brand: "NOMOS — Systemic Intervention · ASCENSION — Identity Elevation",
+        meta: "Founded and led by Léo · 5 leaders per semester · 1:1 with no delegation · Absolute Diagnostic Guarantee",
+      },
+      hub: {
+        brand: "NOMOS — Neuro-Operational System for Leaders",
+        meta: "Founded by Léo · 1:1 intervention · Absolute Diagnostic Guarantee",
+      },
+      metaphysique: {
+        brand: "NOMOS — Metaphysical Dimension · Strategic Avant-Gardism",
+        meta: "Founded by Léo · Reserved for a handful of leaders · 1:1 with no delegation",
+      },
+    },
+    mobileCta: {
+      default: "Apply for the audit",
+      ascension: "Apply for the ASCENSION audit",
+      metaphysique: "Apply — Avant-garde",
+    },
+    auditCta: {
+      contactDirect: {
+        name: "Direct Contact",
+        description:
+          "First point of contact to quickly assess whether an audit is relevant. No diagnostic is performed at this stage.",
+        cta: "Send a message",
+      },
+      auditInitial: {
+        name: "Initial Audit",
+        description:
+          "Strategic reading session. Objective: determine whether the system requires intervention or not.",
+        cta: "Book the audit",
+      },
+    },
+    auditForm: {
+      title: "Strategic audit application",
+      subtitle:
+        "A few details — your email app will open with a detailed message in English (45 min audit offered).",
+      companyName: "Company name",
+      companyNamePlaceholder: "e.g. Acme Inc.",
+      referral: "How did you find us?",
+      referralPlaceholder: "Referral, LinkedIn, event…",
+      expectation: "What you're looking for",
+      expectationOptions: {
+        message: "Message",
+        email: "Email",
+        call: "Call",
+      },
+      messengerLabel: "How should we reach you?",
+      messengerAppWhatsapp: "WhatsApp",
+      messengerAppTelegram: "Telegram",
+      messengerContact: "Phone number or username",
+      messengerContactPlaceholder: "+1 555 123 4567 or @username",
+      validationMessengerRequired: "Please provide your WhatsApp or Telegram.",
+      submit: "Open in email app",
+      submitSending: "Preparing…",
+      cancel: "Cancel",
+      validationRequired: "Please fill in all fields.",
+      successTitle: "Email app opened",
+      successDescription:
+        "A detailed message in English is pre-filled — tap Send in your mail app.",
+      sendErrorTitle: "Could not open mail",
+      sendErrorDescription:
+        "Set up a mail app or email contact@protocolenomos.com",
+    },
+    contactForm: {
+      title: "Contact NOMOS",
+      subtitle:
+        "A few details — your email app will open with a detailed message in English.",
+      companyName: "Company name",
+      companyNamePlaceholder: "e.g. Acme Inc.",
+      referral: "How did you find us?",
+      referralPlaceholder: "Referral, LinkedIn, event…",
+      expectation: "What you're looking for",
+      expectationOptions: {
+        message: "Message",
+        email: "Email",
+        call: "Call",
+      },
+      messengerLabel: "How should we reach you?",
+      messengerAppWhatsapp: "WhatsApp",
+      messengerAppTelegram: "Telegram",
+      messengerContact: "Phone number or username",
+      messengerContactPlaceholder: "+1 555 123 4567 or @username",
+      validationMessengerRequired: "Please provide your WhatsApp or Telegram.",
+      submit: "Open in email app",
+      submitSending: "Preparing…",
+      cancel: "Cancel",
+      validationRequired: "Please fill in all fields.",
+      successTitle: "Email app opened",
+      successDescription:
+        "A detailed message in English is pre-filled — tap Send in your mail app.",
+      sendErrorTitle: "Could not open mail",
+      sendErrorDescription:
+        "Set up a mail app or email contact@protocolenomos.com",
+    },
+    auditIntro: {
+      title: "Start the strategic audit",
+      duration: "(45 min)",
+      deliverablesLabel: "You leave with:",
+      deliverables: [
+        "Reading of the 3 major systemic frictions",
+        "Identification of decision / execution gaps",
+        "Clarity on the real level of misalignment",
+        "Decision: whether a NOMOS intervention is relevant or not",
+      ],
+    },
+    notFound: {
+      code: "404",
+      message: "Oops! Page not found",
+      back: "Back to home",
+    },
+    crossLink: {
+      nomos: {
+        prompt: "Think you're in level up rather than crisis?",
+        link: "Discover the ASCENSION Protocol →",
+      },
+      ascension: {
+        prompt: "Think you're in crisis instead?",
+        link: "Discover the NOMOS Protocol →",
+      },
+      metaphysique: {
+        prompt: "In crisis or looking for a concrete next level?",
+        linkCrisis: "CRISIS Protocol →",
+        linkLevelUp: "LEVEL UP Protocol →",
+        separator: "·",
+      },
+    },
+    language: {
+      aria: "Choose language",
+      fr: "French",
+      en: "English",
+    },
+    qualify: {
+      noLabel: "Do not apply if:",
+      yesLabel: "Apply if:",
+      nomos: {
+        title: "This protocol is not for everyone.",
+        no: [
+          "You generate less than €20,000/month or have no team",
+          "You're still looking for \"the right training\" or \"the right productivity system\"",
+          "You believe your problem is entirely external",
+          "You're not willing to invest 2–3 hours per week for 90 days",
+        ],
+        yes: [
+          "You generate between €20,000 and €150,000/month with a team of 3 to 12 people",
+          "You've already tried coaching, consulting, training — and nothing lasted more than 3 months",
+          "You know what you should do — and you can't sustain the changes",
+          "You're ready to address the real problem, not its visible consequences",
+        ],
+        hesitation: {
+          title: "If you're hesitating to apply...",
+          p1: "That hesitation deserves to be named. It may be rational caution — and in that case, it's healthy.",
+          p2: "But it may also be the exact signature of the mechanism we treat: an ANS that resists any proposal involving a change of control.",
+          p3: "The difference between the two? In a 45-minute audit, that's the first thing we identify.",
+          p3Strong: "In a 45-minute audit, that's the first thing we identify.",
+        },
+      },
+      ascension: {
+        title: "ASCENSION is not for everyone.",
+        titleLine2: "By design.",
+        no: [
+          "You're in active crisis: team tension, cash flow under pressure, unstable operations — NOMOS is the right protocol for you",
+          "Your business generates less than €45,000/month or doesn't yet have operational systems in place",
+          "You're looking for quick recipes, a new productivity framework, or an operational method",
+          "You're not ready to put your current positioning and some identity certainties at stake",
+          "You don't have 6 months of regular availability for structured work",
+        ],
+        yes: [
+          "Your business is stable, your systems hold, and you've moved past the stage where everything depended on you",
+          "You have a vision to deploy but it's not yet precise, shared, or directive enough",
+          "You're ready to rebuild your public positioning to match who you've actually become",
+          "You want to structure your public authority as a strategic lever — not visibility for its own sake",
+          "You have 6 months available for progressive, in-depth work that doesn't happen in a sprint",
+        ],
+      },
+      metaphysique: {
+        title: "The metaphysical dimension is not for everyone.",
+        titleLine2: "And that's exactly what makes it valuable.",
+        intro:
+          "You don't need to be in crisis to apply. You need to sense there's a level above — and not yet know how to read it.",
+        no: [
+          "You're looking for one more method, system, or framework — avant-gardism isn't reduced to a tactic",
+          "You're not ready to question your certainties about what creates value in your business",
+          "You want results in 30 days without deep transformation",
+          "You think strategy is limited to what's measurable and visible",
+        ],
+        yes: [
+          "You've exhausted classic tools and sense a layer of reading you haven't activated yet",
+          "You're ready to work on invisible dimensions: intention, timing, frequency positioning",
+          "You want to get twenty years ahead of your market — not just one quarter",
+          "You understand that some competitive advantages can't be copied because they can't be seen",
+        ],
+        hesitation: {
+          title: "If you're hesitating...",
+          p1: "That hesitation is often a sign you're exactly in the right place. What resists avant-gardism is precisely what keeps you in the previous era.",
+          p2: "Metaphysical reading starts there: in the first 45 minutes, we name what resists — and why.",
+          p2Strong: "in the first 45 minutes, we name what resists — and why.",
+        },
+      },
+    },
+    guarantee: {
+      eyebrow: "The Absolute Diagnostic Guarantee",
+      nomos: {
+        title: "If the exact mechanism isn't identified —",
+        titleLine2: "full refund.",
+        p1: "If, at the end of the 45-minute Strategic Audit, the exact mechanism blocking your expansion isn't identified with precision — the deposit is refunded in full. No conditions. No questions.",
+        p2: "This guarantee isn't marketing. It's proof in action: if the diagnostic is precise enough to guarantee, the mechanism is real, measurable, and identifiable.",
+        p3: "No coaching, consultant, or training program can offer this guarantee.",
+        riskLabel: "What you risk:",
+        risk: "45 minutes of your time.",
+        gainLabel: "What you gain:",
+        gain: "a precise map of your bug — even if you don't continue.",
+      },
+      ascension: {
+        title: "If the identity diagnostic isn't more precise —",
+        titleLine2: "full refund.",
+        p1: "In the first 21 days of the protocol, a full identity audit is conducted: mapping of your Identity Coherence Ceiling™, precise identification of misalignment zones, diagnostic of blocked decisions and their real cause.",
+        p2: "If, after those 21 days, the diagnostic produced isn't significantly more precise than what you could articulate alone before starting — full refund. No conditions. No questions. No delay.",
+        p3: "This guarantee isn't marketing. It's proof in action: if the diagnostic is precise enough to guarantee, the mechanism is real, measurable, identifiable — and the protocol that follows has a solid foundation.",
+        p4: "No consultant, coach, or training program can offer this guarantee. ASCENSION can.",
+        p4Strong: "No consultant, coach, or training program can offer this guarantee. ASCENSION can.",
+        riskLabel: "What you risk:",
+        risk: "21 days and €15,000.",
+        gainLabel: "What you gain at minimum:",
+        gain: "the most precise map of your leader identity you've ever had — even if you don't continue.",
+      },
+      metaphysique: {
+        title: "If the metaphysical angle doesn't open",
+        titleLine2: "a radically new perspective — full refund.",
+        p1: "In the first 21 days, a strategic reading audit is conducted: identification of invisible levers active in your trajectory, mapping of decision blind spots, diagnostic of the gap between what you steer and what actually steers you.",
+        p2: "If this diagnostic doesn't give you a reading of your situation more precise and more actionable than anything you've had before — full refund. No conditions. No delay.",
+        p2Strong: "full refund. No conditions. No delay.",
+        riskLabel: "What you risk:",
+        risk: "21 days and a reckoning.",
+        gainLabel: "What you gain at minimum:",
+        gain: "the most precise map of what's holding you back — even if you don't continue.",
+      },
+    },
+  },
+};

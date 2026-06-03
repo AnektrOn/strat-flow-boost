@@ -27,6 +27,7 @@ type LanguageContextValue = {
   locale: Locale;
   setLocale: (locale: Locale) => void;
   t: (key: string) => string;
+  getTr: (key: string) => unknown;
   tr: Translations;
 };
 
@@ -66,7 +67,9 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       const value = getNested(tr as unknown as Record<string, unknown>, key);
       return typeof value === "string" ? value : key;
     };
-    return { locale, setLocale, t, tr };
+    const getTr = (key: string): unknown =>
+      getNested(tr as unknown as Record<string, unknown>, key);
+    return { locale, setLocale, t, getTr, tr };
   }, [locale, setLocale]);
 
   return (

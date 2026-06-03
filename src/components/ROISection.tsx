@@ -1,24 +1,26 @@
+import { AuditEmailButton } from "@/components/AuditEmailButton";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { useLanguage } from "@/contexts/LanguageContext";
 
-const rows = [
-  { label: "Ce mois", value: "15 000 à 50 000€ de revenus non capturés" },
-  { label: "Sur 90 jours", value: "45 000 à 150 000€" },
-  { label: "Sur 12 mois", value: "180 000 à 600 000€" },
-];
+type RoiRow = { label: string; value: string };
 
 const ROISection = () => {
   const ref = useScrollReveal();
+  const { t, getTr } = useLanguage();
+  const rows = getTr("nomos.roi.rows") as RoiRow[];
+
   return (
     <section ref={ref} id="roi" className="section-pad">
       <div className="container-nomos narrow">
-        <h2 className="reveal h-section">
-          La vraie question n'est pas "ai-je les moyens ?"
-        </h2>
-        <p className="reveal section-intro">Faites le calcul.</p>
+        <h2 className="reveal h-section">{t("nomos.roi.title")}</h2>
+        <p className="reveal section-intro">{t("nomos.roi.intro")}</p>
 
         <div className="reveal my-8">
           {rows.map((r) => (
-            <div key={r.label} className="flex justify-between flex-col sm:flex-row gap-1 px-6 py-4 border-b border-n-border">
+            <div
+              key={r.label}
+              className="flex justify-between flex-col sm:flex-row gap-1 px-6 py-4 border-b border-n-border"
+            >
               <span className="font-medium text-sm">{r.label}</span>
               <span className="text-sm text-n-muted text-right">{r.value}</span>
             </div>
@@ -27,33 +29,26 @@ const ROISection = () => {
             className="flex justify-between flex-col sm:flex-row gap-1 px-6 py-4 rounded mt-2"
             style={{ background: "hsl(var(--color-teal-glow))" }}
           >
-            <span className="font-semibold text-sm text-n-teal">ROI conservateur du protocole</span>
-            <span className="text-sm text-n-teal text-right font-semibold">12:1</span>
+            <span className="font-semibold text-sm text-n-teal">{t("nomos.roi.roiLabel")}</span>
+            <span className="text-sm text-n-teal text-right font-semibold">{t("nomos.roi.roiValue")}</span>
           </div>
         </div>
 
         <p className="reveal font-display text-xl text-center my-10">
-          <strong>Ai-je les moyens de ne pas le faire ?</strong>
+          <strong>{t("nomos.roi.question")}</strong>
         </p>
 
-        <blockquote className="reveal bq-gold">
-          "C'était tellement une douleur avant de me faire accompagner que quand
-          vous m'avez dit le prix c'était 'où est-ce que je signe ?' Le coût
-          d'inaction pour moi est monstrueux." — CEO, B2B
-        </blockquote>
+        <blockquote className="reveal bq-gold">{t("nomos.roi.quote")}</blockquote>
 
-        <p className="reveal text-sm text-n-muted text-center mt-6">
-          Pendant que vous lisez ceci, votre bug actif vous coûte entre 500€ et
-          1 600€ aujourd'hui. Pas en théorie. En revenus non capturés.
-        </p>
+        <p className="reveal text-sm text-n-muted text-center mt-6">{t("nomos.roi.footnote")}</p>
 
         <div className="reveal text-center mt-8">
-          <a
-            href="#audit"
+          <AuditEmailButton
+            protocol="nomos"
             className="inline-block border border-n-gold-dim text-n-gold px-6 py-3 rounded text-sm font-medium hover:bg-n-gold/10 hover:border-n-gold transition-colors"
           >
-            Calculer mon coût d'inaction
-          </a>
+            {t("nomos.roi.cta")}
+          </AuditEmailButton>
         </div>
       </div>
     </section>

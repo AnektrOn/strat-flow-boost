@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { AUDIT_FORM_URL } from "@/components/AuditCTABlock";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { useEmailDialog } from "@/contexts/EmailDialogContext";
+import type { AuditProtocol } from "@/lib/contactEmail";
 
 export type HeaderMode = "hub" | "nomos" | "ascension" | "metaphysique";
 
@@ -8,8 +11,24 @@ type HeaderProps = {
   mode?: HeaderMode;
 };
 
+const auditKey: Record<HeaderMode, string> = {
+  hub: "common.header.auditHub",
+  nomos: "common.header.auditDefault",
+  ascension: "common.header.auditAscension",
+  metaphysique: "common.header.auditMetaphysique",
+};
+
+const protocolByMode: Record<HeaderMode, AuditProtocol> = {
+  hub: "hub",
+  nomos: "nomos",
+  ascension: "ascension",
+  metaphysique: "metaphysique",
+};
+
 export function Header({ mode = "nomos" }: HeaderProps) {
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useLanguage();
+  const { openAudit } = useEmailDialog();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 100);
@@ -17,14 +36,8 @@ export function Header({ mode = "nomos" }: HeaderProps) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const auditLabel =
-    mode === "ascension"
-      ? "Réserver l'Audit ASCENSION"
-      : mode === "metaphysique"
-        ? "Candidater — Avant-garde"
-        : "Réserver l'Audit";
-  const auditHref = mode === "hub" ? AUDIT_FORM_URL : "#audit";
-  const auditExternal = mode === "hub";
+  const auditLabel = t(auditKey[mode]);
+  const isHub = mode === "hub";
 
   return (
     <header
@@ -32,28 +45,30 @@ export function Header({ mode = "nomos" }: HeaderProps) {
         scrolled ? "bg-n-bg/90 border-b border-n-border" : "bg-transparent"
       }`}
     >
-      <div className="container-nomos flex items-center justify-between py-4">
+      <div className="container-nomos flex items-center justify-between gap-4 py-4">
         <Link
           to="/"
-          className="font-body font-bold text-sm tracking-[0.2em] uppercase text-n-text"
-          aria-label="NOMOS — Accueil"
+          className="font-body font-bold text-sm tracking-[0.2em] uppercase text-n-text shrink-0"
+          aria-label={t("common.header.homeAria")}
         >
           NOMOS
         </Link>
-        {auditExternal ? (
-          <a
-            href={auditHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-outline sm"
-          >
-            {auditLabel}
-          </a>
-        ) : (
-          <a href={auditHref} className="btn-outline sm">
-            {auditLabel}
-          </a>
-        )}
+        <div className="flex items-center gap-3 sm:gap-4">
+          <LanguageSwitcher />
+          {isHub ? (
+            <button
+              type="button"
+              onClick={() => openAudit("hub")}
+              className="btn-outline sm shrink-0"
+            >
+              {auditLabel}
+            </button>
+          ) : (
+            <a href="#audit" className="btn-outline sm shrink-0">
+              {auditLabel}
+            </a>
+          )}
+        </div>
       </div>
     </header>
   );

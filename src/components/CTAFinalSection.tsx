@@ -1,35 +1,24 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import AuditCTABlock from "@/components/AuditCTABlock";
+import { useLanguage } from "@/contexts/LanguageContext";
 
-const items = [
-  {
-    title: "Votre Dérive Neuro-Opérationnelle™ identifiée",
-    detail: "parmi les 4 profils documentés, le vôtre est cartographié.",
-  },
-  {
-    title: "Votre Kill List opérationnelle",
-    detail: "les 3 comportements qui coûtent le plus de bande passante à votre organisation.",
-  },
-  {
-    title: "La prochaine étape claire",
-    detail: "si le Protocole APEX est adapté, vous le saurez. Sinon aussi.",
-  },
-];
-
+type CtaItem = { title: string; detail: string };
 
 const CTAFinalSection = () => {
   const ref = useScrollReveal();
+  const { t, getTr } = useLanguage();
+  const items = getTr("nomos.ctaFinal.items") as CtaItem[];
+
   return (
     <section ref={ref} id="audit" className="section-pad text-center">
       <div className="container-nomos">
         <h2 className="reveal h-section">
-          Commencez par l'audit.<br />45 minutes. Garanti.
+          {t("nomos.ctaFinal.title")}
+          <br />
+          {t("nomos.ctaFinal.titleLine2")}
         </h2>
 
-        <p className="reveal section-intro mx-auto">
-          L'Audit Stratégique NOMOS n'est pas un appel de vente. C'est un
-          diagnostic réel de 45 minutes avec le fondateur.
-        </p>
+        <p className="reveal section-intro mx-auto">{t("nomos.ctaFinal.intro")}</p>
 
         <div className="flex flex-col gap-6 my-10 text-left max-w-[560px] mx-auto">
           {items.map((it) => (
@@ -43,34 +32,43 @@ const CTAFinalSection = () => {
         </div>
 
         <p className="reveal guarantee-reminder text-sm text-n-teal mb-8">
-          Si le mécanisme exact n'est pas identifié — remboursement intégral. Sans conditions.
+          {t("nomos.ctaFinal.guarantee")}
         </p>
 
-        {/* Two-card contact block */}
         <div className="mb-12">
           <AuditCTABlock />
         </div>
 
         <div className="reveal inline-block p-6 bg-n-surface border border-n-border rounded-lg mb-8 text-left">
-          <p className="text-sm text-n-text mb-2"><strong>Ce trimestre : 5 places disponibles.</strong></p>
-          <p className="text-sm text-n-muted max-w-[50ch]">
-            Chaque protocole est conduit en direct, 1:1, sans délégation. Si vous
-            êtes sélectionné et choisissez de ne pas avancer — la place revient
-            au prochain sur liste d'attente.
+          <p className="text-sm text-n-text mb-2">
+            <strong>{t("nomos.ctaFinal.placesTitle")}</strong>
           </p>
+          <p className="text-sm text-n-muted max-w-[50ch]">{t("nomos.ctaFinal.placesBody")}</p>
         </div>
 
         <div className="reveal mt-12 pt-8 border-t border-n-border max-w-lg mx-auto">
-          <p className="text-sm text-n-muted mb-3">Pas encore prêt pour l'audit ?</p>
+          <p className="text-sm text-n-muted mb-3">{t("nomos.ctaFinal.notReady")}</p>
           <p className="text-sm text-n-muted mb-6">
-            Téléchargez <strong className="text-n-text">« Le Bug Invisible™ »</strong> — les 4 profils de Dérive
-            Neuro-Opérationnelle qui bloquent les dirigeants 20k-150k€/mois.
+            {(() => {
+              const intro = t("nomos.ctaFinal.leadMagnetIntro");
+              const title = t("nomos.ctaFinal.leadMagnetTitle");
+              const parts = intro.split(title);
+              if (parts.length === 2) {
+                return (
+                  <>
+                    {parts[0]}
+                    <strong className="text-n-text">{title}</strong>
+                    {parts[1]}
+                  </>
+                );
+              }
+              return intro;
+            })()}
           </p>
           <a href="#" className="btn-outline">
-            Télécharger le diagnostic gratuit
+            {t("nomos.ctaFinal.leadMagnetCta")}
           </a>
         </div>
-
       </div>
     </section>
   );

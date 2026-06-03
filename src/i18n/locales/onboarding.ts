@@ -1,0 +1,163 @@
+export const fr = {
+  onboarding: {
+    hero: {
+      eyebrow: "Réservé aux fondateurs · 20 000€ – 150 000€/mois",
+      title: "Deux portes.",
+      titleLine2: "Deux états.",
+      titleAccent: "Une même exigence.",
+      subtitle:
+        "Crise ou level up : deux façons d'entrer dans le diagnostic. Derrière, la même rigueur — méthode systémique et protocole NOMOS ou ASCENSION selon votre situation réelle.",
+    },
+    gateway: {
+      crise: {
+        ariaLabel: "Porte Crise — continuer vers le protocole NOMOS",
+        label: "Crise",
+        title: "Mon business",
+        titleLine2: "me dépasse.",
+        description: [
+          "Vous travaillez plus que jamais.",
+          "Les résultats ne suivent plus.",
+          "Votre équipe dépend de vous pour tout.",
+          "Le soir, votre cerveau ne s'éteint pas.",
+        ],
+        signals: [
+          "Délégation impossible",
+          "Décisions lentes ou repoussées",
+          "Charge mentale permanente",
+          "Sommeil dégradé",
+          "Sentiment d'être prisonnier de son propre business",
+        ],
+        cta: "Protocole CRISIS",
+        note: "Neuro-opérationnel · 90 jours intensifs",
+      },
+      levelUp: {
+        ariaLabel: "Porte Level up — continuer vers le protocole ASCENSION",
+        label: "Level up",
+        title: "Je veux passer",
+        titleLine2: "au niveau supérieur.",
+        description: [
+          "Votre business tourne.",
+          "Vos systèmes sont en place.",
+          "Mais vous sentez que vous n'êtes pas à votre plein potentiel.",
+          "Vous voulez incarner davantage ce que vous pouvez devenir.",
+        ],
+        signals: [
+          "Business stable mais plafonné identitairement",
+          "Vision long terme à clarifier",
+          "Positionnement d'autorité à bâtir",
+          "Identité de dirigeant à incarner",
+          "Prochain palier stratégique à franchir",
+        ],
+        cta: "Protocole LEVEL UP",
+        note: "Identité & stratégie · 6 mois",
+      },
+      doubt: {
+        text: "Pas sûr par quelle porte entrer ?",
+        sub: "En 45 minutes d'audit, nous identifions où vous en êtes — et si un protocole opérationnel est le bon cadre.",
+        link: "Réserver un audit de diagnostic →",
+      },
+    },
+    method: {
+      eyebrow: "Méthode commune",
+      title: "Deux portes. Une même rigueur.",
+      intro:
+        "Même refus du coaching déguisé et des recettes génériques. Diagnostic exigeant avant toute décision d'engagement sur les protocoles opérationnels. Garantie de Diagnostic Absolue lorsque l'audit précède un protocole NOMOS ou ASCENSION.",
+      items: [
+        {
+          title: "1:1 sans délégation",
+          body: "Chaque protocole opérationnel est conduit par le fondateur en direct. Aucune sous-traitance, aucune équipe de coachs intermédiaires.",
+        },
+        {
+          title: "Places limitées",
+          body: "NOMOS : 5 dirigeants par trimestre. ASCENSION : 5 par semestre. Aucune extension possible.",
+        },
+        {
+          title: "Garantie de Diagnostic",
+          body: "Si le mécanisme précis n'est pas identifié à l'issue de l'audit — remboursement intégral. Sans condition.",
+        },
+      ],
+    },
+  },
+};
+
+export const en = {
+  onboarding: {
+    hero: {
+      eyebrow: "Reserved for founders · €20,000 – €150,000/month",
+      title: "Two doors.",
+      titleLine2: "Two states.",
+      titleAccent: "One standard.",
+      subtitle:
+        "Crisis or level up: two ways into the diagnostic. Behind them, the same rigor — systemic method and NOMOS or ASCENSION protocol depending on your real situation.",
+    },
+    gateway: {
+      crise: {
+        ariaLabel: "Crisis door — continue to the NOMOS protocol",
+        label: "Crisis",
+        title: "My business",
+        titleLine2: "is outpacing me.",
+        description: [
+          "You're working harder than ever.",
+          "Results no longer follow.",
+          "Your team depends on you for everything.",
+          "At night, your brain won't shut off.",
+        ],
+        signals: [
+          "Delegation impossible",
+          "Slow or postponed decisions",
+          "Permanent mental load",
+          "Degraded sleep",
+          "Feeling trapped in your own business",
+        ],
+        cta: "CRISIS Protocol",
+        note: "Neuro-operational · 90 intensive days",
+      },
+      levelUp: {
+        ariaLabel: "Level up door — continue to the ASCENSION protocol",
+        label: "Level up",
+        title: "I want to move",
+        titleLine2: "to the next level.",
+        description: [
+          "Your business runs.",
+          "Your systems are in place.",
+          "But you sense you're not at your full potential.",
+          "You want to embody more of what you can become.",
+        ],
+        signals: [
+          "Stable business but identity-capped",
+          "Long-term vision to clarify",
+          "Authority positioning to build",
+          "Leader identity to embody",
+          "Next strategic level to cross",
+        ],
+        cta: "LEVEL UP Protocol",
+        note: "Identity & strategy · 6 months",
+      },
+      doubt: {
+        text: "Not sure which door to enter?",
+        sub: "In a 45-minute audit, we identify where you are — and whether an operational protocol is the right frame.",
+        link: "Book a diagnostic audit →",
+      },
+    },
+    method: {
+      eyebrow: "Shared method",
+      title: "Two doors. One standard.",
+      intro:
+        "Same refusal of disguised coaching and generic recipes. Rigorous diagnostic before any commitment decision on operational protocols. Absolute Diagnostic Guarantee when the audit precedes a NOMOS or ASCENSION protocol.",
+      items: [
+        {
+          title: "1:1 with no delegation",
+          body: "Every operational protocol is led directly by the founder. No subcontracting, no intermediate coach team.",
+        },
+        {
+          title: "Limited places",
+          body: "NOMOS: 5 leaders per quarter. ASCENSION: 5 per semester. No extensions.",
+        },
+        {
+          title: "Diagnostic Guarantee",
+          body: "If the precise mechanism isn't identified at the end of the audit — full refund. No conditions.",
+        },
+      ],
+    },
+  },
+};

@@ -3,6 +3,8 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { LanguageProvider } from "@/contexts/LanguageContext";
+import { EmailDialogProvider } from "@/contexts/EmailDialogContext";
 import FloatingMetaphysicBubble from "./components/FloatingMetaphysicBubble";
 import OnboardingPage from "./pages/OnboardingPage";
 import NomosPage from "./pages/NomosPage";
@@ -14,10 +16,12 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
+    <LanguageProvider>
+      <EmailDialogProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
         <FloatingMetaphysicBubble />
         <Routes>
           <Route path="/" element={<OnboardingPage />} />
@@ -26,8 +30,10 @@ const App = () => (
           <Route path="/metaphysique" element={<MetaphysiquePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
+          </BrowserRouter>
+        </TooltipProvider>
+      </EmailDialogProvider>
+    </LanguageProvider>
   </QueryClientProvider>
 );
 

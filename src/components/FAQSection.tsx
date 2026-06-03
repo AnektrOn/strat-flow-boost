@@ -1,34 +1,17 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { useLanguage } from "@/contexts/LanguageContext";
 
-const faqs = [
-  {
-    q: "\"C'est encore du coaching déguisé, non ?\"",
-    a: "Non. Le mot \"coaching\" n'apparaît pas dans le protocole. Le coaching travaille sur la couche consciente — vos pensées, vos croyances. Le Protocole APEX intervient sur la couche biologique (votre SNA), la couche identitaire (votre câblage) et la couche décisionnelle (votre architecture business). C'est la différence entre repeindre les murs et traiter les fondations.",
-  },
-  {
-    q: "\"J'ai déjà essayé du coaching et du consulting. Ça n'a rien changé.\"",
-    a: "C'est la raison pour laquelle le Protocole APEX existe. Ce que vous avez essayé traitait 2 couches sur 3 — et sans la couche biologique, les résultats ne tiennent pas. L'audit de 45 minutes démontre une profondeur diagnostique que les solutions précédentes n'avaient pas. Si elle n'est pas au rendez-vous — remboursement intégral.",
-  },
-  {
-    q: "\"Je n'ai pas le temps de faire ça en ce moment.\"",
-    a: "Le \"moment idéal\" n'arrivera pas — parce que le système qui crée le manque de temps est précisément ce que le protocole corrige. Votre investissement : 2-3 heures par semaine. Dès la semaine 6, vous récupérez 5 à 10 heures nettes. Le protocole se finance en temps avant sa fin.",
-  },
-  {
-    q: "\"Comment je sais que ça va marcher pour MON cas ?\"",
-    a: "C'est exactement pourquoi l'audit existe. En 45 minutes, nous identifions votre bug précis parmi les 4 profils documentés de Dérive Neuro-Opérationnelle. Si votre bug n'est pas identifié avec précision : remboursement. C'est la garantie.",
-  },
-  {
-    q: "\"Qu'est-ce qui se passe concrètement pendant l'audit de 45 minutes ?\"",
-    a: "C'est un diagnostic en direct — pas un appel de vente. Vous décrivez votre situation, je pose des questions précises, et en temps réel je cartographie votre profil de Dérive parmi les 4 documentés. Vous repartez avec votre Kill List (les 3 comportements qui coûtent le plus) et une recommandation claire : soit le Protocole APEX est adapté, soit il ne l'est pas. Dans les deux cas, le diagnostic a de la valeur.",
-  },
-];
+type FaqItem = { q: string; a: string };
 
 const FAQSection = () => {
   const ref = useScrollReveal();
+  const { t, getTr } = useLanguage();
+  const faqs = getTr("nomos.faq.items") as FaqItem[];
+
   return (
     <section ref={ref} id="faq" className="section-pad section-dark">
       <div className="container-nomos narrow">
-        <h2 className="reveal h-section">Ce que vous vous demandez probablement.</h2>
+        <h2 className="reveal h-section">{t("nomos.faq.title")}</h2>
 
         <div className="flex flex-col">
           {faqs.map((f) => (
