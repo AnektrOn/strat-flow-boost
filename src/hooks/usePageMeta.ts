@@ -1,7 +1,16 @@
 import { useEffect } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-export type PageMetaKey = "hub" | "nomos" | "ascension" | "metaphysique" | "notFound";
+export type PageMetaKey =
+  | "hub"
+  | "nomos"
+  | "ascension"
+  | "metaphysique"
+  | "caseStudies"
+  | "caseStudyC"
+  | "caseStudyL"
+  | "caseStudyH"
+  | "notFound";
 
 function setMetaTag(attr: "name" | "property", key: string, content: string) {
   if (typeof document === "undefined") return;

@@ -47,7 +47,7 @@ export const fr = {
     auditForm: {
       title: "Candidature audit stratégique",
       subtitle:
-        "Quelques informations — votre messagerie s'ouvrira avec un message détaillé en français (audit 45 min offert).",
+        "Quelques informations, puis choix entre messagerie de l'ordinateur ou Gmail (message détaillé en français).",
       companyName: "Nom de l'entreprise",
       companyNamePlaceholder: "Ex. Acme SAS",
       referral: "Comment nous avez-vous connus ?",
@@ -64,13 +64,18 @@ export const fr = {
       messengerContact: "Numéro ou identifiant",
       messengerContactPlaceholder: "+33 6 12 34 56 78 ou @pseudo",
       validationMessengerRequired: "Indiquez votre WhatsApp ou Telegram.",
-      submit: "Ouvrir ma messagerie",
-      submitSending: "Préparation…",
+      submit: "Continuer",
       cancel: "Annuler",
       validationRequired: "Veuillez renseigner tous les champs.",
+      chooseClientTitle: "Comment envoyer votre message ?",
+      chooseClientDescription:
+        "Le message détaillé en français est prêt. Choisissez votre messagerie, puis cliquez sur Envoyer.",
+      openNativeMail: "Messagerie de l'ordinateur (Mail, Outlook…)",
+      openGmailWeb: "Gmail dans le navigateur",
+      backToForm: "Modifier les informations",
       successTitle: "Messagerie ouverte",
       successDescription:
-        "Le message détaillé est prérempli en français — cliquez sur Envoyer dans votre application mail.",
+        "Le message est prérempli — cliquez sur Envoyer pour l'expédier à l'équipe NOMOS.",
       sendErrorTitle: "Ouverture impossible",
       sendErrorDescription:
         "Configurez une application mail ou écrivez à contact@protocolenomos.com",
@@ -78,7 +83,7 @@ export const fr = {
     contactForm: {
       title: "Contact NOMOS",
       subtitle:
-        "Quelques informations — votre messagerie s'ouvrira avec un message détaillé en français.",
+        "Quelques informations, puis choix entre messagerie de l'ordinateur ou Gmail (message détaillé en français).",
       companyName: "Nom de l'entreprise",
       companyNamePlaceholder: "Ex. Acme SAS",
       referral: "Comment nous avez-vous connus ?",
@@ -95,13 +100,18 @@ export const fr = {
       messengerContact: "Numéro ou identifiant",
       messengerContactPlaceholder: "+33 6 12 34 56 78 ou @pseudo",
       validationMessengerRequired: "Indiquez votre WhatsApp ou Telegram.",
-      submit: "Ouvrir ma messagerie",
-      submitSending: "Préparation…",
+      submit: "Continuer",
       cancel: "Annuler",
       validationRequired: "Veuillez renseigner tous les champs.",
+      chooseClientTitle: "Comment envoyer votre message ?",
+      chooseClientDescription:
+        "Le message détaillé en français est prêt. Choisissez votre messagerie, puis cliquez sur Envoyer.",
+      openNativeMail: "Messagerie de l'ordinateur (Mail, Outlook…)",
+      openGmailWeb: "Gmail dans le navigateur",
+      backToForm: "Modifier les informations",
       successTitle: "Messagerie ouverte",
       successDescription:
-        "Le message détaillé est prérempli en français — cliquez sur Envoyer dans votre application mail.",
+        "Le message est prérempli — cliquez sur Envoyer pour l'expédier à l'équipe NOMOS.",
       sendErrorTitle: "Ouverture impossible",
       sendErrorDescription:
         "Configurez une application mail ou écrivez à contact@protocolenomos.com",
@@ -301,7 +311,7 @@ export const en = {
     auditForm: {
       title: "Strategic audit application",
       subtitle:
-        "A few details — your email app will open with a detailed message in English (45 min audit offered).",
+        "A few details, then choose computer mail or Gmail in the browser (detailed message in English).",
       companyName: "Company name",
       companyNamePlaceholder: "e.g. Acme Inc.",
       referral: "How did you find us?",
@@ -318,13 +328,18 @@ export const en = {
       messengerContact: "Phone number or username",
       messengerContactPlaceholder: "+1 555 123 4567 or @username",
       validationMessengerRequired: "Please provide your WhatsApp or Telegram.",
-      submit: "Open in email app",
-      submitSending: "Preparing…",
+      submit: "Continue",
       cancel: "Cancel",
       validationRequired: "Please fill in all fields.",
-      successTitle: "Email app opened",
+      chooseClientTitle: "How would you like to send?",
+      chooseClientDescription:
+        "Your detailed message in English is ready. Pick your mail app, then tap Send.",
+      openNativeMail: "Computer mail app (Mail, Outlook…)",
+      openGmailWeb: "Gmail in the browser",
+      backToForm: "Edit details",
+      successTitle: "Mail app opened",
       successDescription:
-        "A detailed message in English is pre-filled — tap Send in your mail app.",
+        "Your message is pre-filled — tap Send to reach the NOMOS team.",
       sendErrorTitle: "Could not open mail",
       sendErrorDescription:
         "Set up a mail app or email contact@protocolenomos.com",
@@ -332,7 +347,7 @@ export const en = {
     contactForm: {
       title: "Contact NOMOS",
       subtitle:
-        "A few details — your email app will open with a detailed message in English.",
+        "A few details, then choose computer mail or Gmail in the browser (detailed message in English).",
       companyName: "Company name",
       companyNamePlaceholder: "e.g. Acme Inc.",
       referral: "How did you find us?",
@@ -349,13 +364,18 @@ export const en = {
       messengerContact: "Phone number or username",
       messengerContactPlaceholder: "+1 555 123 4567 or @username",
       validationMessengerRequired: "Please provide your WhatsApp or Telegram.",
-      submit: "Open in email app",
-      submitSending: "Preparing…",
+      submit: "Continue",
       cancel: "Cancel",
       validationRequired: "Please fill in all fields.",
-      successTitle: "Email app opened",
+      chooseClientTitle: "How would you like to send?",
+      chooseClientDescription:
+        "Your detailed message in English is ready. Pick your mail app, then tap Send.",
+      openNativeMail: "Computer mail app (Mail, Outlook…)",
+      openGmailWeb: "Gmail in the browser",
+      backToForm: "Edit details",
+      successTitle: "Mail app opened",
       successDescription:
-        "A detailed message in English is pre-filled — tap Send in your mail app.",
+        "Your message is pre-filled — tap Send to reach the NOMOS team.",
       sendErrorTitle: "Could not open mail",
       sendErrorDescription:
         "Set up a mail app or email contact@protocolenomos.com",

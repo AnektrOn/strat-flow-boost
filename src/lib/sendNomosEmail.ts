@@ -1,5 +1,6 @@
 import {
   openNomosEmailClient,
+  openNomosGmailCompose,
   type AuditProtocol,
   type EmailRequestVariant,
   type NomosFormData,
@@ -13,13 +14,16 @@ export type SubmitNomosEmailPayload = {
   data: NomosFormData;
 };
 
-/** Ouvre la messagerie avec objet + long corps prérempli (FR/EN selon locale). */
-export function submitNomosEmail(payload: SubmitNomosEmailPayload): void {
+function auditProtocolFor(payload: SubmitNomosEmailPayload) {
+  return payload.variant === "audit" ? payload.auditProtocol : undefined;
+}
+
+export function openNativeMailClient(payload: SubmitNomosEmailPayload): void {
   const { locale, variant, data } = payload;
-  openNomosEmailClient(
-    locale,
-    variant,
-    data,
-    variant === "audit" ? payload.auditProtocol : undefined,
-  );
+  openNomosEmailClient(locale, variant, data, auditProtocolFor(payload));
+}
+
+export function openGmailInBrowser(payload: SubmitNomosEmailPayload): void {
+  const { locale, variant, data } = payload;
+  openNomosGmailCompose(locale, variant, data, auditProtocolFor(payload));
 }

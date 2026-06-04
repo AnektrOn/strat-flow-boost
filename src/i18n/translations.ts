@@ -5,6 +5,7 @@ import { fr as nomosFr, en as nomosEn } from "./locales/nomos";
 import { fr as ascensionFr, en as ascensionEn } from "./locales/ascension";
 import { fr as metaphysiqueFr, en as metaphysiqueEn } from "./locales/metaphysique";
 import { fr as floatingBubbleFr, en as floatingBubbleEn } from "./locales/floatingBubble";
+import { fr as caseStudiesFr, en as caseStudiesEn } from "./locales/caseStudies";
 
 export type Locale = "fr" | "en";
 
@@ -17,6 +18,7 @@ export const translations = {
     ...ascensionFr,
     ...metaphysiqueFr,
     ...floatingBubbleFr,
+    ...caseStudiesFr,
   },
   en: {
     ...commonEn,
@@ -26,6 +28,7 @@ export const translations = {
     ...ascensionEn,
     ...metaphysiqueEn,
     ...floatingBubbleEn,
+    ...caseStudiesEn,
   },
 } as const;
 

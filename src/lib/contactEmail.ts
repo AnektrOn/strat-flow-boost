@@ -426,15 +426,55 @@ export function getNomosEmailPlainText(
   return blocks.join("\n");
 }
 
+function getNomosEmailComposeParams(
+  locale: Locale,
+  variant: EmailRequestVariant,
+  data: NomosFormData,
+  auditProtocol?: AuditProtocol,
+) {
+  return {
+    to: CONTACT_EMAIL,
+    subject: getNomosEmailSubject(locale, variant, data.companyName, auditProtocol),
+    body: getNomosEmailPlainText(locale, variant, data, auditProtocol),
+  };
+}
+
 export function buildNomosMailtoUrl(
   locale: Locale,
   variant: EmailRequestVariant,
   data: NomosFormData,
   auditProtocol?: AuditProtocol,
 ): string {
-  const subject = getNomosEmailSubject(locale, variant, data.companyName, auditProtocol);
-  const body = getNomosEmailPlainText(locale, variant, data, auditProtocol);
-  return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const { to, subject, body } = getNomosEmailComposeParams(
+    locale,
+    variant,
+    data,
+    auditProtocol,
+  );
+  return `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+/** Compose Gmail dans le navigateur (même destinataire, objet et corps que mailto). */
+export function buildNomosGmailComposeUrl(
+  locale: Locale,
+  variant: EmailRequestVariant,
+  data: NomosFormData,
+  auditProtocol?: AuditProtocol,
+): string {
+  const { to, subject, body } = getNomosEmailComposeParams(
+    locale,
+    variant,
+    data,
+    auditProtocol,
+  );
+  const params = new URLSearchParams({
+    view: "cm",
+    fs: "1",
+    to,
+    su: subject,
+    body,
+  });
+  return `https://mail.google.com/mail/?${params.toString()}`;
 }
 
 export function openNomosEmailClient(
@@ -444,6 +484,19 @@ export function openNomosEmailClient(
   auditProtocol?: AuditProtocol,
 ): void {
   window.location.href = buildNomosMailtoUrl(locale, variant, data, auditProtocol);
+}
+
+export function openNomosGmailCompose(
+  locale: Locale,
+  variant: EmailRequestVariant,
+  data: NomosFormData,
+  auditProtocol?: AuditProtocol,
+): void {
+  window.open(
+    buildNomosGmailComposeUrl(locale, variant, data, auditProtocol),
+    "_blank",
+    "noopener,noreferrer",
+  );
 }
 
 export function getNomosEmailSubject(

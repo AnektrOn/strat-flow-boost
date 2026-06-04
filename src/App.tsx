@@ -10,6 +10,8 @@ import OnboardingPage from "./pages/OnboardingPage";
 import NomosPage from "./pages/NomosPage";
 import AscensionPage from "./pages/AscensionPage";
 import MetaphysiquePage from "./pages/MetaphysiquePage";
+import CaseStudiesIndexPage from "./pages/CaseStudiesIndexPage";
+import CaseStudyDetailPage from "./pages/CaseStudyDetailPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +30,8 @@ const App = () => (
           <Route path="/nomos" element={<NomosPage />} />
           <Route path="/ascension" element={<AscensionPage />} />
           <Route path="/metaphysique" element={<MetaphysiquePage />} />
+          <Route path="/case-studies" element={<CaseStudiesIndexPage />} />
+          <Route path="/case-studies/:slug" element={<CaseStudyDetailPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
           </BrowserRouter>

@@ -105,6 +105,30 @@ const OnboardingPage = () => {
               </Link>
             </div>
 
+            <div className="gateway-casestudy-teaser">
+              <span className="eyebrow">{t("caseStudies.hubTeaser.eyebrow")}</span>
+              <h3 className="gateway-casestudy-title">{t("caseStudies.hubTeaser.title")}</h3>
+              <p className="gateway-casestudy-desc">{t("caseStudies.hubTeaser.description")}</p>
+              <div className="gateway-casestudy-actions">
+                <Link
+                  to="/case-studies"
+                  className="btn-outline gateway-casestudy-btn"
+                  aria-label={t("caseStudies.hubTeaser.ariaLabel")}
+                >
+                  {t("caseStudies.hubTeaser.cta")}
+                </Link>
+                <Link to="/case-studies/c" className="gateway-casestudy-link-secondary">
+                  {t("caseStudies.hubTeaser.linkC")}
+                </Link>
+                <Link to="/case-studies/l" className="gateway-casestudy-link-secondary">
+                  {t("caseStudies.hubTeaser.linkL")}
+                </Link>
+                <Link to="/case-studies/h" className="gateway-casestudy-link-secondary">
+                  {t("caseStudies.hubTeaser.linkH")}
+                </Link>
+              </div>
+            </div>
+
             <div className="gateway-doubt">
               <p className="gateway-doubt-text">{t("onboarding.gateway.doubt.text")}</p>
               <p className="gateway-doubt-sub">{t("onboarding.gateway.doubt.sub")}</p>
