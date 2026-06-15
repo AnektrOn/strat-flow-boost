@@ -8,6 +8,7 @@ import QualifySection from "@/components/QualifySection";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { AuditEmailButton } from "@/components/AuditEmailButton";
 import { useLanguage } from "@/contexts/LanguageContext";
+import PageSideNavLayout from "@/components/PageSideNavLayout";
 import { usePageMeta } from "@/hooks/usePageMeta";
 
 type SignItem = { title: string; detail: string };
@@ -146,19 +147,20 @@ const MetaphysiquePage = () => {
     <div className="ascension-theme overflow-x-hidden pb-24 sm:pb-0">
       <Header mode="metaphysique" />
       <main>
-        <MetaphysiqueHero />
-        <MetaphysiqueConstat />
-        <MetaphysiqueSignes />
-        <MetaphysiqueMechanism />
-        <MetaphysiqueProtocol />
-        <MetaphysiqueFuture />
-        <MetaphysiqueProof />
-        <MetaphysiqueFounder />
-        <MetaphysiqueRoi />
-        <GuaranteeSection variant="metaphysique" />
-        <QualifySection variant="metaphysique" />
-        <MetaphysiqueFaq />
-        <MetaphysiqueCta />
+        <PageSideNavLayout page="metaphysique" hero={<MetaphysiqueHero />}>
+          <MetaphysiqueConstat />
+          <MetaphysiqueSignes />
+          <MetaphysiqueMechanism />
+          <MetaphysiqueProtocol />
+          <MetaphysiqueFuture />
+          <MetaphysiqueProof />
+          <MetaphysiqueFounder />
+          <MetaphysiqueRoi />
+          <GuaranteeSection variant="metaphysique" />
+          <QualifySection variant="metaphysique" />
+          <MetaphysiqueFaq />
+          <MetaphysiqueCta />
+        </PageSideNavLayout>
         <section className="cross-link">
           <div className="container-nomos narrow">
             <p>
@@ -356,7 +358,7 @@ function MetaphysiqueProof() {
   const ref = useScrollReveal();
   const { t } = useLanguage();
   return (
-    <section ref={ref} className="section-pad">
+    <section ref={ref} id="proof" className="section-pad">
       <div className="container-nomos narrow">
         <blockquote className="reveal bq-gold text-center">{t("metaphysique.proof.quote")}</blockquote>
       </div>

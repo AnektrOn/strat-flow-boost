@@ -7,6 +7,7 @@ import QualifySection from "@/components/QualifySection";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { AuditEmailButton } from "@/components/AuditEmailButton";
 import { useLanguage } from "@/contexts/LanguageContext";
+import PageSideNavLayout from "@/components/PageSideNavLayout";
 import { usePageMeta } from "@/hooks/usePageMeta";
 
 type SymptomItem = { title: string; detail: string };
@@ -78,20 +79,21 @@ const AscensionPage = () => {
     <div className="ascension-theme overflow-x-hidden pb-24 sm:pb-0">
       <Header mode="ascension" />
       <main>
-        <AscensionHero />
-        <AscensionConstat />
-        <AscensionSignes />
-        <AscensionMechanism />
-        <AscensionProtocol />
-        <AscensionConcrete />
-        <AscensionResults />
-        <AscensionFuture />
-        <AscensionFounder />
-        <AscensionRoi />
-        <GuaranteeSection variant="ascension" />
-        <QualifySection variant="ascension" />
-        <AscensionFaq />
-        <AscensionCta />
+        <PageSideNavLayout page="ascension" hero={<AscensionHero />}>
+          <AscensionConstat />
+          <AscensionSignes />
+          <AscensionMechanism />
+          <AscensionProtocol />
+          <AscensionConcrete />
+          <AscensionResults />
+          <AscensionFuture />
+          <AscensionFounder />
+          <AscensionRoi />
+          <GuaranteeSection variant="ascension" />
+          <QualifySection variant="ascension" />
+          <AscensionFaq />
+          <AscensionCta />
+        </PageSideNavLayout>
         <section className="cross-link">
           <div className="container-nomos narrow">
             <p>

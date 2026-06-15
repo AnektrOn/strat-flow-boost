@@ -4,8 +4,10 @@ import { fr as onboardingFr, en as onboardingEn } from "./locales/onboarding";
 import { fr as nomosFr, en as nomosEn } from "./locales/nomos";
 import { fr as ascensionFr, en as ascensionEn } from "./locales/ascension";
 import { fr as metaphysiqueFr, en as metaphysiqueEn } from "./locales/metaphysique";
+import { fr as aegisFr, en as aegisEn } from "./locales/aegis";
 import { fr as floatingBubbleFr, en as floatingBubbleEn } from "./locales/floatingBubble";
 import { fr as caseStudiesFr, en as caseStudiesEn } from "./locales/caseStudies";
+import { fr as pageNavFr, en as pageNavEn } from "./locales/pageNav";
 
 export type Locale = "fr" | "en";
 
@@ -17,8 +19,10 @@ export const translations = {
     ...nomosFr,
     ...ascensionFr,
     ...metaphysiqueFr,
+    ...aegisFr,
     ...floatingBubbleFr,
     ...caseStudiesFr,
+    ...pageNavFr,
   },
   en: {
     ...commonEn,
@@ -27,8 +31,10 @@ export const translations = {
     ...nomosEn,
     ...ascensionEn,
     ...metaphysiqueEn,
+    ...aegisEn,
     ...floatingBubbleEn,
     ...caseStudiesEn,
+    ...pageNavEn,
   },
 } as const;
 

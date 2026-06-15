@@ -1,7 +1,7 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-type QualifyVariant = "nomos" | "ascension" | "metaphysique";
+type QualifyVariant = "nomos" | "ascension" | "metaphysique" | "aegis";
 
 const QualifySection = ({ variant = "nomos" }: { variant?: QualifyVariant }) => {
   const ref = useScrollReveal();
@@ -17,7 +17,7 @@ const QualifySection = ({ variant = "nomos" }: { variant?: QualifyVariant }) => 
         <h2 className="reveal h-section">
           {variant === "nomos" ? (
             t(`${prefix}.title`)
-          ) : variant === "metaphysique" ? (
+          ) : variant === "metaphysique" || variant === "aegis" ? (
             <>
               {t(`${prefix}.title`)}
               <br />
@@ -32,7 +32,7 @@ const QualifySection = ({ variant = "nomos" }: { variant?: QualifyVariant }) => 
           )}
         </h2>
 
-        {variant === "metaphysique" && (
+        {(variant === "metaphysique" || variant === "aegis") && (
           <p className="reveal section-intro mt-4">{t(`${prefix}.intro`)}</p>
         )}
 
@@ -95,7 +95,7 @@ const QualifySection = ({ variant = "nomos" }: { variant?: QualifyVariant }) => 
             </p>
           </div>
         )}
-        {variant === "metaphysique" && (
+        {(variant === "metaphysique" || variant === "aegis") && (
           <div className="reveal mt-12 p-8 border border-n-gold-dim rounded-lg">
             <h3 className="h-sub text-n-gold mb-3">{t(`${prefix}.hesitation.title`)}</h3>
             <p className="text-n-muted mb-3">{t(`${prefix}.hesitation.p1`)}</p>

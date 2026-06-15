@@ -88,10 +88,10 @@ export const fr = {
       },
       cardL: {
         label: "Protocole NOMOS™",
-        title: "Purge du Vaisseau Amiral",
-        subject: "Dirigeante L.",
+        title: "Recalibration du Vaisseau Amiral",
+        subject: "Opérateur L.",
         excerpt:
-          "Backdoors énergétiques, charge allostatique somatisée, purge de l'écosystème — puis offre Ultra-Élite et momentum biologique.",
+          "Dérive neuro-opérationnelle, scanning environnemental, purge des backdoors, régulation SNA et pivot Ultra-Élite.",
       },
       cardH: {
         label: "Protocole NOMOS™",
@@ -155,9 +155,11 @@ export const fr = {
             ],
             subsections: [
               {
-                title: "Le Modèle de la « Meuf en Rouge » (Lauren Bemer)",
+                title: "L'Infection par les Injonctions Exogènes (Le Bruit du Monde)",
                 paragraphs: [
-                  "Le protocole NOMOS identifie les fréquences Rouge et Jaune dans le marketing comme des zones de haute pression et de confrontation émotionnelle — closing agressif, manipulation, injonction. Ces fréquences sont fondamentalement incompatibles avec la musique intérieure de C. et ont généré une saturation cognitive sévère.",
+                  "Le diagnostic NOMOS a isolé la source originelle de la friction : l'absorption des modèles d'acquisition standardisés et dictés par le marché.",
+                  "Ces architectures extérieures, fondées sur une dynamique de haute pression psychologique (closing manipulatoire, urgence artificielle, injonctions à l'action forcée), constituent un Bruit du Monde hautement toxique.",
+                  "Ces méthodes d'ingénierie de masse se sont révélées structurellement incompatibles avec la musique intérieure de la dirigeante. En forçant son Vaisseau Amiral à s'aligner sur une fréquence exogène qui n'était pas la sienne, elle a déclenché une violente dissonance identitaire et une saturation sévère de son propre système nerveux.",
                 ],
               },
               {
@@ -291,197 +293,167 @@ export const fr = {
       l: {
         slug: "l",
         hero: {
-          eyebrow: "Étude de Cas Clinique — Protocole NOMOS™",
-          title: "Purge du Vaisseau Amiral & Régulation Neuro-Systémique",
-          subtitle: "Le Cas de la Dirigeante L.",
+          eyebrow: "Étude de Cas — Protocole NOMOS™",
+          title: "Recalibration Systémique du Vaisseau Amiral",
+          subtitle: "Opérateur L.",
           protocol: "Protocole NOMOS™",
           entryDoor: "Porte d'entrée NOMOS : Vaisseau Amiral",
-          statusLine:
-            "25 mai 2026 · Phase initiale complétée — protocole complet estimé à 12 mois minimum",
         },
         sections: [
           {
             id: "profil",
             num: "01",
-            title: "Profil & Diagnostic Initial",
+            title: "Profil & Diagnostic : L'État de Dérive Neuro-Opérationnelle™",
             paragraphs: [
-              "La Dirigeante L. est fondatrice d'une école de formation et de coaching reconnue. Elle sollicite l'intervention NOMOS pour un problème de performance sur ses campagnes d'attraction. L'audit d'entrée révèle rapidement que la défaillance n'est pas technique — elle est systémique et identitaire.",
-              "En surface : une entreprise rentable, un delivery délégué, un agenda rempli. En profondeur : le Vaisseau Amiral est percé. La dirigeante s'épuisait à gérer des frictions mineures au lieu de piloter son entreprise depuis son Centre.",
+              "L'Opérateur L. pilote son Vaisseau Amiral. Bien que les indicateurs de performance commerciale soient nominaux, l'architecture interne a atteint un seuil de saturation critique. Le système ne génère plus de croissance fluide, mais une friction biologique insupportable pour le processeur central.",
+              "État initial : opérateur en état d'épuisement allostatique critique. Le système produit du résultat, mais au prix d'une dégradation accélérée des ressources neurologiques.",
+              "Dérive Neuro-Opérationnelle™ : incapacité du câblage actuel à absorber l'expansion du vaisseau. Chaque palier de chiffre d'affaires supplémentaire se traduit par une augmentation proportionnelle de la tension interne.",
             ],
-            crisisTable: {
-              headers: { signal: "Signal de Crise", mechanism: "Mécanisme Sous-jacent" },
-              rows: [
-                {
-                  signal: "Parasitage de l'écosystème",
-                  mechanism:
-                    "Réseau infiltré par des profils toxiques agissant comme des Backdoors énergétiques",
-                },
-                {
-                  signal: "Sur-effort sécuritaire",
-                  mechanism:
-                    "Croyance encodée que la réussite est une fonction linéaire de l'intensité du travail",
-                },
-                {
-                  signal: "Inversion identitaire",
-                  mechanism:
-                    "Confusion entre le Moi (pilotage neutre) et le Je (auto-identification péjorative)",
-                },
-                {
-                  signal: "Somatisation du SNA",
-                  mechanism:
-                    "Le corps traduit la surcharge mentale en signaux physiques d'alarme",
-                },
-              ],
-            },
+            paragraphsAfter: ["Signatures de saturation :"],
+            bullets: [
+              "Hyper-vigilance cognitive : moteur préfrontal incapable de se désengager, maintenant une activité de processing jusqu'à 02h00.",
+              "Dashboard AEGIS surchargé : bruit de fond permanent empêchant la lecture des fréquences stratégiques.",
+              "Inversion souveraine : sensation d'être un composant asservi à la structure au lieu d'être l'architecte de son déploiement.",
+            ],
           },
           {
             id: "phase1",
             num: "02",
-            title: "Phase 1 — Identification des Frictions & Purge de l'Écosystème",
+            title: "Phase I — Scanning Environnemental et Sécurisation du Périmètre",
             paragraphs: [
-              "Le Bruit du Monde ne venait pas uniquement du marché — il provenait de l'intérieur même du réseau de L.",
+              "L'intervention a débuté par un scanning des attaques environnementales, interprétées comme des failles de sécurité dans le périmètre de l'Opérateur.",
             ],
             subsections: [
               {
-                title: "Les Backdoors du Vaisseau",
+                title: "Attaques du Milieu",
                 paragraphs: [
-                  "Trois vecteurs de fuite identifiés : un ancien associé la décrédibilisant publiquement, une ex-collaboratrice forçant les frontières de l'entreprise en mode sangsue énergétique, une partenaire commerciale pratiquant la rétention de ventes par peur de la concurrence. Le Collaborateur S. avait notamment ouvert des Backdoors émotionnelles via un triangle dramatique (victime / sauveur), extrayant les ressources humaines du Vaisseau sans contrepartie.",
+                  "Présence de vecteurs biologiques (rats) dans les locaux professionnels de sa structure. En systémique NOMOS, ce n'est pas un incident logistique, mais une érosion du périmètre de sécurité environnemental.",
                 ],
               },
               {
-                title: "L'Épisode du Goudron Cognitif",
+                title: "Signal Somatique et Diagnostic Latéral",
                 paragraphs: [
-                  "Un investissement de 3 600 € auprès de l'Expert B. (Fréquence Rouge) sur une offre de contenus pré-enregistrés — découverts inadaptés après le délai légal de rétractation. Selon la loi de rebond cinétique (Bim-Bim), l'énergie engagée contre ce mur ne disparaît pas : elle rebondit vers sa source, déclenchant une boucle d'autoflagellation systémique qui a alourdi davantage le système.",
+                  "Entorse de la cheville droite (jambe de mission). Dans le protocole NOMOS, la jambe gauche est celle du réflexe / initiative, tandis que la droite porte la mission. La blessure à droite, couplée à une jambe gauche intacte, diagnostique un blocage dans la position actuelle et non un problème de direction. Le système est entravé dans son état présent.",
                 ],
               },
             ],
-            paragraphsAfter: ["L'axiome appliqué : l'univers amplifie là où le dirigeant place son attention."],
             bullets: [
-              "En consacrant son énergie à gérer les profils toxiques, L. les cristallisait.",
-              "La première urgence : fermeture définitive des Backdoors.",
+              "Action NOMOS : identification de la nécessité d'une rupture géographique immédiate. Le mouvement est l'unique protocole de restauration de l'intégrité.",
             ],
           },
           {
             id: "phase2",
             num: "03",
-            title: "Phase 2 — Nettoyage de l'Information Cristallisée & Régulation Neurologique",
+            title: 'Phase II — Extraction des Frictions et Verrouillage des "Backdoors"',
+            paragraphs: [
+              "Le nettoyage du vaisseau a exigé l'élimination des parasites siphonnant la bande passante de l'organisation.",
+            ],
             subsections: [
               {
-                title: "Le Nettoyage de l'Information Cristallisée",
+                title: "Extraction de l'Ancien Associé",
                 paragraphs: [
-                  "Certains collaborateurs s'accrochaient à de vieilles mémoires toxiques, incapables d'évoluer. Application du protocole de réinitialisation fréquentielle pour neutraliser les lignes de résonance néfastes et recalibrer les ancrages à un état vierge — bloquant les lignes de résonance qui maintenaient L. dans l'orbite de ces systèmes dégradés.",
+                  "L'extraction de l'ancien associé a agi comme une décharge de masse inerte, augmentant instantanément l'agilité du vaisseau.",
                 ],
               },
               {
-                title: "Régulation Neurologique & Loi du Rythme",
+                title: 'Le Cas de la Collaboratrice "Leech"',
                 paragraphs: [
-                  "L'épuisement ne restait pas mental — il s'était inscrit dans le corps. Pour stopper la somatisation, il fallait ralentir le Système Nerveux Autonome — pas seulement le mental. Déploiement d'ancrages biologiques (chocolat noir, palette chromatique sombre et stable) et instauration de cycles rythmiques : 20 min de focus / 10 min de jeu. L'objectif : que le corps cesse de percevoir le business comme une menace pour recommencer à émaner.",
-                ],
-                bullets: [
-                  "Extrémités froides — SNA saturé, incapable de distribuer l'énergie cinétique aux périphéries",
-                  "Eczéma inflammatoire des paupières — résidu somatique d'une hyper-imagination forcée ; le cerveau traite la pensée comme une orientation oculaire physique",
-                  "Blessure physique (entorse) — signal de rupture systémique, collision entre l'élan interne et la résistance de l'environnement",
+                  "Analyse d'une prédation énergétique active. Le sujet oscillait entre postures dominante et dominée dans une même chaîne de communication, signalant une pathologie relationnelle toxique.",
+                  "Siphonnage de ressources : tentative d'intrusion du profil toxique via des backdoors internes (membres de l'équipe et relais organisationnels) pour tenter de constituer une structure parallèle avec les ressources de l'Opérateur L.",
                 ],
               },
+            ],
+            bullets: [
+              "Intervention : fermeture binaire et définitive. Transition d'une posture de négociation vers une coupure de toxicité absolue pour empêcher toute ré-infection du système nerveux de l'Opérateur par la culpabilité.",
             ],
           },
           {
             id: "phase3",
             num: "04",
-            title: "Phase 3 — Déprogrammation Identitaire : Le « Je Suis »",
+            title: "Phase III — Déprogrammation Métaphysique de l'Information Cristallisée",
             paragraphs: [
-              "Le cœur du problème : L. se définissait à travers l'autre. Elle subissait un tango maladroit où l'environnement menait la danse — impossible de piloter un Vaisseau depuis ce positionnement.",
-              "La transformation neuro-opérationnelle a exigé trois basculements :",
+              "Les métaux (or, argent, fer) ne sont pas des objets inertes ; ils agissent comme des supports de stockage de micro-data environnementales et émotionnelles.",
+              "Le concept de cristallisation : la densité atomique des métaux permet la conservation de données obsolètes (traumatismes de l'adolescence, émotions stagnantes de lieux tiers).",
+              "Signal des anneaux : le refus d'une collaboratrice de retirer son anneau nasal, et l'apparition d'une nouvelle candidate porteuse du même signal, confirme que l'Opérateur L. attire une fréquence de conscience inférieure agissant comme un shield (bouclier) contre la vulnérabilité et la mise à jour logicielle (growth).",
+              "Protocole de purge : utilisation de la sauge et de la lumière lunaire pour réinitialiser les objets à leur forme cristalline originelle. L'objectif est de rendre les métaux vierges pour stopper la rémanence de données passées dans le champ énergétique immédiat de l'Opérateur.",
             ],
-            numbered: [
-              "Cessation de l'over-identification au Labeur — Déprogrammer la croyance que l'effort permanent est le garant de la réussite.",
-              "Dépossession de l'identité relationnelle — Exercice clinique radical : réapprendre à décrire son business et sa vie sans jamais référencer l'existence de l'autre (ni collaborateurs, ni clients, ni concurrents).",
-              "Réinstallation du Centre de gravité absolu — En cessant d'être un produit défini par le regard extérieur, L. a retrouvé sa capacité de pilotage neutre.",
-            ],
-            quote: {
-              text: "Tout est musique. Chaque individu est un orchestre évoluant au sein d'un orchestre plus vaste. La défaillance systémique survient lorsque l'on cesse de jouer sa propre partition pour tenter de reproduire, par mimétisme ou peur, la sonorité d'un autre.",
-              attribution: "Loi NOMOS",
-            },
           },
           {
             id: "phase4",
             num: "05",
-            title: "Phase 4 — Le Blindage du Centre : Le Filtre Vitré",
+            title: "Phase IV — Régulation du Système Nerveux Autonome (SNA)",
             paragraphs: [
-              "Axiome NOMOS : « Plus on devient fort, plus l'oppression est forte. » L'augmentation de la puissance d'émanation provoque mécaniquement une résistance accrue de l'environnement extérieur.",
-              "Le Filtre Vitré (SAS) répond à cette loi par une double dynamique biomécanique asymétrique :",
-              "Cette asymétrie — protection contre l'entrée, puissance en sortie — garantit que la dirigeante reste Indouchable tout en demeurant une émettrice de haute fréquence.",
+              "Le système nerveux de l'Opérateur présentait une inflammation systémique due à une dérégulation polyvagale prolongée.",
             ],
-            bullets: [
-              "La Vitre (Boundary) : contrairement à un bouclier qui absorbe, le Filtre Vitré fait rebondir les projections extérieures (jugements, injonctions, fréquences parasites) sans qu'elles ne pénètrent l'espace décisionnel. C'est une barrière de neutralité active.",
-              "L'Émanation (Expire) : couplée à une respiration profonde, elle projette la Musique souveraine vers l'extérieur — l'énergie sort pour impacter le marché.",
+            subsections: [
+              {
+                title: "Signatures Biologiques",
+                bullets: [
+                  "Eczéma sur les paupières — épuisement des mouvements oculaires liés à l'hyper-vigilance et à une surcharge de pensée projective.",
+                  "Hypothermie des extrémités : pieds froids chroniques, retrait massif du flux sanguin vers les organes vitaux (mode survie / cortisol).",
+                ],
+              },
+              {
+                title: "Prescription Neuro-Somatique",
+                paragraphs: [
+                  "Alcools sombres (vin rouge) : utilisation stratégique pour ralentir la fréquence de transmission du SNA.",
+                  "Chocolat noir haute densité : ancrage biologique et réchauffement des extrémités pour signaler la sécurité au système nerveux.",
+                  "Objectif : restaurer la régulation polyvagale pour passer du mode survie au mode rayonnement.",
+                ],
+              },
             ],
           },
           {
             id: "phase5",
             num: "06",
-            title: "Phase 5 — Ascension vers l'Ultra-Élite",
+            title: "Phase V — Refonte de l'Offre et Élévation vers l'Ultra-Élite",
             paragraphs: [
-              "Une fois le Vaisseau colmaté et le Centre blindé, il fallait élever la dimension du business.",
+              "Une fois le vaisseau assaini, le pivot stratégique vers la haute performance a été initialisé.",
             ],
-            subsections: [
-              {
-                title: "Loi de Résonance",
-                paragraphs: [
-                  "Le système ne peut attirer que des fréquences égales ou inférieures à son propre niveau de conscience. Pour attirer l'excellence, L. devait élever son centre de gravité fréquentiel — et filtrer mécaniquement les profils à faible engagement.",
-                ],
-              },
-              {
-                title: "Pivot Structurel",
-                paragraphs: [
-                  "Abandon du modèle de production de masse (banques de vidéos pré-enregistrées, épuisantes et obsolètes) au profit d'une architecture de haute fréquence : accompagnement en direct, itération en temps réel, rayonnement organique. Restructuration de l'offre en un Programme Ultra-Premium à 15 000 € réservé aux initiés — moins de volume, fréquence stratégique maximale. Ce pivot a mécaniquement rehaussé la valeur perçue de l'ensemble de la marque.",
-                ],
-              },
+            bullets: [
+              "Abandon des « jeux d'enfants » : fin de la formation de masse. Limitation de l'accès à une courte élite via le programme Humilité / Excellence.",
+              "Filtre de fréquence : mise en place d'un seuil financier radical (15 000 €+) pour les cycles d'immersion. Ce tarif n'est pas une métrique de profit, mais un filtre de fréquence pour n'admettre que des profils déjà alignés.",
+              "Mutation identitaire : l'Opérateur L. abandonne la posture de l'experte-qui-fait pour incarner l'Autorité Systémique qui transmute des experts en élite.",
             ],
           },
           {
             id: "results",
             num: "07",
-            title: "Résultats : Purification de l'Écosystème & Momentum Biologique",
+            title: "Résultats : Restauration de la Souveraineté Binaire",
             paragraphs: [
-              "Une fois le Centre restauré, les résultats se sont produits par simple résonance — sans recours aux tactiques de closing manipulatoires :",
-              "L. a retrouvé sa capacité d'exécution fulgurante — décision actée en moins d'une heure là où l'hésitation chronique régnait. L'arrêt de la définition de soi par le regard des autres a libéré une bande passante cognitive massive pour piloter la croissance.",
+              "L'intervention a permis une recalibration des métriques de souveraineté.",
             ],
             outcomes: [
-              "Séparation actée et assumée avec l'ensemble des profils toxiques de l'écosystème",
-              "Lancement de l'offre Ultra-Élite à 15 000 € — rehaussement immédiat de la valeur perçue de la marque",
-              "Transition vers un réseau de pairs de haut niveau, indépendants de sa structure",
-              "Effondrement de la charge allostatique — cessation de la somatisation",
-              "Attraction de collaborateurs qui existent indépendamment d'elle — partenariats de pairs",
+              "Cadence décisionnelle : passage de la procrastination cognitive à une exécution instantanée (cas Leech tranché définitivement)",
+              "Bande passante stratégique : élimination du bruit de fond allostatique ; libération de l'espace CPU pour le pilotage du Vaisseau Amiral",
+              "Souveraineté relationnelle : capacité à identifier et rejeter instantanément les signaux de conscience inférieure (profils à anneaux)",
+              "Intégrité biologique : disparition des signaux inflammatoires et retour à une stabilité thermique",
             ],
           },
           {
             id: "testimonials",
             num: "08",
-            title: "Témoignage",
+            title: "Témoignage : La Voix de l'Opérateur L.",
             testimonials: [
-              "Je me suis tellement trompée par le passé en engageant des gens. J'ai toujours pris les gens sous mon aile et ils n'étaient personne sans moi. Aujourd'hui, je travaille avec des gens qui existent indépendamment de moi, et c'est vachement reposant.",
-              "Je me suis positionnée — le gros du travail est de cibler l'excellence, et d'arrêter de me définir par l'autre.",
+              "C'est bien écoute, j'ai pris beaucoup de plaisir et j'ai appris beaucoup lors de nos échanges... J'ai l'impression que c'est bien parce qu'on a clôturé un cycle.",
             ],
           },
           {
-            id: "exocortex",
+            id: "ascension",
             num: "09",
-            title: "Suite du Protocole : L'Exocortex (ASCENSION)",
+            title: "Suite du Protocole : Activation d'ASCENSION",
             paragraphs: [
-              "Ce cas illustre une réalité fondamentale du Protocole NOMOS : les dysfonctions de surface (performance publicitaire, conversion) sont rarement la cause réelle du plafonnement — elles en sont le symptôme. Un cas de cette complexité exige 12 mois minimum d'accompagnement pour ancrer durablement les recadrages identitaires et déployer l'Exocortex dans sa totalité.",
-              "L'évolution vers le Protocole ASCENSION active l'Exocortex — le Cerveau Extérieur neuro-opérationnel. Ce système comprend :",
+              "Le cycle de réparation NOMOS est achevé. L'Opérateur L. entre désormais dans la phase de déploiement de sa nouvelle architecture identitaire via le protocole ASCENSION.",
             ],
             bullets: [
-              "Diagnostic par 100 questions identifiant les Archétypes dominants (Mystique, Sage, Guérisseur, Guerrier)",
-              "Monitoring Énergétique : suivi des interactions et surveillance de l'énergie des lieux pour optimiser les routines de la dirigeante",
-              "Lois Universelles : étude approfondie du Kybalion (Lois du Rythme, de la Vibration et de la Polarité) pour ancrer le centre de pouvoir de manière définitive",
+              "Objectif : construction de l'architecture de la dirigeante à 36 mois",
+              "Level Up : passage de la gestion de crise à l'incarnation d'une autorité de marché incontestée",
             ],
           },
         ],
         closing: {
-          title: "Diagnostic NOMOS — Êtes-Vous Concerné ?",
-          lead: "Votre entreprise tourne, mais les dynamiques toxiques de votre écosystème saturent votre système nerveux ? Vous repoussez les décisions d'élite par manque de bande passante cognitive ? Le problème n'est pas votre stratégie marketing. C'est l'intégrité de votre Vaisseau Amiral.",
+          title: "Accès au Protocole",
+          lead: "Pour les dirigeants générant entre 20 000 € et 150 000 €/mois dont le système est en état de saturation allostatique.",
           paragraphs: [
             "Le Protocole NOMOS n'est pas un coaching de gestion. C'est une intervention de haute précision sur l'architecture neuro-opérationnelle de votre leadership.",
           ],
@@ -492,7 +464,7 @@ export const fr = {
           guaranteeTitle: "Garantie Absolue",
           guarantee:
             "Si le mécanisme précis de votre blocage n'est pas identifié lors de l'audit, remboursement intégral.",
-          cta: "Demandez votre Audit Stratégique NOMOS",
+          cta: "Réserver un audit de diagnostic",
         },
       } as CaseStudyStudy,
       h: {
@@ -857,10 +829,10 @@ export const en = {
       },
       cardL: {
         label: "NOMOS Protocol™",
-        title: "Flagship Vessel Purge",
-        subject: "Leader L.",
+        title: "Flagship Vessel Recalibration",
+        subject: "Operator L.",
         excerpt:
-          "Energetic Backdoors, somatized allostatic load, ecosystem purge — then Ultra-Elite offer and biological momentum.",
+          "Neuro-operational drift, environmental scanning, backdoor purge, ANS regulation and Ultra-Elite pivot.",
       },
       cardH: {
         label: "NOMOS Protocol™",
@@ -920,9 +892,11 @@ export const en = {
             ],
             subsections: [
               {
-                title: "The « Woman in Red » Model (Lauren Bemer)",
+                title: "Exogenous Injunction Infection (World Noise)",
                 paragraphs: [
-                  "NOMOS identifies Red and Yellow marketing frequencies as high-pressure zones—aggressive closing, manipulation, injunction. Fundamentally incompatible with C.'s inner music; severe cognitive saturation followed.",
+                  "The NOMOS diagnostic isolated the original source of friction: absorption of standardized, market-dictated acquisition models.",
+                  "These external architectures, built on high psychological pressure dynamics (manipulative closing, artificial urgency, forced action injunctions), constitute highly toxic World Noise.",
+                  "These mass-engineering methods proved structurally incompatible with the leader's inner music. Forcing her Flagship Vessel to align on an exogenous frequency that was not her own triggered violent identity dissonance and severe saturation of her own nervous system.",
                 ],
               },
               {
@@ -1054,191 +1028,165 @@ export const en = {
       l: {
         slug: "l",
         hero: {
-          eyebrow: "Clinical Case Study — NOMOS Protocol™",
-          title: "Flagship Vessel Purge & Neuro-Systemic Regulation",
-          subtitle: "The Case of Leader L.",
+          eyebrow: "Case Study — NOMOS Protocol™",
+          title: "Systemic Recalibration of the Flagship Vessel",
+          subtitle: "Operator L.",
           protocol: "NOMOS Protocol™",
           entryDoor: "NOMOS entry door: Flagship Vessel",
-          statusLine:
-            "May 25, 2026 · Initial phase completed — full protocol estimated at 12 months minimum",
         },
         sections: [
           {
             id: "profil",
             num: "01",
-            title: "Profile & Initial Diagnostic",
+            title: "Profile & Diagnostic: Neuro-Operational Drift™ State",
             paragraphs: [
-              "Leader L. founded a recognized training and coaching school. She sought NOMOS for underperforming attraction campaigns. Entry audit quickly revealed the failure is not technical—it is systemic and identity-based.",
-              "On the surface: profitable business, delegated delivery, full agenda. Deep down: the Flagship Vessel is breached. The leader exhausted herself managing minor frictions instead of piloting from her Center.",
+              "Operator L. pilots her Flagship Vessel. Although commercial performance indicators are nominal, internal architecture reached critical saturation threshold. The system no longer generates fluid growth but unbearable biological friction for the central processor.",
+              "Initial state: operator in critical allostatic exhaustion. The system produces results at the cost of accelerated degradation of neurological resources.",
+              "Neuro-Operational Drift™: current wiring unable to absorb vessel expansion. Each additional revenue tier translates into proportional internal tension increase.",
             ],
-            crisisTable: {
-              headers: { signal: "Crisis Signal", mechanism: "Underlying Mechanism" },
-              rows: [
-                {
-                  signal: "Ecosystem parasitism",
-                  mechanism: "Network infiltrated by toxic profiles acting as energetic Backdoors",
-                },
-                {
-                  signal: "Security over-effort",
-                  mechanism: "Encoded belief that success is linear function of work intensity",
-                },
-                {
-                  signal: "Identity inversion",
-                  mechanism: "Confusion between Self (neutral piloting) and Ego (pejorative self-identification)",
-                },
-                {
-                  signal: "ANS somatization",
-                  mechanism: "Body translates mental overload into physical alarm signals",
-                },
-              ],
-            },
+            paragraphsAfter: ["Saturation signatures:"],
+            bullets: [
+              "Cognitive hyper-vigilance: prefrontal engine unable to disengage, maintaining processing activity until 2:00 AM.",
+              "Overloaded AEGIS Dashboard: permanent background noise preventing reading of strategic frequencies.",
+              "Sovereign inversion: sensation of being a component enslaved to structure instead of architect of deployment.",
+            ],
           },
           {
             id: "phase1",
             num: "02",
-            title: "Phase 1 — Friction Mapping & Ecosystem Purge",
+            title: "Phase I — Environmental Scanning & Perimeter Securing",
             paragraphs: [
-              "World Noise came not only from the market—it originated inside L.'s own network.",
+              "Intervention began with scanning environmental attacks, interpreted as security breaches in the Operator's perimeter.",
             ],
             subsections: [
               {
-                title: "Vessel Backdoors",
+                title: "Environmental Attacks",
                 paragraphs: [
-                  "Three leak vectors identified: a former partner publicly discrediting her, an ex-collaborator forcing boundaries in energy-vampire mode, a commercial partner hoarding sales from fear of competition. Collaborator S. notably opened emotional Backdoors via a drama triangle (victim/savior), extracting human resources without return.",
+                  "Biological vectors (rats) present in her professional premises. In NOMOS systemics, this is not a logistics incident but erosion of environmental security perimeter.",
                 ],
               },
               {
-                title: "The Cognitive Tar Episode",
+                title: "Somatic Signal & Lateral Diagnostic",
                 paragraphs: [
-                  "A €3,600 investment with Expert B. (Red Frequency) on pre-recorded content—found misaligned after the legal withdrawal window. Per kinetic rebound law (Bim-Bim), energy against this wall returns to source, triggering systemic self-flagellation that further burdened the system.",
+                  "Right ankle sprain (mission leg). In NOMOS protocol, left leg is reflex/initiative, right carries mission. Right-side injury with intact left leg diagnoses blockage in current position—not direction problem. System is hindered in present state.",
                 ],
               },
             ],
-            paragraphsAfter: ["Applied axiom: the universe amplifies where the leader places attention."],
             bullets: [
-              "By dedicating energy to toxic profiles, L. crystallized them.",
-              "First urgency: definitive closure of Backdoors.",
+              "NOMOS Action: immediate geographic rupture required. Movement is the sole integrity restoration protocol.",
             ],
           },
           {
             id: "phase2",
             num: "03",
-            title: "Phase 2 — Crystallized Information Cleanup & Neurological Regulation",
+            title: "Phase II — Friction Extraction & Backdoor Lockdown",
+            paragraphs: [
+              "Vessel cleaning required eliminating parasites siphoning organizational bandwidth.",
+            ],
             subsections: [
               {
-                title: "Crystallized Information Cleanup",
+                title: "Former Partner Extraction",
                 paragraphs: [
-                  "Some collaborators clung to old toxic memories, unable to evolve. Frequency reset protocol applied to neutralize harmful resonance lines and recalibrate anchors to virgin state—blocking lines keeping L. in degraded systems' orbit.",
+                  "Former partner extraction acted as inert mass discharge, instantly increasing vessel agility.",
                 ],
               },
               {
-                title: "Neurological Regulation & Law of Rhythm",
+                title: 'The "Leech" Collaborator Case',
                 paragraphs: [
-                  "Exhaustion was not only mental—it was inscribed in the body. To stop somatization, the Autonomic Nervous System had to slow—not just the mind. Biological anchors deployed (dark chocolate, stable dark palette) and rhythmic cycles: 20 min focus / 10 min play. Goal: body stops perceiving business as threat and begins emanating again.",
-                ],
-                bullets: [
-                  "Cold extremities—saturated ANS unable to distribute kinetic energy to peripheries",
-                  "Inflammatory eyelid eczema—somatic residue of forced hyper-imagination",
-                  "Physical injury (sprain)—systemic rupture signal, collision between inner drive and environmental resistance",
+                  "Analysis of active energetic predation. Subject oscillated between dominant and dominated postures in same communication chain—toxic relational pathology signal.",
+                  "Resource siphoning: toxic profile attempted intrusion via internal backdoors (team members and organizational relays) to build parallel structure with Operator L.'s resources.",
                 ],
               },
+            ],
+            bullets: [
+              "Intervention: binary definitive closure. Transition from negotiation posture to absolute toxicity cut to prevent guilt re-infecting Operator's nervous system.",
             ],
           },
           {
             id: "phase3",
             num: "04",
-            title: "Phase 3 — Identity Deprogramming: « I Am »",
+            title: "Phase III — Metaphysical Deprogramming of Crystallized Information",
             paragraphs: [
-              "Core problem: L. defined herself through others. She endured a dysfunctional tango where environment led—impossible to pilot a Vessel from that position.",
-              "Neuro-operational transformation required three shifts:",
+              "Metals (gold, silver, iron) are not inert objects—they act as storage supports for environmental and emotional micro-data.",
+              "Crystallization concept: metals' atomic density preserves obsolete data (adolescent trauma, stagnant emotions from third-party places).",
+              "Ring signal: a collaborator's refusal to remove nose ring, and new candidate bearing same signal, confirms Operator L. attracts lower consciousness frequency acting as shield against vulnerability and software update (growth).",
+              "Purge protocol: sage and moonlight to reset objects to original crystalline form—making metals virgin to stop past data remanence in Operator's immediate energy field.",
             ],
-            numbered: [
-              "End over-identification with Toil—deprogram belief that permanent effort guarantees success.",
-              "Dispossession of relational identity—clinical exercise: describe business and life without referencing others (collaborators, clients, competitors).",
-              "Reinstall absolute center of gravity—ceasing to be a product defined by external gaze restored neutral piloting capacity.",
-            ],
-            quote: {
-              text: "Everything is music. Each individual is an orchestra within a greater orchestra. Systemic failure occurs when one stops playing one's own score to mimic another's sound through fear.",
-              attribution: "NOMOS Law",
-            },
           },
           {
             id: "phase4",
             num: "05",
-            title: "Phase 4 — Center Armoring: The Glass Filter",
+            title: "Phase IV — Autonomic Nervous System (ANS) Regulation",
             paragraphs: [
-              "NOMOS axiom: « The stronger you become, the stronger the oppression. » Increased emanation power mechanically increases external resistance.",
-              "The Glass Filter (airlock) responds via asymmetric biomechanical dynamics:",
-              "This asymmetry—protection against entry, power on exit—keeps the leader Untouchable while remaining a high-frequency emitter.",
+              "Operator's nervous system showed systemic inflammation from prolonged polyvagal dysregulation.",
             ],
-            bullets: [
-              "The Glass (Boundary): unlike a shield that absorbs, the Glass Filter rebounds external projections without penetrating decision space—active neutrality barrier.",
-              "Emanation (Expire): coupled with deep breath, projects Sovereign Music outward—energy exits to impact the market.",
+            subsections: [
+              {
+                title: "Biological Signatures",
+                bullets: [
+                  "Eyelid eczema—exhaustion of eye movements linked to hyper-vigilance and projective thought overload.",
+                  "Extremity hypothermia: chronically cold feet—massive blood flow withdrawal to vital organs (survival/cortisol mode).",
+                ],
+              },
+              {
+                title: "Neuro-Somatic Prescription",
+                paragraphs: [
+                  "Dark alcohols (red wine): strategic use to slow ANS transmission frequency.",
+                  "High-density dark chocolate: biological anchoring and extremity warming to signal safety to nervous system.",
+                  "Goal: restore polyvagal regulation—from survival mode to radiance mode.",
+                ],
+              },
             ],
           },
           {
             id: "phase5",
             num: "06",
-            title: "Phase 5 — Ascension to Ultra-Elite",
-            paragraphs: ["Once the Vessel was sealed and Center armored, business dimension had to rise."],
-            subsections: [
-              {
-                title: "Law of Resonance",
-                paragraphs: [
-                  "The system can only attract frequencies equal to or below its consciousness level. To attract excellence, L. had to raise her frequency center of gravity—and mechanically filter low-engagement profiles.",
-                ],
-              },
-              {
-                title: "Structural Pivot",
-                paragraphs: [
-                  "Abandoning mass production (pre-recorded video banks) for high-frequency architecture: live accompaniment, real-time iteration, organic radiance. Offer restructured into €15,000 Ultra-Premium Program for initiates—less volume, maximum strategic frequency. This pivot mechanically raised perceived brand value.",
-                ],
-              },
+            title: "Phase V — Offer Reframing & Ultra-Elite Elevation",
+            paragraphs: [
+              "Once vessel was cleansed, strategic pivot toward high performance was initiated.",
+            ],
+            bullets: [
+              "End of « child's play »: mass training over. Access limited to short elite via Humility/Excellence program.",
+              "Frequency filter: radical financial threshold (€15,000+) for immersion cycles—not profit metric but frequency filter admitting only aligned profiles.",
+              "Identity mutation: Operator L. abandons expert-who-does posture to embody Systemic Authority transmuting experts into elite.",
             ],
           },
           {
             id: "results",
             num: "07",
-            title: "Results: Ecosystem Purification & Biological Momentum",
-            paragraphs: [
-              "Once Center was restored, results came through simple resonance—without manipulative closing tactics:",
-              "L. regained lightning execution—decisions in under an hour where chronic hesitation reigned. Stopping self-definition through others' gaze freed massive cognitive bandwidth for growth piloting.",
-            ],
+            title: "Results: Binary Sovereignty Restoration",
+            paragraphs: ["Intervention enabled sovereignty metrics recalibration."],
             outcomes: [
-              "Decisive separation from all toxic ecosystem profiles",
-              "Ultra-Elite €15,000 offer launch—immediate perceived brand value increase",
-              "Transition to high-level peer network independent of her structure",
-              "Allostatic load collapse—somatization ceased",
-              "Attraction of collaborators who exist independently of her—peer partnerships",
+              "Decision cadence: from cognitive procrastination to instant execution (Leech case definitively closed)",
+              "Strategic bandwidth: allostatic background noise eliminated; CPU space freed for Flagship Vessel piloting",
+              "Relational sovereignty: ability to instantly identify and reject lower consciousness signals (ring profiles)",
+              "Biological integrity: inflammatory signals gone; thermal stability restored",
             ],
           },
           {
             id: "testimonials",
             num: "08",
-            title: "Testimonial",
+            title: "Testimonial: Operator L.'s Voice",
             testimonials: [
-              "I was so wrong in the past hiring people. I always took people under my wing and they were nobody without me. Today I work with people who exist independently of me—and it's deeply restful.",
-              "I positioned myself—the core work is targeting excellence and stopping defining myself through others.",
+              "Well listen, I really enjoyed it and learned a lot during our exchanges... I feel it's good because we closed a cycle.",
             ],
           },
           {
-            id: "exocortex",
+            id: "ascension",
             num: "09",
-            title: "Protocol Continuation: The Exocortex (ASCENSION)",
+            title: "Protocol Continuation: ASCENSION Activation",
             paragraphs: [
-              "This case illustrates a NOMOS fundamental: surface dysfunctions (ad performance, conversion) are rarely the real ceiling cause—they are symptoms. This complexity requires 12 months minimum to anchor identity recalibrations and deploy the full Exocortex.",
-              "Evolution to ASCENSION Protocol activates the Exocortex—externalized neuro-operational brain. The system includes:",
+              "NOMOS repair cycle is complete. Operator L. now enters new identity architecture deployment via ASCENSION protocol.",
             ],
             bullets: [
-              "100-question diagnostic identifying dominant Archetypes (Mystic, Sage, Healer, Warrior)",
-              "Energy Monitoring: interaction tracking and place energy surveillance to optimize routines",
-              "Universal Laws: deep Kybalion study (Rhythm, Vibration, Polarity) to anchor power center definitively",
+              "Objective: build leader architecture over 36 months",
+              "Level Up: from crisis management to embodying undisputed market authority",
             ],
           },
         ],
         closing: {
-          title: "NOMOS Diagnostic — Does This Concern You?",
-          lead: "Your business runs, but toxic ecosystem dynamics saturate your nervous system? You postpone elite decisions for lack of cognitive bandwidth? The problem isn't your marketing strategy. It's your Flagship Vessel's integrity.",
+          title: "Protocol Access",
+          lead: "For leaders generating €20,000–€150,000/month whose system is in allostatic saturation.",
           paragraphs: [
             "The NOMOS Protocol is not management coaching. It is high-precision intervention on your leadership's neuro-operational architecture.",
           ],
@@ -1247,7 +1195,7 @@ export const en = {
           guaranteeTitle: "Absolute Guarantee",
           guarantee:
             "If your precise blockage mechanism isn't identified during the audit, full refund.",
-          cta: "Request your NOMOS Strategic Audit",
+          cta: "Book a diagnostic audit",
         },
       } as CaseStudyStudy,
       h: {

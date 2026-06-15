@@ -35,7 +35,7 @@ export function needsMessengerContact(expectation: ContactExpectation): boolean 
 
 export type EmailRequestVariant = "contact" | "audit";
 
-export type AuditProtocol = "hub" | "nomos" | "ascension" | "metaphysique";
+export type AuditProtocol = "hub" | "nomos" | "ascension" | "metaphysique" | "aegis";
 
 const expectationLabel: Record<Locale, Record<ContactExpectation, string>> = {
   fr: { message: "Message", email: "E-mail", call: "Appel" },
@@ -53,12 +53,14 @@ const protocolLabel: Record<Locale, Record<AuditProtocol, string>> = {
     nomos: "NOMOS — Protocole CRISIS",
     ascension: "ASCENSION — Protocole LEVEL UP",
     metaphysique: "Dimension Métaphysique",
+    aegis: "EXOCORTEX — Système vivant de pilotage",
   },
   en: {
     hub: "Entry portal — diagnostic",
     nomos: "NOMOS — CRISIS Protocol",
     ascension: "ASCENSION — LEVEL UP Protocol",
     metaphysique: "Metaphysical dimension",
+    aegis: "EXOCORTEX — Living steering system",
   },
 };
 

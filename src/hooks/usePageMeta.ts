@@ -6,6 +6,7 @@ export type PageMetaKey =
   | "nomos"
   | "ascension"
   | "metaphysique"
+  | "aegis"
   | "caseStudies"
   | "caseStudyC"
   | "caseStudyL"

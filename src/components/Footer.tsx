@@ -1,6 +1,6 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 
-type FooterVariant = "nomos" | "ascension" | "hub" | "metaphysique";
+type FooterVariant = "nomos" | "ascension" | "hub" | "metaphysique" | "aegis";
 
 const Footer = ({ variant = "nomos" }: { variant?: FooterVariant }) => {
   const { t } = useLanguage();

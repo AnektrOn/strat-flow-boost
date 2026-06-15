@@ -1,7 +1,7 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-type GuaranteeVariant = "nomos" | "ascension" | "metaphysique";
+type GuaranteeVariant = "nomos" | "ascension" | "metaphysique" | "aegis";
 
 const GuaranteeSection = ({ variant = "nomos" }: { variant?: GuaranteeVariant }) => {
   const ref = useScrollReveal();
@@ -10,7 +10,7 @@ const GuaranteeSection = ({ variant = "nomos" }: { variant?: GuaranteeVariant })
   const borderClass =
     variant === "ascension"
       ? "border-n-gold-warm"
-      : variant === "metaphysique"
+      : variant === "metaphysique" || variant === "aegis"
         ? "border-n-gold/60"
         : "border-n-teal";
 
@@ -31,7 +31,7 @@ const GuaranteeSection = ({ variant = "nomos" }: { variant?: GuaranteeVariant })
 
         <p className="reveal section-intro mx-auto">{t(`${prefix}.p1`)}</p>
 
-        {variant === "metaphysique" ? (
+        {variant === "metaphysique" || variant === "aegis" ? (
           <p className="reveal section-intro mx-auto">
             {(() => {
               const full = t(`${prefix}.p2`);

@@ -16,6 +16,7 @@ import FAQSection from "@/components/FAQSection";
 import CTAFinalSection from "@/components/CTAFinalSection";
 import Footer from "@/components/Footer";
 import MobileCTABar from "@/components/MobileCTABar";
+import PageSideNavLayout from "@/components/PageSideNavLayout";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
 
@@ -27,20 +28,21 @@ const NomosPage = () => {
     <div className="overflow-x-hidden pb-24 sm:pb-0">
       <Header mode="nomos" />
       <main>
-        <HeroSection />
-        <SymptomsSection />
-        <MechanismSection />
-        <SufferingSection />
-        <SolutionsSection />
-        <ProtocolSection />
-        <TestimonialsSection />
-        <FutureSection />
-        <FounderSection />
-        <ROISection />
-        <GuaranteeSection variant="nomos" />
-        <QualifySection variant="nomos" />
-        <FAQSection />
-        <CTAFinalSection />
+        <PageSideNavLayout page="nomos" hero={<HeroSection />}>
+          <SymptomsSection />
+          <MechanismSection />
+          <SufferingSection />
+          <SolutionsSection />
+          <ProtocolSection />
+          <TestimonialsSection />
+          <FutureSection />
+          <FounderSection />
+          <ROISection />
+          <GuaranteeSection variant="nomos" />
+          <QualifySection variant="nomos" />
+          <FAQSection />
+          <CTAFinalSection />
+        </PageSideNavLayout>
         <section className="cross-link">
           <div className="container-nomos narrow">
             <p>{t("common.crossLink.nomos.prompt")}</p>

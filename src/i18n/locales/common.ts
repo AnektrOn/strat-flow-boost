@@ -5,7 +5,11 @@ export const fr = {
       auditDefault: "Réserver l'Audit",
       auditAscension: "Réserver l'Audit ASCENSION",
       auditMetaphysique: "Candidater — Avant-garde",
+      auditAegis: "Candidater — Aegis",
       auditHub: "Réserver l'Audit",
+      aegisTab: "AEGIS",
+      aegisTabAria: "AEGIS — système vivant de pilotage pour dirigeants",
+      aegisBadge: "Système vivant",
     },
     footer: {
       nomos: {
@@ -24,11 +28,16 @@ export const fr = {
         brand: "NOMOS — Dimension Métaphysique · Avant-Gardisme Stratégique",
         meta: "Fondé par Léo · Réservé à une poignée de dirigeants · 1:1 sans délégation",
       },
+      aegis: {
+        brand: "EXOCORTEX — Système vivant de pilotage pour leaders",
+        meta: "Cortex auxiliaire · Trajectoire à 10 ans · Pré‑lancement · Places limitées",
+      },
     },
     mobileCta: {
       default: "Candidater pour l'audit",
       ascension: "Candidater pour l'audit ASCENSION",
       metaphysique: "Candidater — Avant-garde",
+      aegis: "Candidater — Aegis",
     },
     auditCta: {
       contactDirect: {
@@ -147,6 +156,12 @@ export const fr = {
         linkLevelUp: "Protocole LEVEL UP →",
         separator: "·",
       },
+      aegis: {
+        prompt: "Vous êtes en crise active ou cherchez un protocole d'intervention 1:1 ?",
+        linkCrisis: "Protocole CRISIS →",
+        linkLevelUp: "Protocole LEVEL UP →",
+        separator: "·",
+      },
     },
     language: {
       aria: "Choisir la langue",
@@ -220,6 +235,30 @@ export const fr = {
           p2Strong: "dans les 45 premières minutes, nous nommons ce qui résiste — et pourquoi.",
         },
       },
+      aegis: {
+        title: "Aegis n'est pas pour tout le monde.",
+        titleLine2: "C'est un instrument de pilotage, pas un coach.",
+        intro:
+          "Vous n'avez pas besoin d'être en crise. Vous avez besoin d'un système qui lit votre réalité chaque semaine — et qui recalcule l'écart entre le court terme et votre trajectoire à 10 ans.",
+        no: [
+          "Vous cherchez un coach mindset, une app de bien‑être ou des tips motivationnels",
+          "Vous n'êtes pas prêt à logger vos décisions et votre état interne chaque semaine",
+          "Vous voulez des résultats sans engagement sur le temps long",
+          "La dimension métaphysique et archétypale vous résiste — et vous la voulez optionnelle",
+        ],
+        yes: [
+          "Vous êtes fondateur, CEO ou C‑level qui opère déjà dans la complexité (multi‑pays, multi‑projets)",
+          "Vous voulez un instrument de navigation : People Board, Decision Log, clinique évolutive",
+          "Vous pensez en trajectoire à 10 ans — pas en gestion de semaine",
+          "Vous êtes prêt à alimenter un système vivant qui se reconfigure avec vous",
+        ],
+        hesitation: {
+          title: "Si vous hésitez...",
+          p1: "Cette hésitation peut être de la prudence — ou le signe que vous n'êtes pas encore prêt à voir vos patterns décisionnels en temps réel.",
+          p2: "L'entretien de sélection commence là : nous validons si Aegis est le bon instrument pour votre niveau de pilotage — et quel format (Solo, Team, + Human Check‑ins) vous correspond.",
+          p2Strong: "nous validons si Aegis est le bon instrument pour votre niveau de pilotage",
+        },
+      },
     },
     guarantee: {
       eyebrow: "La Garantie de Diagnostic Absolue",
@@ -258,6 +297,17 @@ export const fr = {
         gainLabel: "Ce que vous gagnez au minimum :",
         gain: "la carte la plus précise de ce qui vous retient — même si vous ne continuez pas.",
       },
+      aegis: {
+        title: "Si le premier cycle hebdomadaire",
+        titleLine2: "ne produit pas une lecture plus précise que vos outils actuels — remboursement du premier mois.",
+        p1: "Après le premier cycle hebdomadaire complet (People Board, Decision Log, analyse clinique, Pulses), vous disposez d'une lecture intégrée de votre système : relations, décisions, états internes, trajectoire à 10 ans.",
+        p2: "Si cette lecture n'est pas significativement plus précise et actionnaire que ce que vous aviez avant — remboursement du premier mois. Sans conditions.",
+        p2Strong: "remboursement du premier mois. Sans conditions.",
+        riskLabel: "Ce que vous risquez :",
+        risk: "un mois et l'engagement de logger vos décisions.",
+        gainLabel: "Ce que vous gagnez au minimum :",
+        gain: "la carte la plus précise de vos patterns décisionnels et relationnels — même si vous arrêtez.",
+      },
     },
   },
 };
@@ -269,7 +319,11 @@ export const en = {
       auditDefault: "Book the Audit",
       auditAscension: "Book the ASCENSION Audit",
       auditMetaphysique: "Apply — Avant-garde",
+      auditAegis: "Apply — Aegis",
       auditHub: "Book the Audit",
+      aegisTab: "AEGIS",
+      aegisTabAria: "AEGIS — living steering system for executives",
+      aegisBadge: "Living system",
     },
     footer: {
       nomos: {
@@ -288,11 +342,16 @@ export const en = {
         brand: "NOMOS — Metaphysical Dimension · Strategic Avant-Gardism",
         meta: "Founded by Léo · Reserved for a handful of leaders · 1:1 with no delegation",
       },
+      aegis: {
+        brand: "EXOCORTEX — Living steering system for leaders",
+        meta: "Auxiliary cortex · 10-year trajectory · Pre-launch · Limited places",
+      },
     },
     mobileCta: {
       default: "Apply for the audit",
       ascension: "Apply for the ASCENSION audit",
       metaphysique: "Apply — Avant-garde",
+      aegis: "Apply — Aegis",
     },
     auditCta: {
       contactDirect: {
@@ -411,6 +470,12 @@ export const en = {
         linkLevelUp: "LEVEL UP Protocol →",
         separator: "·",
       },
+      aegis: {
+        prompt: "In active crisis or looking for a 1:1 intervention protocol?",
+        linkCrisis: "CRISIS Protocol →",
+        linkLevelUp: "LEVEL UP Protocol →",
+        separator: "·",
+      },
     },
     language: {
       aria: "Choose language",
@@ -484,6 +549,30 @@ export const en = {
           p2Strong: "in the first 45 minutes, we name what resists — and why.",
         },
       },
+      aegis: {
+        title: "Aegis is not for everyone.",
+        titleLine2: "It's a steering instrument, not a coach.",
+        intro:
+          "You don't need to be in crisis. You need a system that reads your reality every week — and recalculates the gap between the short term and your 10-year trajectory.",
+        no: [
+          "You're looking for a mindset coach, wellness app, or motivational tips",
+          "You're not ready to log your decisions and internal state every week",
+          "You want results without a long-horizon commitment",
+          "The metaphysical and archetypal dimension resists you — and you want it optional",
+        ],
+        yes: [
+          "You're a founder, CEO, or C-level already operating in complexity (multi-country, multi-project)",
+          "You want a navigation instrument: People Board, Decision Log, evolving clinic",
+          "You think in 10-year trajectory — not week management",
+          "You're ready to feed a living system that reconfigures with you",
+        ],
+        hesitation: {
+          title: "If you're hesitating...",
+          p1: "That hesitation may be caution — or a sign you're not yet ready to see your decision patterns in real time.",
+          p2: "The selection interview starts there: we validate whether Aegis is the right instrument for your steering level — and which format (Solo, Team, + Human Check-ins) fits you.",
+          p2Strong: "we validate whether Aegis is the right instrument for your steering level",
+        },
+      },
     },
     guarantee: {
       eyebrow: "The Absolute Diagnostic Guarantee",
@@ -521,6 +610,17 @@ export const en = {
         risk: "21 days and a reckoning.",
         gainLabel: "What you gain at minimum:",
         gain: "the most precise map of what's holding you back — even if you don't continue.",
+      },
+      aegis: {
+        title: "If the first weekly cycle",
+        titleLine2: "doesn't produce a reading more precise than your current tools — first month refunded.",
+        p1: "After the first complete weekly cycle (People Board, Decision Log, clinical analysis, Pulses), you have an integrated reading of your system: relationships, decisions, internal states, 10-year trajectory.",
+        p2: "If this reading isn't significantly more precise and actionable than what you had before — first month refunded. No conditions.",
+        p2Strong: "first month refunded. No conditions.",
+        riskLabel: "What you risk:",
+        risk: "one month and the commitment to log your decisions.",
+        gainLabel: "What you gain at minimum:",
+        gain: "the most precise map of your decision and relational patterns — even if you stop.",
       },
     },
   },

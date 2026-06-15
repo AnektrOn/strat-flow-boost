@@ -10,6 +10,7 @@ import OnboardingPage from "./pages/OnboardingPage";
 import NomosPage from "./pages/NomosPage";
 import AscensionPage from "./pages/AscensionPage";
 import MetaphysiquePage from "./pages/MetaphysiquePage";
+import AegisPage from "./pages/AegisPage";
 import CaseStudiesIndexPage from "./pages/CaseStudiesIndexPage";
 import CaseStudyDetailPage from "./pages/CaseStudyDetailPage";
 import NotFound from "./pages/NotFound";
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/nomos" element={<NomosPage />} />
           <Route path="/ascension" element={<AscensionPage />} />
           <Route path="/metaphysique" element={<MetaphysiquePage />} />
+          <Route path="/aegis" element={<AegisPage />} />
           <Route path="/case-studies" element={<CaseStudiesIndexPage />} />
           <Route path="/case-studies/:slug" element={<CaseStudyDetailPage />} />
           <Route path="*" element={<NotFound />} />

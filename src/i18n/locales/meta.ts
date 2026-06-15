@@ -1,9 +1,9 @@
 export const fr = {
   meta: {
     hub: {
-      title: "NOMOS — Deux portes. Une même exigence.",
+      title: "NOMOS — Trois portes. Une même exigence.",
       description:
-        "Choisissez votre porte d'entrée : Protocole CRISIS (NOMOS) ou Protocole LEVEL UP (ASCENSION). Diagnostic exigeant, intervention 1:1, places limitées.",
+        "Choisissez votre porte : Protocole CRISIS (NOMOS), LEVEL UP (ASCENSION) ou AEGIS — système vivant de pilotage. Diagnostic exigeant, intervention 1:1, places limitées.",
     },
     nomos: {
       title: "NOMOS — Protocole CRISIS · Recalibration neuro-opérationnelle",
@@ -20,6 +20,11 @@ export const fr = {
       description:
         "Ce que les autres appellent invisible, nous appelons avantage. Alignement Invisible™, lecture stratégique à 20 ans, places extrêmement limitées.",
     },
+    aegis: {
+      title: "EXOCORTEX — Système vivant de pilotage pour leaders",
+      description:
+        "Cortex auxiliaire pour dirigeants : People Board, Decision Log, clinique multi-corpus, Pulse Learning Cards et trajectoire à 10 ans. Solo, Team ou + Human Check-ins.",
+    },
     caseStudies: {
       title: "NOMOS — Études de cas cliniques",
       description:
@@ -31,9 +36,9 @@ export const fr = {
         "Protocole NOMOS™ : dissonance identitaire, neutralisation du bruit du monde, filtre vitré, momentum par résonance et indouchabilité opérationnelle.",
     },
     caseStudyL: {
-      title: "Étude de cas — Purge du Vaisseau Amiral · Dirigeante L.",
+      title: "Étude de cas — Recalibration du Vaisseau Amiral · Opérateur L.",
       description:
-        "Protocole NOMOS™ : Backdoors énergétiques, régulation neuro-systémique, offre Ultra-Élite et purification de l'écosystème — phase initiale complétée.",
+        "Protocole NOMOS™ : Dérive Neuro-Opérationnelle™, purge des backdoors, régulation SNA et pivot Ultra-Élite.",
     },
     caseStudyH: {
       title: "Étude de cas — 40% à 85% d'occupation · Dirigeante H.",
@@ -50,9 +55,9 @@ export const fr = {
 export const en = {
   meta: {
     hub: {
-      title: "NOMOS — Two doors. One standard.",
+      title: "NOMOS — Three doors. One standard.",
       description:
-        "Choose your entry point: CRISIS Protocol (NOMOS) or LEVEL UP Protocol (ASCENSION). Rigorous diagnostic, 1:1 intervention, limited places.",
+        "Choose your door: CRISIS Protocol (NOMOS), LEVEL UP (ASCENSION), or AEGIS — living steering system. Rigorous diagnostic, 1:1 intervention, limited places.",
     },
     nomos: {
       title: "NOMOS — CRISIS Protocol · Neuro-operational recalibration",
@@ -69,6 +74,11 @@ export const en = {
       description:
         "What others call invisible, we call advantage. Invisible Alignment™, 20-year strategic reading, extremely limited places.",
     },
+    aegis: {
+      title: "EXOCORTEX — Living steering system for leaders",
+      description:
+        "Auxiliary cortex for executives: People Board, Decision Log, multi-corpus clinic, Pulse Learning Cards, and 10-year trajectory. Solo, Team, or + Human Check-ins.",
+    },
     caseStudies: {
       title: "NOMOS — Clinical case studies",
       description:
@@ -80,9 +90,9 @@ export const en = {
         "NOMOS Protocol™: identity dissonance, world noise neutralization, glass filter, momentum by resonance, operational untouchability.",
     },
     caseStudyL: {
-      title: "Case study — Flagship Vessel Purge · Leader L.",
+      title: "Case study — Flagship Vessel Recalibration · Operator L.",
       description:
-        "NOMOS Protocol™: energetic Backdoors, neuro-systemic regulation, Ultra-Elite offer, ecosystem purification — initial phase completed.",
+        "NOMOS Protocol™: Neuro-Operational Drift™, backdoor purge, ANS regulation, Ultra-Elite pivot.",
     },
     caseStudyH: {
       title: "Case study — 40% to 85% occupancy · Leader H.",
