@@ -10,7 +10,7 @@ export const fr = {
     },
     gateway: {
       intro:
-        "Deux portes selon où vous en êtes : recalibration en crise ou élévation identitaire."
+        "Deux portes selon où vous en êtes : recalibration en crise ou élévation identitaire.",
       crise: {
         ariaLabel: "Porte Crise — continuer vers le protocole NOMOS",
         label: "Crise",
