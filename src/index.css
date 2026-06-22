@@ -971,12 +971,17 @@
 .case-study-toc-compact ol {
   flex-direction: row;
   flex-wrap: nowrap;
+  align-items: stretch;
   overflow-x: auto;
   gap: 0.4rem;
   padding-bottom: 0.15rem;
   scroll-snap-type: x proximity;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+}
+.case-study-toc-compact ol > li {
+  display: flex;
+  flex: 0 0 6.5rem;
 }
 .case-study-toc-compact ol::-webkit-scrollbar { display: none; }
 .case-study-toc a {
@@ -992,16 +997,19 @@
   transition: color 200ms ease, background 200ms ease, border-color 200ms ease;
 }
 .case-study-toc-compact a {
+  flex: 1;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  gap: 0.3rem;
   text-align: center;
-  min-width: 4.5rem;
-  max-width: 7.5rem;
-  padding: 0.4rem 0.55rem;
+  width: 100%;
+  padding: 0.5rem 0.55rem;
   scroll-snap-align: start;
   background: hsl(var(--color-surface));
   border-color: hsl(var(--color-border));
 }
+
 .case-study-toc a:hover { color: hsl(var(--color-teal)); }
 .case-study-toc a.is-active {
   color: hsl(var(--color-text));
