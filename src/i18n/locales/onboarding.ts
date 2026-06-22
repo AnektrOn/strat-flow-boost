@@ -187,17 +187,17 @@ export const en = {
     },
     method: {
       eyebrow: "Shared method",
-      title: "Three doors. One standard.",
+      title: "Two doors. One standard.",
       intro:
-        "Same refusal of disguised coaching and generic recipes. Rigorous diagnostic before commitment — whether on NOMOS and ASCENSION protocols, or AEGIS integration for leaders already in complex terrain.",
+        "Same refusal of disguised coaching and generic recipes. Rigorous diagnostic before commitment — whether on NOMOS and ASCENSION protocols.",
       items: [
         {
           title: "1:1 with no delegation",
-          body: "Every operational protocol is led directly by the founder. AEGIS is a living system; the + Human Check-ins format adds a monthly human mirror.",
+          body: "Every operational protocol is led directly by the founder. The + Human Check-ins format adds a monthly human mirror.",
         },
         {
           title: "Limited places",
-          body: "NOMOS: 5 leaders per quarter. ASCENSION: 5 per semester. AEGIS: progressive pre-launch access.",
+          body: "NOMOS: 5 leaders per quarter. ASCENSION: 5 per semester.",
         },
         {
           title: "Diagnostic Guarantee",

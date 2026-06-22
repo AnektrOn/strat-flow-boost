@@ -292,7 +292,7 @@ export const en = {
   aegis: {
     hero: {
       eyebrow: "Auxiliary cortex · Weekly steering · 10-year trajectory",
-      title: "Aegis — A living system",
+      title: "Aegis — Exocortex APP",
       titleAccent: "for leader navigation.",
       intro:
         "Aegis is not a coach, nor a \"wellness app.\" It's an auxiliary cortex for executives: a living system that reads your internal architecture every week, tracks your decisions, and aligns you with your 10-year trajectory.",
@@ -485,7 +485,7 @@ export const en = {
           name: "Aegis Solo",
           tagline: "Weekly auxiliary cortex, without human coaching.",
           audience: "Leader who wants a living system in autonomy.",
-          price: "Pre-launch · €290–350/month",
+          price: "€150/month (6 months) · €100/month (1 year) · €200/month",
           includes: [
             "People Board updated every week",
             "Decision Log and decision pattern analysis",
