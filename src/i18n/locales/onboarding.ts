@@ -2,15 +2,15 @@ export const fr = {
   onboarding: {
     hero: {
       eyebrow: "Réservé aux fondateurs · 20 000€ – 150 000€/mois",
-      title: "Trois portes.",
-      titleLine2: "Trois niveaux.",
+      title: "Deux portes.",
+      titleLine2: "Deux niveaux.",
       titleAccent: "Une même exigence.",
       subtitle:
-        "Crise, level up ou pilotage long terme : trois façons d'entrer. Protocoles NOMOS et ASCENSION selon votre situation — ou AEGIS, le système vivant qui lit votre trajectoire chaque semaine.",
+        "Crise ou level up : deux façons d'entrer. Protocoles NOMOS et ASCENSION selon votre situation.",
     },
     gateway: {
       intro:
-        "Trois portes selon où vous en êtes : recalibration en crise, élévation identitaire, ou cortex auxiliaire hebdomadaire.",
+        "Deux portes selon où vous en êtes : recalibration en crise ou élévation identitaire.",
       crise: {
         ariaLabel: "Porte Crise — continuer vers le protocole NOMOS",
         label: "Crise",
@@ -72,27 +72,27 @@ export const fr = {
           "EXOCORTEX · Solo, Team ou + Human Check-ins",
         ],
         cta: "Découvrir AEGIS",
-        note: "Système vivant · Pré-lancement · 290–350 €/mois",
+        note: "Exocortex APP · 150 €/mois (6 mois) · 100 €/mois (1 an) · 200 €/mois",
       },
       doubt: {
         text: "Pas sûr par quelle porte entrer ?",
-        sub: "En 45 minutes d'audit, nous identifions où vous en êtes — crise, level up, ou si AEGIS est le bon instrument de pilotage pour votre niveau.",
+        sub: "En 45 minutes d'audit, nous identifions où vous en êtes — crise ou level up.",
         link: "Réserver un audit de diagnostic →",
       },
     },
     method: {
       eyebrow: "Méthode commune",
-      title: "Trois portes. Une même rigueur.",
+      title: "Deux portes. Une même rigueur.",
       intro:
-        "Même refus du coaching déguisé et des recettes génériques. Diagnostic exigeant avant engagement — que ce soit sur les protocoles NOMOS et ASCENSION, ou sur l'intégration AEGIS pour les dirigeants déjà en terrain complexe.",
+        "Même refus du coaching déguisé et des recettes génériques. Diagnostic exigeant avant engagement — que ce soit sur les protocoles NOMOS et ASCENSION.",
       items: [
         {
           title: "1:1 sans délégation",
-          body: "Chaque protocole opérationnel est conduit par le fondateur en direct. AEGIS est un système vivant ; le format + Human Check-ins ajoute un miroir humain mensuel.",
+          body: "Chaque protocole opérationnel est conduit par le fondateur en direct. Le format + Human Check-ins ajoute un miroir humain mensuel.",
         },
         {
           title: "Places limitées",
-          body: "NOMOS : 5 dirigeants par trimestre. ASCENSION : 5 par semestre. AEGIS : accès progressif en pré-lancement.",
+          body: "NOMOS : 5 dirigeants par trimestre. ASCENSION : 5 par semestre.",
         },
         {
           title: "Garantie de Diagnostic",
@@ -107,15 +107,15 @@ export const en = {
   onboarding: {
     hero: {
       eyebrow: "Reserved for founders · €20,000 – €150,000/month",
-      title: "Three doors.",
-      titleLine2: "Three levels.",
+      title: "Two doors.",
+      titleLine2: "Two levels.",
       titleAccent: "One standard.",
       subtitle:
-        "Crisis, level up, or long-horizon steering: three ways in. NOMOS and ASCENSION protocols for your situation — or AEGIS, the living system that reads your trajectory every week.",
+        "Crisis or level up: two ways in. NOMOS and ASCENSION protocols for your situation.",
     },
     gateway: {
       intro:
-        "Three doors based on where you are: crisis recalibration, identity elevation, or a weekly auxiliary cortex.",
+        "Two doors based on where you are: crisis recalibration or identity elevation.",
       crise: {
         ariaLabel: "Crisis door — continue to the NOMOS protocol",
         label: "Crisis",
@@ -177,27 +177,27 @@ export const en = {
           "EXOCORTEX · Solo, Team, or + Human Check-ins",
         ],
         cta: "Discover AEGIS",
-        note: "Living system · Pre-launch · €290–350/month",
+        note: "Exocortex APP · €150/month (6 months) · €100/month (1 year) · €200/month",
       },
       doubt: {
         text: "Not sure which door to enter?",
-        sub: "In a 45-minute audit, we identify where you are — crisis, level up, or whether AEGIS is the right steering instrument for your level.",
+        sub: "In a 45-minute audit, we identify where you are — crisis or level up.",
         link: "Book a diagnostic audit →",
       },
     },
     method: {
       eyebrow: "Shared method",
-      title: "Three doors. One standard.",
+      title: "Two doors. One standard.",
       intro:
-        "Same refusal of disguised coaching and generic recipes. Rigorous diagnostic before commitment — whether on NOMOS and ASCENSION protocols, or AEGIS integration for leaders already in complex terrain.",
+        "Same refusal of disguised coaching and generic recipes. Rigorous diagnostic before commitment — whether on NOMOS and ASCENSION protocols.",
       items: [
         {
           title: "1:1 with no delegation",
-          body: "Every operational protocol is led directly by the founder. AEGIS is a living system; the + Human Check-ins format adds a monthly human mirror.",
+          body: "Every operational protocol is led directly by the founder. The + Human Check-ins format adds a monthly human mirror.",
         },
         {
           title: "Limited places",
-          body: "NOMOS: 5 leaders per quarter. ASCENSION: 5 per semester. AEGIS: progressive pre-launch access.",
+          body: "NOMOS: 5 leaders per quarter. ASCENSION: 5 per semester.",
         },
         {
           title: "Diagnostic Guarantee",

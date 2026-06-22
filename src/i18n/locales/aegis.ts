@@ -2,7 +2,7 @@ export const fr = {
   aegis: {
     hero: {
       eyebrow: "EXOCORTEX · Pilotage hebdomadaire · Trajectoire à 10 ans",
-      title: "EXOCORTEX — Système vivant",
+      title: "EXOCORTEX — Exocortex APP",
       titleAccent: "de pilotage pour leaders.",
       intro:
         "EXOCORTEX n'est pas un coach, ni une « app de bien‑être ». C'est un cortex auxiliaire pour dirigeants : un système vivant qui lit ton architecture interne chaque semaine, suit tes décisions, et t'aligne sur ta trajectoire à 10 ans.",
@@ -195,7 +195,7 @@ export const fr = {
           name: "Aegis Solo",
           tagline: "Cortex auxiliaire hebdomadaire, sans coaching humain.",
           audience: "Leader qui veut un système vivant en autonomie.",
-          price: "Pré‑lancement · 290–350 €/mois",
+          price: "150 €/mois (6 mois) · 100 €/mois (1 an) · 200 €/mois",
           includes: [
             "People Board mis à jour chaque semaine",
             "Decision Log et analyse des patterns décisionnels",
@@ -292,7 +292,7 @@ export const en = {
   aegis: {
     hero: {
       eyebrow: "Auxiliary cortex · Weekly steering · 10-year trajectory",
-      title: "Aegis — A living system",
+      title: "Aegis — Exocortex APP",
       titleAccent: "for leader navigation.",
       intro:
         "Aegis is not a coach, nor a \"wellness app.\" It's an auxiliary cortex for executives: a living system that reads your internal architecture every week, tracks your decisions, and aligns you with your 10-year trajectory.",
@@ -485,7 +485,7 @@ export const en = {
           name: "Aegis Solo",
           tagline: "Weekly auxiliary cortex, without human coaching.",
           audience: "Leader who wants a living system in autonomy.",
-          price: "Pre-launch · €290–350/month",
+          price: "€150/month (6 months) · €100/month (1 year) · €200/month",
           includes: [
             "People Board updated every week",
             "Decision Log and decision pattern analysis",

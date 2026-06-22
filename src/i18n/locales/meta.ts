@@ -1,9 +1,9 @@
 export const fr = {
   meta: {
     hub: {
-      title: "NOMOS — Trois portes. Une même exigence.",
+      title: "NOMOS — Deux portes. Une même exigence.",
       description:
-        "Choisissez votre porte : Protocole CRISIS (NOMOS), LEVEL UP (ASCENSION) ou AEGIS — système vivant de pilotage. Diagnostic exigeant, intervention 1:1, places limitées.",
+        "Choisissez votre porte : Protocole CRISIS (NOMOS) ou LEVEL UP (ASCENSION). Diagnostic exigeant, intervention 1:1, places limitées.",
     },
     nomos: {
       title: "NOMOS — Protocole CRISIS · Recalibration neuro-opérationnelle",
@@ -55,9 +55,9 @@ export const fr = {
 export const en = {
   meta: {
     hub: {
-      title: "NOMOS — Three doors. One standard.",
+      title: "NOMOS — Two doors. One standard.",
       description:
-        "Choose your door: CRISIS Protocol (NOMOS), LEVEL UP (ASCENSION), or AEGIS — living steering system. Rigorous diagnostic, 1:1 intervention, limited places.",
+        "Choose your door: CRISIS Protocol (NOMOS) or LEVEL UP (ASCENSION). Rigorous diagnostic, 1:1 intervention, limited places.",
     },
     nomos: {
       title: "NOMOS — CRISIS Protocol · Neuro-operational recalibration",

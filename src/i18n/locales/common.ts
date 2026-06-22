@@ -8,8 +8,8 @@ export const fr = {
       auditAegis: "Candidater — Aegis",
       auditHub: "Réserver l'Audit",
       aegisTab: "AEGIS",
-      aegisTabAria: "AEGIS — système vivant de pilotage pour dirigeants",
-      aegisBadge: "Système vivant",
+      aegisTabAria: "AEGIS — Exocortex APP de pilotage pour dirigeants",
+      aegisBadge: "Exocortex APP",
     },
     footer: {
       nomos: {
@@ -322,8 +322,8 @@ export const en = {
       auditAegis: "Apply — Aegis",
       auditHub: "Book the Audit",
       aegisTab: "AEGIS",
-      aegisTabAria: "AEGIS — living steering system for executives",
-      aegisBadge: "Living system",
+      aegisTabAria: "AEGIS — Exocortex APP for executives",
+      aegisBadge: "Exocortex APP",
     },
     footer: {
       nomos: {
