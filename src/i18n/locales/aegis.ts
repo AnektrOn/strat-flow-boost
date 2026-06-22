@@ -1,14 +1,14 @@
 export const fr = {
   aegis: {
     hero: {
-      eyebrow: "EXOCORTEX · Pilotage hebdomadaire · Trajectoire à 10 ans",
-      title: "EXOCORTEX — Exocortex APP",
+      eyebrow: "AEGIS · Exocortex APP · Pilotage hebdomadaire",
+      title: "AEGIS — Exocortex APP",
       titleAccent: "de pilotage pour leaders.",
       intro:
-        "EXOCORTEX n'est pas un coach, ni une « app de bien‑être ». C'est un cortex auxiliaire pour dirigeants : un système vivant qui lit ton architecture interne chaque semaine, suit tes décisions, et t'aligne sur ta trajectoire à 10 ans.",
+        "AEGIS n'est pas un coach, ni une « app de bien‑être ». C'est un cortex auxiliaire pour dirigeants : un système vivant qui lit ton architecture interne chaque semaine, suit tes décisions, et t'aligne sur ta trajectoire à 10 ans.",
       contrast:
-        "Là où les outils classiques se contentent de réguler ton énergie pour « tenir la semaine », EXOCORTEX orchestre la cohérence de ton système nerveux, de tes choix et de ton environnement en fonction de là où tu dois être dans dix ans.",
-      cta: "Candidater à EXOCORTEX — Entretien de sélection",
+        "Là où les outils classiques se contentent de réguler ton énergie pour « tenir la semaine », AEGIS orchestre la cohérence de ton système nerveux, de tes choix et de ton environnement en fonction de là où tu dois être dans dix ans.",
+      cta: "Candidater à AEGIS — Entretien de sélection",
       footnote: "⬥ Pré‑lancement · Places limitées · Solo, Team ou + Human Check‑ins",
     },
     positioning: {
