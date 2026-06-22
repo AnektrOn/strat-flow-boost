@@ -1,9 +1,9 @@
 export const fr = {
   meta: {
     hub: {
-      title: "NOMOS — Trois portes. Une même exigence.",
+      title: "NOMOS — Deux portes. Une même exigence.",
       description:
-        "Choisissez votre porte : Protocole CRISIS (NOMOS), LEVEL UP (ASCENSION) ou AEGIS — système vivant de pilotage. Diagnostic exigeant, intervention 1:1, places limitées.",
+        "Choisissez votre porte : Protocole CRISIS (NOMOS) ou LEVEL UP (ASCENSION). Diagnostic exigeant, intervention 1:1, places limitées.",
     },
     nomos: {
       title: "NOMOS — Protocole CRISIS · Recalibration neuro-opérationnelle",

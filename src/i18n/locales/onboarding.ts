@@ -82,17 +82,17 @@ export const fr = {
     },
     method: {
       eyebrow: "Méthode commune",
-      title: "Trois portes. Une même rigueur.",
+      title: "Deux portes. Une même rigueur.",
       intro:
-        "Même refus du coaching déguisé et des recettes génériques. Diagnostic exigeant avant engagement — que ce soit sur les protocoles NOMOS et ASCENSION, ou sur l'intégration AEGIS pour les dirigeants déjà en terrain complexe.",
+        "Même refus du coaching déguisé et des recettes génériques. Diagnostic exigeant avant engagement — que ce soit sur les protocoles NOMOS et ASCENSION.",
       items: [
         {
           title: "1:1 sans délégation",
-          body: "Chaque protocole opérationnel est conduit par le fondateur en direct. AEGIS est un système vivant ; le format + Human Check-ins ajoute un miroir humain mensuel.",
+          body: "Chaque protocole opérationnel est conduit par le fondateur en direct. Le format + Human Check-ins ajoute un miroir humain mensuel.",
         },
         {
           title: "Places limitées",
-          body: "NOMOS : 5 dirigeants par trimestre. ASCENSION : 5 par semestre. AEGIS : accès progressif en pré-lancement.",
+          body: "NOMOS : 5 dirigeants par trimestre. ASCENSION : 5 par semestre.",
         },
         {
           title: "Garantie de Diagnostic",
