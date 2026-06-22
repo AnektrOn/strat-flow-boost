@@ -14,8 +14,6 @@ const OnboardingPage = () => {
   const criseSignals = getTr("onboarding.gateway.crise.signals") as string[];
   const levelUpDesc = getTr("onboarding.gateway.levelUp.description") as string[];
   const levelUpSignals = getTr("onboarding.gateway.levelUp.signals") as string[];
-  const aegisDesc = getTr("onboarding.gateway.aegis.description") as string[];
-  const aegisSignals = getTr("onboarding.gateway.aegis.signals") as string[];
   const methodItems = getTr("onboarding.method.items") as Array<{ title: string; body: string }>;
 
   return (

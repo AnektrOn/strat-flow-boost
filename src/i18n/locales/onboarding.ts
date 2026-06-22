@@ -2,15 +2,15 @@ export const fr = {
   onboarding: {
     hero: {
       eyebrow: "Réservé aux fondateurs · 20 000€ – 150 000€/mois",
-      title: "Trois portes.",
-      titleLine2: "Trois niveaux.",
+      title: "Deux portes.",
+      titleLine2: "Deux niveaux.",
       titleAccent: "Une même exigence.",
       subtitle:
-        "Crise, level up ou pilotage long terme : trois façons d'entrer. Protocoles NOMOS et ASCENSION selon votre situation — ou AEGIS, le système vivant qui lit votre trajectoire chaque semaine.",
+        "Crise ou level up : deux façons d'entrer. Protocoles NOMOS et ASCENSION selon votre situation.",
     },
     gateway: {
       intro:
-        "Trois portes selon où vous en êtes : recalibration en crise, élévation identitaire, ou cortex auxiliaire hebdomadaire.",
+        "Deux portes selon où vous en êtes : recalibration en crise ou élévation identitaire."
       crise: {
         ariaLabel: "Porte Crise — continuer vers le protocole NOMOS",
         label: "Crise",
