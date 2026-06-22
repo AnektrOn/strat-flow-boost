@@ -107,15 +107,15 @@ export const en = {
   onboarding: {
     hero: {
       eyebrow: "Reserved for founders · €20,000 – €150,000/month",
-      title: "Three doors.",
-      titleLine2: "Three levels.",
+      title: "Two doors.",
+      titleLine2: "Two levels.",
       titleAccent: "One standard.",
       subtitle:
-        "Crisis, level up, or long-horizon steering: three ways in. NOMOS and ASCENSION protocols for your situation — or AEGIS, the living system that reads your trajectory every week.",
+        "Crisis or level up: two ways in. NOMOS and ASCENSION protocols for your situation.",
     },
     gateway: {
       intro:
-        "Three doors based on where you are: crisis recalibration, identity elevation, or a weekly auxiliary cortex.",
+        "Two doors based on where you are: crisis recalibration or identity elevation.",
       crise: {
         ariaLabel: "Crisis door — continue to the NOMOS protocol",
         label: "Crisis",
@@ -177,11 +177,11 @@ export const en = {
           "EXOCORTEX · Solo, Team, or + Human Check-ins",
         ],
         cta: "Discover AEGIS",
-        note: "Living system · Pre-launch · €290–350/month",
+        note: "Exocortex APP · €150/month (6 months) · €100/month (1 year) · €200/month",
       },
       doubt: {
         text: "Not sure which door to enter?",
-        sub: "In a 45-minute audit, we identify where you are — crisis, level up, or whether AEGIS is the right steering instrument for your level.",
+        sub: "In a 45-minute audit, we identify where you are — crisis or level up.",
         link: "Book a diagnostic audit →",
       },
     },
