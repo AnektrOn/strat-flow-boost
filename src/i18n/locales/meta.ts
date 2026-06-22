@@ -21,7 +21,7 @@ export const fr = {
         "Ce que les autres appellent invisible, nous appelons avantage. Alignement Invisible™, lecture stratégique à 20 ans, places extrêmement limitées.",
     },
     aegis: {
-      title: "EXOCORTEX — Système vivant de pilotage pour leaders",
+      title: "AEGIS — Exocortex APP",
       description:
         "Cortex auxiliaire pour dirigeants : People Board, Decision Log, clinique multi-corpus, Pulse Learning Cards et trajectoire à 10 ans. Solo, Team ou + Human Check-ins.",
     },
@@ -75,7 +75,7 @@ export const en = {
         "What others call invisible, we call advantage. Invisible Alignment™, 20-year strategic reading, extremely limited places.",
     },
     aegis: {
-      title: "EXOCORTEX — Living steering system for leaders",
+      title: "AEGIS — Exocortex APP",
       description:
         "Auxiliary cortex for executives: People Board, Decision Log, multi-corpus clinic, Pulse Learning Cards, and 10-year trajectory. Solo, Team, or + Human Check-ins.",
     },

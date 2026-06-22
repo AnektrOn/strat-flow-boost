@@ -29,7 +29,7 @@ export const fr = {
         meta: "Fondé par Léo · Réservé à une poignée de dirigeants · 1:1 sans délégation",
       },
       aegis: {
-        brand: "EXOCORTEX — Système vivant de pilotage pour leaders",
+        brand: "AEGIS — Exocortex APP",
         meta: "Cortex auxiliaire · Trajectoire à 10 ans · Pré‑lancement · Places limitées",
       },
     },
@@ -343,7 +343,7 @@ export const en = {
         meta: "Founded by Léo · Reserved for a handful of leaders · 1:1 with no delegation",
       },
       aegis: {
-        brand: "EXOCORTEX — Living steering system for leaders",
+        brand: "AEGIS — Exocortex APP",
         meta: "Auxiliary cortex · 10-year trajectory · Pre-launch · Limited places",
       },
     },

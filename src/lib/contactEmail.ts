@@ -53,14 +53,14 @@ const protocolLabel: Record<Locale, Record<AuditProtocol, string>> = {
     nomos: "NOMOS — Protocole CRISIS",
     ascension: "ASCENSION — Protocole LEVEL UP",
     metaphysique: "Dimension Métaphysique",
-    aegis: "EXOCORTEX — Système vivant de pilotage",
+    aegis: "AEGIS — Exocortex APP",
   },
   en: {
     hub: "Entry portal — diagnostic",
     nomos: "NOMOS — CRISIS Protocol",
     ascension: "ASCENSION — LEVEL UP Protocol",
     metaphysique: "Metaphysical dimension",
-    aegis: "EXOCORTEX — Living steering system",
+    aegis: "AEGIS — Exocortex APP",
   },
 };
 
