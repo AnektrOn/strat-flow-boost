@@ -72,11 +72,11 @@ export const fr = {
           "EXOCORTEX · Solo, Team ou + Human Check-ins",
         ],
         cta: "Découvrir AEGIS",
-        note: "Système vivant · Pré-lancement · 290–350 €/mois",
+        note: "Exocortex APP · 150 €/mois (6 mois) · 100 €/mois (1 an) · 200 €/mois",
       },
       doubt: {
         text: "Pas sûr par quelle porte entrer ?",
-        sub: "En 45 minutes d'audit, nous identifions où vous en êtes — crise, level up, ou si AEGIS est le bon instrument de pilotage pour votre niveau.",
+        sub: "En 45 minutes d'audit, nous identifions où vous en êtes — crise ou level up.",
         link: "Réserver un audit de diagnostic →",
       },
     },
