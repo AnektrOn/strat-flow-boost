@@ -40,7 +40,7 @@ const OnboardingPage = () => {
             <p className="gateway-intro text-center text-sm text-n-muted max-w-[52ch] mx-auto mb-2">
               {t("onboarding.gateway.intro")}
             </p>
-            <div className="gateway-grid gateway-grid-three">
+            <div className="gateway-grid">
               <Link
                 to="/nomos"
                 className="gateway-card gateway-crise"
@@ -107,37 +107,6 @@ const OnboardingPage = () => {
                 </div>
               </Link>
 
-              <Link
-                to="/aegis"
-                className="gateway-card gateway-aegis"
-                aria-label={t("onboarding.gateway.aegis.ariaLabel")}
-              >
-                <div className="gateway-label gateway-label-aegis">{t("onboarding.gateway.aegis.label")}</div>
-                <h2 className="gateway-title">
-                  {t("onboarding.gateway.aegis.title")}
-                  <br />
-                  {t("onboarding.gateway.aegis.titleLine2")}
-                </h2>
-                <p className="gateway-description">
-                  {aegisDesc.map((line, i) => (
-                    <span key={line}>
-                      {line}
-                      {i < aegisDesc.length - 1 && <br />}
-                    </span>
-                  ))}
-                </p>
-                <ul className="gateway-signals gateway-signals-aegis">
-                  {aegisSignals.map((s) => (
-                    <li key={s}>{s}</li>
-                  ))}
-                </ul>
-                <div className="gateway-cta-wrap">
-                  <span className="btn-primary btn-large gateway-cta gateway-cta-aegis">
-                    {t("onboarding.gateway.aegis.cta")}
-                  </span>
-                  <p className="gateway-note">{t("onboarding.gateway.aegis.note")}</p>
-                </div>
-              </Link>
             </div>
 
             <div className="gateway-casestudy-teaser">
