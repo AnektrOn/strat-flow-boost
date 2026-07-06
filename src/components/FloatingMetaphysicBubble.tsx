@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const METAPHYSIQUE_PATH = "/metaphysique";
+const BUBBLE_VISIBLE_PATHS = ["/", METAPHYSIQUE_PATH] as const;
 
 const BUBBLE = 44;
 const MARGIN = 10;
@@ -125,7 +126,9 @@ const FloatingMetaphysicBubble = () => {
   const lastTiltShaveRef = useRef(0);
   const phaseAnnouncedRef = useRef(false);
 
-  const hidden = location.pathname === METAPHYSIQUE_PATH;
+  const visible = BUBBLE_VISIBLE_PATHS.includes(
+    location.pathname as (typeof BUBBLE_VISIBLE_PATHS)[number],
+  );
   const coarse = isCoarsePointer();
   const showDesktopPopover = !coarse;
 
@@ -176,7 +179,7 @@ const FloatingMetaphysicBubble = () => {
   }, [showDesktopPopover, popoverHover]);
 
   useEffect(() => {
-    if (hidden) return;
+    if (!visible) return;
     const start = performance.now();
     chaseEndRef.current = start + CHASE_MS;
     phaseAnnouncedRef.current = false;
@@ -191,10 +194,10 @@ const FloatingMetaphysicBubble = () => {
     wanderTargetRef.current = pickWanderTarget(vw, vh);
     nextWanderRetargetRef.current = performance.now() + randomInRange(WANDER_RETARGET_MIN_MS, WANDER_RETARGET_MAX_MS);
     requestAnimationFrame(applyTransform);
-  }, [hidden, applyTransform]);
+  }, [visible, applyTransform]);
 
   useEffect(() => {
-    if (hidden) return;
+    if (!visible) return;
     const id = window.setInterval(() => {
       const left = Math.max(0, chaseEndRef.current - performance.now());
       setMsLeft(Math.round(left));
@@ -204,10 +207,10 @@ const FloatingMetaphysicBubble = () => {
       }
     }, 100);
     return () => window.clearInterval(id);
-  }, [hidden]);
+  }, [visible]);
 
   useEffect(() => {
-    if (hidden) return;
+    if (!visible) return;
     if (!isCoarsePointer()) return;
 
     const onOrient = (e: DeviceOrientationEvent) => {
@@ -237,7 +240,7 @@ const FloatingMetaphysicBubble = () => {
     return () => {
       window.removeEventListener("deviceorientation", onOrient, true);
     };
-  }, [hidden, orientationGranted]);
+  }, [visible, orientationGranted]);
 
   const requestOrientation = useCallback(async () => {
     try {
@@ -253,7 +256,7 @@ const FloatingMetaphysicBubble = () => {
   }, []);
 
   useEffect(() => {
-    if (hidden) return;
+    if (!visible) return;
 
     const tick = (t: number) => {
       const now = performance.now();
@@ -339,10 +342,10 @@ const FloatingMetaphysicBubble = () => {
 
     rafRef.current = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(rafRef.current);
-  }, [hidden]);
+  }, [visible]);
 
   useEffect(() => {
-    if (hidden) return;
+    if (!visible) return;
 
     const setMouse = (clientX: number, clientY: number) => {
       mouseRef.current = { x: clientX, y: clientY };
@@ -359,7 +362,7 @@ const FloatingMetaphysicBubble = () => {
       window.removeEventListener("mousemove", onMove);
       window.removeEventListener("touchmove", onTouch);
     };
-  }, [hidden]);
+  }, [visible]);
 
   useLayoutEffect(() => {
     if (!popoverHover || !showDesktopPopover) return;
@@ -400,7 +403,7 @@ const FloatingMetaphysicBubble = () => {
     }
   }, []);
 
-  if (hidden) return null;
+  if (!visible) return null;
 
   const showIosOrientationBtn =
     coarse && hasOrientationPermissionAPI() && orientationGranted !== true;
@@ -422,7 +425,7 @@ const FloatingMetaphysicBubble = () => {
       ref={popoverInnerRef}
       role="dialog"
       aria-label={t("floatingBubble.popover.ariaLabel")}
-      className="rounded-lg border border-n-border bg-n-bg/95 p-4 text-left shadow-xl backdrop-blur-md cursor-pointer"
+      className="rounded-2xl border border-n-border bg-n-bg/95 p-4 text-left shadow-xl backdrop-blur-md cursor-pointer"
       onPointerDown={onCatch}
       onPointerEnter={() => {
         clearLeaveTimer();
@@ -528,7 +531,7 @@ const FloatingMetaphysicBubble = () => {
             <button
               type="button"
               onClick={requestOrientation}
-              className="mb-2 w-full rounded border border-n-border bg-n-surface px-3 py-2 text-[10px] uppercase tracking-widest text-n-muted hover:border-n-teal hover:text-n-teal"
+              className="mb-2 w-full rounded-full border border-n-border bg-n-surface px-3 py-2 text-[10px] uppercase tracking-widest text-n-muted hover:border-n-teal hover:text-n-teal"
             >
               {t("floatingBubble.mobile.enableTiltIos")}
             </button>
@@ -549,7 +552,7 @@ const FloatingMetaphysicBubble = () => {
         createPortal(
           <div
             ref={popoverOuterRef}
-            className="fixed z-[200] rounded-lg shadow-2xl"
+            className="fixed z-[200] rounded-2xl shadow-2xl"
             style={
               popoverStyle
                 ? {

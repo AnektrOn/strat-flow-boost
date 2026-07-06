@@ -79,6 +79,9 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      transitionTimingFunction: {
+        cinematic: "cubic-bezier(0.16, 1, 0.3, 1)",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -88,10 +91,15 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "hero-ken-burns": {
+          "0%": { transform: "scale(1) translate(0, 0)" },
+          "100%": { transform: "scale(1.06) translate(-1%, -0.5%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "hero-ken-burns": "hero-ken-burns 28s ease-in-out infinite alternate",
       },
     },
   },

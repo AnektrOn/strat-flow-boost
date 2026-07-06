@@ -145,10 +145,16 @@ export const fr = {
       nomos: {
         prompt: "Vous pensez être plutôt en level up qu'en crise ?",
         link: "Découvrir le Protocole ASCENSION →",
+        promptAegis:
+          "Vous n'êtes plus en crise — vous cherchez un cortex auxiliaire qui lit votre trajectoire chaque semaine ?",
+        linkAegis: "Découvrir EXOCORTEX →",
       },
       ascension: {
         prompt: "Vous pensez être plutôt en crise ?",
         link: "Découvrir le Protocole NOMOS →",
+        promptAegis:
+          "Votre business tourne et votre identité suit — prêt pour un pilotage hebdomadaire sur le long terme ?",
+        linkAegis: "Découvrir EXOCORTEX →",
       },
       metaphysique: {
         prompt: "Vous êtes en crise ou cherchez à passer un palier concret ?",
@@ -459,10 +465,16 @@ export const en = {
       nomos: {
         prompt: "Think you're in level up rather than crisis?",
         link: "Discover the ASCENSION Protocol →",
+        promptAegis:
+          "No longer in crisis — looking for an auxiliary cortex that reads your trajectory every week?",
+        linkAegis: "Discover EXOCORTEX →",
       },
       ascension: {
         prompt: "Think you're in crisis instead?",
         link: "Discover the NOMOS Protocol →",
+        promptAegis:
+          "Your business runs and your identity follows — ready for weekly long-horizon steering?",
+        linkAegis: "Discover EXOCORTEX →",
       },
       metaphysique: {
         prompt: "In crisis or looking for a concrete next level?",

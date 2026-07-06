@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useEmailDialog } from "@/contexts/EmailDialogContext";
-import type { AuditProtocol } from "@/lib/contactEmail";
 
 export type HeaderMode = "hub" | "nomos" | "ascension" | "metaphysique" | "aegis";
 
@@ -19,22 +18,11 @@ const auditKey: Record<HeaderMode, string> = {
   aegis: "common.header.auditAegis",
 };
 
-const protocolByMode: Record<HeaderMode, AuditProtocol> = {
-  hub: "hub",
-  nomos: "nomos",
-  ascension: "ascension",
-  metaphysique: "metaphysique",
-  aegis: "aegis",
-};
-
-const AEGIS_PATH = "/aegis";
-
 export function Header({ mode = "nomos" }: HeaderProps) {
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const { t } = useLanguage();
   const { openAudit } = useEmailDialog();
-  const onAegis = mode === "aegis" || location.pathname === AEGIS_PATH;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 100);
@@ -44,14 +32,29 @@ export function Header({ mode = "nomos" }: HeaderProps) {
 
   const auditLabel = t(auditKey[mode]);
   const isHub = mode === "hub";
+  const isLanding = isHub && location.pathname === "/";
 
   return (
     <header
-      className={`sticky top-0 z-50 backdrop-blur-md transition-colors ${
-        scrolled ? "bg-n-bg/90 border-b border-n-border" : "bg-transparent"
-      }`}
+      className={
+        isLanding
+          ? `sticky top-0 z-50 backdrop-blur-md transition-colors ${
+              scrolled ? "bg-n-bg/90 border-b border-n-border" : "bg-transparent"
+            }`
+          : "sticky top-0 z-50 px-3 pt-3 sm:px-4"
+      }
     >
-      <div className="container-nomos flex items-center justify-between gap-3 sm:gap-4 py-4">
+      <div
+        className={
+          isLanding
+            ? "container-nomos flex items-center justify-between gap-3 sm:gap-4 py-4"
+            : `container-nomos flex items-center justify-between gap-3 sm:gap-4 py-3 px-4 sm:px-6 rounded-full border transition-all duration-300 ease-cinematic backdrop-blur-md ${
+                scrolled
+                  ? "bg-n-bg/90 border-n-border shadow-[0_8px_32px_rgba(0,0,0,0.45)]"
+                  : "bg-n-bg/60 border-n-border/50"
+              }`
+        }
+      >
         <Link
           to="/"
           className="font-body font-bold text-sm tracking-[0.2em] uppercase text-n-text shrink-0"
@@ -60,16 +63,6 @@ export function Header({ mode = "nomos" }: HeaderProps) {
           NOMOS
         </Link>
         <div className="flex items-center gap-2 sm:gap-3 ml-auto">
-          <Link
-            to={AEGIS_PATH}
-            className={`header-aegis-tab shrink-0${onAegis ? " header-aegis-tab--active" : ""}`}
-            aria-label={t("common.header.aegisTabAria")}
-            aria-current={onAegis ? "page" : undefined}
-          >
-            <span className="header-aegis-tab-dot" aria-hidden="true" />
-            <span className="header-aegis-tab-label">{t("common.header.aegisTab")}</span>
-            <span className="header-aegis-tab-badge">{t("common.header.aegisBadge")}</span>
-          </Link>
           <LanguageSwitcher />
           {isHub ? (
             <button

@@ -6,11 +6,12 @@ export const fr = {
       titleLine2: "Deux niveaux.",
       titleAccent: "Une même exigence.",
       subtitle:
-        "Crise ou level up : deux façons d'entrer. Protocoles NOMOS et ASCENSION selon votre situation.",
+        "Crise ou level up : deux protocoles d'intervention selon votre situation. L'audit de 45 minutes identifie la bonne porte — et, si votre profil le justifie, l'accès à EXOCORTEX.",
+      cta: "Choisir ma porte",
     },
     gateway: {
       intro:
-        "Deux portes selon où vous en êtes : recalibration en crise ou élévation identitaire.",
+        "Deux portes selon où vous en êtes : recalibration en crise, ou élévation identitaire.",
       crise: {
         ariaLabel: "Porte Crise — continuer vers le protocole NOMOS",
         label: "Crise",
@@ -111,7 +112,8 @@ export const en = {
       titleLine2: "Two levels.",
       titleAccent: "One standard.",
       subtitle:
-        "Crisis or level up: two ways in. NOMOS and ASCENSION protocols for your situation.",
+        "Crisis or level up: two intervention protocols for your situation. The 45-minute audit identifies the right door — and, if your profile warrants it, access to EXOCORTEX.",
+      cta: "Choose my door",
     },
     gateway: {
       intro:

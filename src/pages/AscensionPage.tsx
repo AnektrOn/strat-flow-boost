@@ -9,6 +9,7 @@ import { AuditEmailButton } from "@/components/AuditEmailButton";
 import { useLanguage } from "@/contexts/LanguageContext";
 import PageSideNavLayout from "@/components/PageSideNavLayout";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { CinematicHero } from "@/components/CinematicHero";
 
 type SymptomItem = { title: string; detail: string };
 type FaqItem = { q: string; a: string };
@@ -76,10 +77,10 @@ const AscensionPage = () => {
   const { t } = useLanguage();
 
   return (
-    <div className="ascension-theme overflow-x-hidden pb-24 sm:pb-0">
+    <div data-protocol="ascension" className="overflow-x-clip pb-24 sm:pb-0">
       <Header mode="ascension" />
-      <main>
-        <PageSideNavLayout page="ascension" hero={<AscensionHero />}>
+      <main className="relative">
+        <PageSideNavLayout page="ascension" stickySideNav hero={<AscensionHero />}>
           <AscensionConstat />
           <AscensionSignes />
           <AscensionMechanism />
@@ -94,12 +95,18 @@ const AscensionPage = () => {
           <AscensionFaq />
           <AscensionCta />
         </PageSideNavLayout>
-        <section className="cross-link">
-          <div className="container-nomos narrow">
-            <p>
-              <em>{t("common.crossLink.ascension.prompt")}</em>
-            </p>
-            <Link to="/nomos">{t("common.crossLink.ascension.link")}</Link>
+        <section className="cross-link relative z-10">
+          <div className="container-nomos narrow cross-link-stack">
+            <div className="cross-link-item">
+              <p>
+                <em>{t("common.crossLink.ascension.prompt")}</em>
+              </p>
+              <Link to="/nomos">{t("common.crossLink.ascension.link")}</Link>
+            </div>
+            <div className="cross-link-item cross-link-item--secondary">
+              <p>{t("common.crossLink.ascension.promptAegis")}</p>
+              <Link to="/aegis">{t("common.crossLink.ascension.linkAegis")}</Link>
+            </div>
           </div>
         </section>
       </main>
@@ -110,27 +117,19 @@ const AscensionPage = () => {
 };
 
 function AscensionHero() {
-  const ref = useScrollReveal();
   const { t } = useLanguage();
   return (
-    <section ref={ref} id="hero" className="min-h-[85vh] flex items-center text-center pt-32 pb-20">
-      <div className="container-nomos narrow w-full">
-        <span className="reveal eyebrow-bordered mb-8 inline-block">{t("ascension.hero.eyebrow")}</span>
-        <h1 className="reveal h-hero mb-6">
-          {t("ascension.hero.title")}
-          <br />
-          <em>{t("ascension.hero.titleAccent")}</em>
-        </h1>
-        <p className="reveal section-intro mx-auto">{t("ascension.hero.intro")}</p>
-        <p className="reveal text-base text-n-gold-warm font-medium mb-8">{t("ascension.hero.promise")}</p>
-        <div className="reveal mb-6">
-          <AuditEmailButton protocol="ascension" className="btn-primary">
-            {t("ascension.hero.cta")}
-          </AuditEmailButton>
-        </div>
-        <p className="reveal text-xs text-n-faint tracking-wide">{t("ascension.hero.footnote")}</p>
-      </div>
-    </section>
+    <CinematicHero
+      eyebrow={t("ascension.hero.eyebrow")}
+      title={t("ascension.hero.title")}
+      titleAccent={t("ascension.hero.titleAccent")}
+      intro={t("ascension.hero.intro")}
+      promise={t("ascension.hero.promise")}
+      cta={t("ascension.hero.cta")}
+      protocol="ascension"
+      footnote={t("ascension.hero.footnote")}
+      accent="gold"
+    />
   );
 }
 

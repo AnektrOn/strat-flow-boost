@@ -1,4 +1,6 @@
 import { AuditEmailButton } from "@/components/AuditEmailButton";
+import { ClinicalPullQuote } from "@/components/sections/ClinicalPullQuote";
+import { ClinicalStatDisplay } from "@/components/sections/ClinicalStatDisplay";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -34,13 +36,17 @@ const ROISection = () => {
           </div>
         </div>
 
+        <ClinicalStatDisplay
+          value={t("nomos.roi.roiValue")}
+          label={t("nomos.roi.roiLabel")}
+          detail={t("nomos.roi.footnote")}
+        />
+
         <p className="reveal font-display text-xl text-center my-10">
           <strong>{t("nomos.roi.question")}</strong>
         </p>
 
-        <blockquote className="reveal bq-gold">{t("nomos.roi.quote")}</blockquote>
-
-        <p className="reveal text-sm text-n-muted text-center mt-6">{t("nomos.roi.footnote")}</p>
+        <ClinicalPullQuote>{t("nomos.roi.quote")}</ClinicalPullQuote>
 
         <div className="reveal text-center mt-8">
           <AuditEmailButton

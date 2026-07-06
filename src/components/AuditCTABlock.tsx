@@ -14,7 +14,7 @@ const AuditCTABlock = () => {
         const isGold = key === "auditInitial";
         const Icon = isGold ? ClipboardList : Mail;
         const prefix = `common.auditCta.${key}`;
-        const className = `inline-flex items-center justify-between gap-3 px-5 py-3 border text-xs tracking-[0.15em] uppercase transition-colors ${
+        const className = `inline-flex items-center justify-between gap-3 px-5 py-3 border rounded-full text-xs tracking-[0.15em] uppercase transition-all duration-300 group ${
           isGold
             ? "border-n-gold text-n-gold hover:bg-n-gold/10"
             : "border-n-border text-n-text hover:border-n-muted"
@@ -23,7 +23,7 @@ const AuditCTABlock = () => {
         return (
           <div
             key={key}
-            className={`reveal flex flex-col p-8 rounded-lg border bg-n-surface transition-colors ${
+            className={`reveal flex flex-col p-8 rounded-2xl border bg-n-surface transition-colors ${
               isGold
                 ? "border-n-gold-dim hover:border-n-gold"
                 : "border-n-border hover:border-n-muted"
@@ -49,7 +49,7 @@ const AuditCTABlock = () => {
               className={className}
             >
               <span>{t(`${prefix}.cta`)}</span>
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4 -rotate-45 transition-transform duration-300 group-hover:rotate-0" />
             </button>
           </div>
         );

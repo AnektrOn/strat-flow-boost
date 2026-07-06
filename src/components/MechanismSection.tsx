@@ -1,5 +1,7 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import AuditCTABlock, { AuditIntroHeader } from "@/components/AuditCTABlock";
+import { ClinicalDefinitionBlock } from "@/components/sections/ClinicalDefinitionBlock";
+import { ClinicalPullQuote } from "@/components/sections/ClinicalPullQuote";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 type GridColumn = { title: string; items: string[] };
@@ -19,10 +21,9 @@ const MechanismSection = () => {
         </h2>
         <p className="reveal section-intro">{t("nomos.mechanism.intro")}</p>
 
-        <div className="reveal bg-n-surface-2 border border-n-border rounded-lg p-8 my-10">
-          <h3 className="font-display text-xl text-n-teal mb-4">{t("nomos.mechanism.driftName")}</h3>
-          <p className="text-n-text">{t("nomos.mechanism.driftDefinition")}</p>
-        </div>
+        <ClinicalDefinitionBlock term={t("nomos.mechanism.driftName")}>
+          <p>{t("nomos.mechanism.driftDefinition")}</p>
+        </ClinicalDefinitionBlock>
 
         <div className="space-y-4 text-n-muted">
           <p className="reveal">
@@ -40,7 +41,7 @@ const MechanismSection = () => {
           </p>
         </div>
 
-        <blockquote className="reveal bq-gold">{t("nomos.mechanism.quote")}</blockquote>
+        <ClinicalPullQuote>{t("nomos.mechanism.quote")}</ClinicalPullQuote>
 
         <div className="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 my-10 p-8 bg-n-surface-2 border border-n-border rounded-lg">
           {grid.map((col) => (

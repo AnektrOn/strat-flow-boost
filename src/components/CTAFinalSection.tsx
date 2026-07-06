@@ -1,6 +1,8 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import AuditCTABlock from "@/components/AuditCTABlock";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { WordsPullUp } from "@/components/motion/WordsPullUp";
+import { ScrollRevealText } from "@/components/motion/ScrollRevealText";
 
 type CtaItem = { title: string; detail: string };
 
@@ -10,15 +12,15 @@ const CTAFinalSection = () => {
   const items = getTr("nomos.ctaFinal.items") as CtaItem[];
 
   return (
-    <section ref={ref} id="audit" className="section-pad text-center">
-      <div className="container-nomos">
-        <h2 className="reveal h-section">
-          {t("nomos.ctaFinal.title")}
-          <br />
-          {t("nomos.ctaFinal.titleLine2")}
+    <section ref={ref} id="audit" className="section-pad text-center relative">
+      <div className="absolute inset-0 bg-noise opacity-[0.1] pointer-events-none" />
+      <div className="container-nomos relative">
+        <h2 className="h-section">
+          <WordsPullUp as="span" text={t("nomos.ctaFinal.title")} className="block" justify="center" />
+          <WordsPullUp as="span" text={t("nomos.ctaFinal.titleLine2")} className="block" delay={0.2} justify="center" />
         </h2>
 
-        <p className="reveal section-intro mx-auto">{t("nomos.ctaFinal.intro")}</p>
+        <ScrollRevealText text={t("nomos.ctaFinal.intro")} className="section-intro mx-auto" />
 
         <div className="flex flex-col gap-6 my-10 text-left max-w-[560px] mx-auto">
           {items.map((it) => (

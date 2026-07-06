@@ -1,5 +1,6 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { WordsPullUp } from "@/components/motion/WordsPullUp";
 
 type SufferingLevel = {
   tag: string;
@@ -16,10 +17,9 @@ const SufferingSection = () => {
   return (
     <section ref={ref} id="suffering" className="section-pad">
       <div className="container-nomos narrow">
-        <h2 className="reveal h-section">
-          {t("nomos.suffering.title")}
-          <br />
-          {t("nomos.suffering.titleLine2")}
+        <h2 className="h-section">
+          <WordsPullUp as="span" text={t("nomos.suffering.title")} className="block" />
+          <WordsPullUp as="span" text={t("nomos.suffering.titleLine2")} className="block" delay={0.2} />
         </h2>
         <div className="flex flex-col gap-10 mt-8 text-n-muted">
           {levels.map((level) => (

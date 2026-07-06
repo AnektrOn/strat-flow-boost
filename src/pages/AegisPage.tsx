@@ -9,6 +9,7 @@ import { AuditEmailButton } from "@/components/AuditEmailButton";
 import { useLanguage } from "@/contexts/LanguageContext";
 import PageSideNavLayout from "@/components/PageSideNavLayout";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { CinematicHero } from "@/components/CinematicHero";
 
 type AudienceItem = { title: string; detail: string };
 type CapabilityLayer = {
@@ -34,10 +35,10 @@ const AegisPage = () => {
   const { t } = useLanguage();
 
   return (
-    <div className="ascension-theme overflow-x-hidden pb-24 sm:pb-0">
+    <div data-protocol="aegis" className="overflow-x-clip pb-24 sm:pb-0">
       <Header mode="aegis" />
       <main>
-        <PageSideNavLayout page="aegis" hero={<AegisHero />}>
+        <PageSideNavLayout page="aegis" stickySideNav hero={<AegisHero />}>
           <AegisPositioning />
           <AegisAudience />
           <AegisWeekly />
@@ -67,29 +68,19 @@ const AegisPage = () => {
 };
 
 function AegisHero() {
-  const ref = useScrollReveal();
   const { t } = useLanguage();
   return (
-    <section ref={ref} id="hero" className="min-h-[85vh] flex items-center text-center pt-32 pb-20">
-      <div className="container-nomos narrow w-full">
-        <span className="reveal eyebrow-bordered mb-8 inline-block">{t("aegis.hero.eyebrow")}</span>
-        <h1 className="reveal h-hero mb-6">
-          {t("aegis.hero.title")}
-          <br />
-          <em>{t("aegis.hero.titleAccent")}</em>
-        </h1>
-        <p className="reveal section-intro mx-auto">{t("aegis.hero.intro")}</p>
-        <p className="reveal text-base text-n-gold-warm font-medium mb-8 max-w-[56ch] mx-auto">
-          {t("aegis.hero.contrast")}
-        </p>
-        <div className="reveal mb-6">
-          <AuditEmailButton protocol="aegis" className="btn-primary">
-            {t("aegis.hero.cta")}
-          </AuditEmailButton>
-        </div>
-        <p className="reveal text-xs text-n-faint tracking-wide">{t("aegis.hero.footnote")}</p>
-      </div>
-    </section>
+    <CinematicHero
+      eyebrow={t("aegis.hero.eyebrow")}
+      title={t("aegis.hero.title")}
+      titleAccent={t("aegis.hero.titleAccent")}
+      intro={t("aegis.hero.intro")}
+      promise={t("aegis.hero.contrast")}
+      cta={t("aegis.hero.cta")}
+      protocol="aegis"
+      footnote={t("aegis.hero.footnote")}
+      accent="gold"
+    />
   );
 }
 

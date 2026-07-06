@@ -7,6 +7,8 @@ import { usePageMeta } from "@/hooks/usePageMeta";
 import PageSideNavLayout from "@/components/PageSideNavLayout";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { CASE_STUDY_SLUGS, type CaseStudySlug } from "@/i18n/locales/caseStudies";
+import { WordsPullUp } from "@/components/motion/WordsPullUp";
+import { CardEntrance } from "@/components/motion/CardEntrance";
 
 const INDEX_CARDS: CaseStudySlug[] = [...CASE_STUDY_SLUGS];
 
@@ -30,7 +32,7 @@ const CaseStudiesIndexPage = () => {
                   <span aria-current="page">{t("caseStudies.index.eyebrow")}</span>
                 </nav>
                 <span className="reveal eyebrow-bordered mb-8 inline-block">{t("caseStudies.index.eyebrow")}</span>
-                <h1 className="reveal case-study-hero-title">{t("caseStudies.index.title")}</h1>
+                <WordsPullUp as="h1" text={t("caseStudies.index.title")} className="case-study-hero-title" />
                 <p className="reveal text-base text-n-muted max-w-[56ch] mx-auto leading-relaxed">
                   {t("caseStudies.index.subtitle")}
                 </p>
@@ -40,13 +42,13 @@ const CaseStudiesIndexPage = () => {
         >
           <section id="studies" className="section-pad pt-2 pb-20">
             <div className="case-studies-index-grid">
-              {INDEX_CARDS.map((slug) => {
+              {INDEX_CARDS.map((slug, i) => {
                 const cardKey = `card${slug.toUpperCase()}` as "cardC" | "cardL" | "cardH";
                 return (
+                  <CardEntrance key={slug} index={i} className="h-full">
                   <Link
-                    key={slug}
                     to={`/case-studies/${slug}`}
-                    className="gateway-card gateway-casestudy reveal block"
+                    className="gateway-card gateway-casestudy block h-full"
                     aria-label={`${t(`caseStudies.index.${cardKey}.title`)} — ${t(`caseStudies.index.${cardKey}.subject`)}`}
                   >
                     <div className="gateway-label">{t(`caseStudies.index.${cardKey}.label`)}</div>
@@ -59,6 +61,7 @@ const CaseStudiesIndexPage = () => {
                       <span className="btn-primary btn-large gateway-cta">{t("caseStudies.index.readCta")}</span>
                     </div>
                   </Link>
+                  </CardEntrance>
                 );
               })}
             </div>

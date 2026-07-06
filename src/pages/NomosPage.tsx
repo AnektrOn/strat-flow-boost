@@ -25,10 +25,10 @@ const NomosPage = () => {
   usePageMeta("nomos");
 
   return (
-    <div className="overflow-x-hidden pb-24 sm:pb-0">
+    <div data-protocol="nomos" className="overflow-x-clip pb-24 sm:pb-0">
       <Header mode="nomos" />
-      <main>
-        <PageSideNavLayout page="nomos" hero={<HeroSection />}>
+      <main className="relative">
+        <PageSideNavLayout page="nomos" stickySideNav hero={<HeroSection />}>
           <SymptomsSection />
           <MechanismSection />
           <SufferingSection />
@@ -43,10 +43,16 @@ const NomosPage = () => {
           <FAQSection />
           <CTAFinalSection />
         </PageSideNavLayout>
-        <section className="cross-link">
-          <div className="container-nomos narrow">
-            <p>{t("common.crossLink.nomos.prompt")}</p>
-            <Link to="/ascension">{t("common.crossLink.nomos.link")}</Link>
+        <section className="cross-link relative z-10">
+          <div className="container-nomos narrow cross-link-stack">
+            <div className="cross-link-item">
+              <p>{t("common.crossLink.nomos.prompt")}</p>
+              <Link to="/ascension">{t("common.crossLink.nomos.link")}</Link>
+            </div>
+            <div className="cross-link-item cross-link-item--secondary">
+              <p>{t("common.crossLink.nomos.promptAegis")}</p>
+              <Link to="/aegis">{t("common.crossLink.nomos.linkAegis")}</Link>
+            </div>
           </div>
         </section>
       </main>

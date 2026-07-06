@@ -10,6 +10,7 @@ import { AuditEmailButton } from "@/components/AuditEmailButton";
 import { useLanguage } from "@/contexts/LanguageContext";
 import PageSideNavLayout from "@/components/PageSideNavLayout";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { CinematicHero } from "@/components/CinematicHero";
 
 type SignItem = { title: string; detail: string };
 type ProtocolLayer = {
@@ -144,7 +145,7 @@ const MetaphysiquePage = () => {
   }
 
   return (
-    <div className="ascension-theme overflow-x-hidden pb-24 sm:pb-0">
+    <div data-protocol="metaphysique" className="overflow-x-hidden pb-24 sm:pb-0">
       <Header mode="metaphysique" />
       <main>
         <PageSideNavLayout page="metaphysique" hero={<MetaphysiqueHero />}>
@@ -179,27 +180,19 @@ const MetaphysiquePage = () => {
 };
 
 function MetaphysiqueHero() {
-  const ref = useScrollReveal();
   const { t } = useLanguage();
   return (
-    <section ref={ref} id="hero" className="min-h-[85vh] flex items-center text-center pt-32 pb-20">
-      <div className="container-nomos narrow w-full">
-        <span className="reveal eyebrow-bordered mb-8 inline-block">{t("metaphysique.hero.eyebrow")}</span>
-        <h1 className="reveal h-hero mb-6">
-          {t("metaphysique.hero.title")}
-          <br />
-          <em>{t("metaphysique.hero.titleAccent")}</em>
-        </h1>
-        <p className="reveal section-intro mx-auto">{t("metaphysique.hero.intro")}</p>
-        <p className="reveal text-base text-n-gold-warm font-medium mb-8">{t("metaphysique.hero.promise")}</p>
-        <div className="reveal mb-6">
-          <AuditEmailButton protocol="metaphysique" className="btn-primary">
-            {t("metaphysique.hero.cta")}
-          </AuditEmailButton>
-        </div>
-        <p className="reveal text-xs text-n-faint tracking-wide">{t("metaphysique.hero.footnote")}</p>
-      </div>
-    </section>
+    <CinematicHero
+      eyebrow={t("metaphysique.hero.eyebrow")}
+      title={t("metaphysique.hero.title")}
+      titleAccent={t("metaphysique.hero.titleAccent")}
+      intro={t("metaphysique.hero.intro")}
+      promise={t("metaphysique.hero.promise")}
+      cta={t("metaphysique.hero.cta")}
+      protocol="metaphysique"
+      footnote={t("metaphysique.hero.footnote")}
+      accent="gold"
+    />
   );
 }
 

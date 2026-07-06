@@ -1,4 +1,5 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { ClinicalPullQuote } from "@/components/sections/ClinicalPullQuote";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const SymptomsSection = () => {
@@ -25,7 +26,7 @@ const SymptomsSection = () => {
           ))}
         </div>
 
-        <blockquote className="reveal bq-gold">{t("nomos.symptoms.quote")}</blockquote>
+        <ClinicalPullQuote>{t("nomos.symptoms.quote")}</ClinicalPullQuote>
 
         <p className="reveal text-base text-n-muted mt-8">{t("nomos.symptoms.closing")}</p>
       </div>
