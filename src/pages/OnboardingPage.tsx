@@ -93,13 +93,16 @@ const OnboardingPage = () => {
             <div className="absolute bottom-0 left-0 right-0 px-5 sm:px-8 md:px-10 pb-6 sm:pb-8 md:pb-10 z-10">
               <div className="grid grid-cols-12 gap-4 sm:gap-6 items-end">
                 <div className="col-span-12 lg:col-span-8">
-                  <WordsPullUp
-                    as="h1"
-                    text="NOMOS"
-                    showAsterisk
-                    immediate
-                    className="h-giant text-[22vw] sm:text-[21vw] lg:text-[17vw] xl:text-[16vw] select-none"
-                  />
+                  <h1 className="h-giant text-[22vw] sm:text-[21vw] lg:text-[17vw] xl:text-[16vw] select-none">
+                    <WordsPullUp
+                      as="span"
+                      text="NOMOS"
+                      showAsterisk
+                      immediate
+                      className="block"
+                    />
+                    <span className="sr-only"> — Business Recalibration &amp; Identity Protocols</span>
+                  </h1>
                 </div>
                 <div className="col-span-12 lg:col-span-4 flex flex-col gap-4 sm:gap-5 lg:pb-[2vw] mt-1 sm:mt-0">
                   <motion.div
@@ -229,7 +232,7 @@ const OnboardingPage = () => {
               <div className="reassure-grid">
                 {methodItems.map((item, i) => (
                   <CardEntrance key={item.title} index={i} className="reassure-item">
-                    <h4>{item.title}</h4>
+                    <h3>{item.title}</h3>
                     <p>{item.body}</p>
                   </CardEntrance>
                 ))}
