@@ -103,18 +103,6 @@ const content = {
           { type: "quote", text: "Le vrai engagement ne se joue pas à la signature. Il se joue à J+30. À l'issue du premier mois — l'audit complet réalisé, l'analyse archétypale et les schémas directeurs entre vos mains — vous décidez : arrêter là, sans frais supplémentaires et sans justification, ou lancer l'implémentation en réglant la Mensualité 1, qui vaut alors engagement ferme sur le solde. Vous ne financez jamais à l'aveugle. Nous ne travaillons jamais avec un client qui doute." }
         ]
       },
-      {
-        h: "✦ Prochaine étape",
-        blocks: [
-          { type: "ol", items: [
-            "Validation de la présente proposition (validité : 15 jours)",
-            "Envoi du contrat bilingue français / anglais reprenant à l'identique phases, livrables et échéancier",
-            "Signature et versement de l'acompte d'amorçage (54 000 000 IDR)",
-            "Planification immédiate de la Phase 1 — Onboarding"
-          ]},
-          { type: "p", text: "Le système est prêt. À vous de valider l'amorçage." }
-        ]
-      }
     ],
     footer: "PT MEMBIMBING DRACO TERBANG — NPWP : 39.582.563.1-907.000 · Proposition établie le 11 juillet 2026 · Montants hors taxes ; taxes applicables (PPN) en sus · Document non contractuel : seules les stipulations du contrat signé font foi."
   },
@@ -218,18 +206,6 @@ const content = {
           { type: "quote", text: "The real engagement does not play out at signing. It plays out at D+30. At the end of the first month — the complete audit carried out, the archetypal analysis and the master schematics in your hands — you decide: stop there, without additional cost and without justification, or launch the implementation by paying Monthly Payment 1, which then constitutes a firm commitment on the balance. You never finance blindly. We never work with a client who doubts." }
         ]
       },
-      {
-        h: "✦ Next step",
-        blocks: [
-          { type: "ol", items: [
-            "Validation of this proposal (validity: 15 days)",
-            "Sending of the bilingual French / English contract reproducing phases, deliverables and payment schedule identically",
-            "Signing and payment of the priming deposit (54,000,000 IDR)",
-            "Immediate planning of Phase 1 — Onboarding"
-          ]},
-          { type: "p", text: "The system is ready. It is up to you to validate the priming." }
-        ]
-      }
     ],
     footer: "PT MEMBIMBING DRACO TERBANG — NPWP: 39.582.563.1-907.000 · Proposal issued on July 11, 2026 · Amounts excluding tax; applicable taxes (PPN) additional · Non-contractual document: only the stipulations of the signed contract are authoritative."
   }
