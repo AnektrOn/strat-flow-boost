@@ -288,10 +288,8 @@ export default function PropositionChoraPage() {
         @media print {
           @page { size: A4; margin: 18mm 16mm; }
           .no-print { display: none !important; }
-          html, body { background: #ffffff !important; color: #111 !important; }
-          html body *:not(.proposition-doc):not(.proposition-doc *) { visibility: hidden !important; }
-          body > *:not(.proposition-doc-wrapper) { display: none !important; }
-          .proposition-doc-wrapper { background: #ffffff !important; }
+          html, body, #root { background: #ffffff !important; color: #111 !important; }
+
           .proposition-doc {
             color: #111 !important;
             max-width: 100% !important;
