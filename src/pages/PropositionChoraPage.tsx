@@ -110,7 +110,7 @@ const content = {
     brand: "NOMOS",
     title: "INTERVENTION PROPOSAL",
     subtitle: "NOMOS Protocol × CHORA UBUD — Somatic Engineering & AEGIS™ System",
-    meta: "Reference: PROP-CHORA-2026-07 · Issued by PT MEMBIMBING DRACO TERBANG · Validity: 15 days · Intervention cycle: 6 months (180 days) · Engagement: 270,000,000 IDR (€13,000 excl. tax) — Partnership Rate",
+    meta: "Reference: PROP-CHORA-2026-07 · Issued by PT MEMBIMBING DRACO TERBANG · Intervention cycle: 6 months (180 days) · Engagement: 270,000,000 IDR (€13,000 excl. tax) — Partnership Rate",
     langLabel: "FR",
     printLabel: "Export as PDF",
     sections: [
