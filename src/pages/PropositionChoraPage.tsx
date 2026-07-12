@@ -286,14 +286,58 @@ export default function PropositionChoraPage() {
 
       <style>{`
         @media print {
+          @page { size: A4; margin: 18mm 16mm; }
           .no-print { display: none !important; }
-          body, html { background: white !important; }
-          .proposition-doc { color: #111 !important; max-width: 100% !important; }
-          .proposition-doc * { color: inherit !important; }
-          .proposition-doc h1, .proposition-doc h2, .proposition-doc h3 { color: #111 !important; }
-          .proposition-doc blockquote { color: #333 !important; border-left-color: #b8860b !important; }
-          .proposition-doc table, .proposition-doc th, .proposition-doc td { border-color: #999 !important; }
-          .proposition-doc th { background: #f0f0f0 !important; }
+          html, body { background: #ffffff !important; color: #111 !important; }
+          html body *:not(.proposition-doc):not(.proposition-doc *) { visibility: hidden !important; }
+          body > *:not(.proposition-doc-wrapper) { display: none !important; }
+          .proposition-doc-wrapper { background: #ffffff !important; }
+          .proposition-doc {
+            color: #111 !important;
+            max-width: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            font-size: 11pt;
+            line-height: 1.5;
+          }
+          .proposition-doc * {
+            color: #111 !important;
+            background: transparent !important;
+            box-shadow: none !important;
+            text-shadow: none !important;
+          }
+          .proposition-doc h1 { font-size: 20pt; margin: 0 0 6pt; }
+          .proposition-doc h2 { font-size: 14pt; margin: 14pt 0 6pt; page-break-after: avoid; break-after: avoid; }
+          .proposition-doc h3 { font-size: 12pt; color: #7a5a00 !important; page-break-after: avoid; break-after: avoid; }
+          .proposition-doc p, .proposition-doc li { orphans: 3; widows: 3; }
+          .proposition-doc section { page-break-inside: avoid; break-inside: avoid; }
+          .proposition-doc blockquote {
+            color: #333 !important;
+            border-left: 3px solid #b8860b !important;
+            padding-left: 10pt;
+            margin: 8pt 0;
+            page-break-inside: avoid;
+            break-inside: avoid;
+          }
+          .proposition-doc table {
+            width: 100% !important;
+            border-collapse: collapse !important;
+            page-break-inside: avoid;
+            break-inside: avoid;
+          }
+          .proposition-doc thead { display: table-header-group; }
+          .proposition-doc tr, .proposition-doc td, .proposition-doc th { page-break-inside: avoid; break-inside: avoid; }
+          .proposition-doc th, .proposition-doc td {
+            border: 1px solid #666 !important;
+            padding: 6pt 8pt !important;
+          }
+          .proposition-doc th {
+            background: #eeeeee !important;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+          }
+          .proposition-doc hr { border: 0; border-top: 1px solid #999; margin: 12pt 0; }
+          .proposition-doc a { color: #111 !important; text-decoration: none; }
         }
       `}</style>
     </div>
