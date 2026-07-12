@@ -29,15 +29,17 @@ export function SynapseMorphIndicator() {
   }, [anchors[0], anchors[1], anchors[2]]);
 
   const pct = Math.round(snap.morph * 100);
-  const framing =
-    typeof window !== "undefined" && config?.alignRight
-      ? getProtocolSynapseFraming({
-          viewportWidth: window.innerWidth,
-          viewportHeight: window.innerHeight,
-          morphT: 1,
-          ...getDefaultFramingCamera(window.innerWidth),
-        })
-      : null;
+  const framing = (() => {
+    if (typeof window === "undefined" || !config?.alignRight) return null;
+    const cam = getDefaultFramingCamera(window.innerWidth);
+    return getProtocolSynapseFraming({
+      viewportWidth: window.innerWidth,
+      viewportHeight: window.innerHeight,
+      morphT: 1,
+      cameraDistance: cam.distance,
+      ...cam,
+    });
+  })();
 
   return (
     <aside className="fixed bottom-6 left-6 z-50 max-w-[260px] rounded-2xl border border-white/10 bg-black/70 backdrop-blur-xl p-4 text-xs pointer-events-none shadow-2xl">
