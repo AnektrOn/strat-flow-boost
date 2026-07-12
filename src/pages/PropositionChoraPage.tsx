@@ -7,7 +7,7 @@ const content = {
     brand: "NOMOS",
     title: "PROPOSITION D'INTERVENTION",
     subtitle: "Protocole NOMOS × CHORA UBUD — Ingénierie Somatique & Système AEGIS™",
-    meta: "Référence : PROP-CHORA-2026-07 · Émise par PT MEMBIMBING DRACO TERBANG · Validité : 15 jours · Cycle d'intervention : 6 mois (180 jours) · Engagement : 270 000 000 IDR (13 000 € HT) — Tarif Partenariat",
+    meta: "Référence : PROP-CHORA-2026-07 · Émise par PT MEMBIMBING DRACO TERBANG · Cycle d'intervention : 6 mois (180 jours) · Engagement : 270 000 000 IDR (13 000 € HT) — Tarif Partenariat",
     langLabel: "EN",
     printLabel: "Exporter en PDF",
     sections: [
