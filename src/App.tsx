@@ -15,6 +15,7 @@ import MetaphysiquePage from "./pages/MetaphysiquePage";
 import AegisPage from "./pages/AegisPage";
 import CaseStudiesIndexPage from "./pages/CaseStudiesIndexPage";
 import CaseStudyDetailPage from "./pages/CaseStudyDetailPage";
+import PropositionChoraPage from "./pages/PropositionChoraPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,6 +39,7 @@ const App = () => (
           <Route path="/aegis" element={<AegisPage />} />
           <Route path="/case-studies" element={<CaseStudiesIndexPage />} />
           <Route path="/case-studies/:slug" element={<CaseStudyDetailPage />} />
+          <Route path="/proposition/chora" element={<PropositionChoraPage />} />
           <Route path="/demo/synapse-hero" element={<Navigate to="/" replace />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
