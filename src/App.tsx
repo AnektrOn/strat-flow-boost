@@ -16,6 +16,8 @@ import AegisPage from "./pages/AegisPage";
 import CaseStudiesIndexPage from "./pages/CaseStudiesIndexPage";
 import CaseStudyDetailPage from "./pages/CaseStudyDetailPage";
 import PropositionChoraPage from "./pages/PropositionChoraPage";
+import Reviews from "./pages/Reviews";
+import ReviewsAdmin from "./pages/ReviewsAdmin";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
