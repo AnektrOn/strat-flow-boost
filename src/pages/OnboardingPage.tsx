@@ -216,6 +216,8 @@ const OnboardingPage = () => {
             </div>
           </section>
 
+          <ClientReviewsSection />
+
           <section id="synapse-method" className="section-pad pt-16 pb-20 sm:pb-24 relative">
             <div className="container-nomos narrow text-center relative min-h-[50vh] sm:min-h-0">
               <FadeUp>
