@@ -10,6 +10,7 @@ import { CardEntrance } from "@/components/motion/CardEntrance";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useEmailDialog } from "@/contexts/EmailDialogContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import ClientReviewsSection from "@/components/ClientReviewsSection";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
