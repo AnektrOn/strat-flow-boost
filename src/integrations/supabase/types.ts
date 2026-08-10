@@ -14,7 +14,78 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      client_reviews: {
+        Row: {
+          activity: string | null
+          approved: boolean
+          approved_at: string | null
+          body: string
+          consent_publish: boolean
+          created_at: string
+          email: string | null
+          evolution_score: number | null
+          full_name: string
+          headline: string | null
+          id: string
+          locale: string
+          moderation_note: string | null
+          program_kind: string | null
+          program_name: string | null
+          program_period: string | null
+          rating: number
+          recommend: string | null
+          reviewed_at: string | null
+          role_title: string | null
+          status: string
+        }
+        Insert: {
+          activity?: string | null
+          approved?: boolean
+          approved_at?: string | null
+          body: string
+          consent_publish?: boolean
+          created_at?: string
+          email?: string | null
+          evolution_score?: number | null
+          full_name: string
+          headline?: string | null
+          id?: string
+          locale?: string
+          moderation_note?: string | null
+          program_kind?: string | null
+          program_name?: string | null
+          program_period?: string | null
+          rating?: number
+          recommend?: string | null
+          reviewed_at?: string | null
+          role_title?: string | null
+          status?: string
+        }
+        Update: {
+          activity?: string | null
+          approved?: boolean
+          approved_at?: string | null
+          body?: string
+          consent_publish?: boolean
+          created_at?: string
+          email?: string | null
+          evolution_score?: number | null
+          full_name?: string
+          headline?: string | null
+          id?: string
+          locale?: string
+          moderation_note?: string | null
+          program_kind?: string | null
+          program_name?: string | null
+          program_period?: string | null
+          rating?: number
+          recommend?: string | null
+          reviewed_at?: string | null
+          role_title?: string | null
+          status?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
