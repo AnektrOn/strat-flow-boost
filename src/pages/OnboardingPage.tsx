@@ -10,6 +10,7 @@ import { CardEntrance } from "@/components/motion/CardEntrance";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useEmailDialog } from "@/contexts/EmailDialogContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import ClientReviewsSection from "@/components/ClientReviewsSection";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -214,6 +215,8 @@ const OnboardingPage = () => {
               </FadeUp>
             </div>
           </section>
+
+          <ClientReviewsSection />
 
           <section id="synapse-method" className="section-pad pt-16 pb-20 sm:pb-24 relative">
             <div className="container-nomos narrow text-center relative min-h-[50vh] sm:min-h-0">
