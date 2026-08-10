@@ -42,6 +42,8 @@ const App = () => (
           <Route path="/case-studies" element={<CaseStudiesIndexPage />} />
           <Route path="/case-studies/:slug" element={<CaseStudyDetailPage />} />
           <Route path="/proposition/chora" element={<PropositionChoraPage />} />
+          <Route path="/temoignages-clients-nomos" element={<Reviews />} />
+          <Route path="/admin-avis-nomos" element={<ReviewsAdmin />} />
           <Route path="/demo/synapse-hero" element={<Navigate to="/" replace />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
