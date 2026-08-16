@@ -185,10 +185,15 @@ const OnboardingPage = () => {
                 ))}
               </div>
 
-              <FadeUp className="gateway-casestudy-teaser">
-                <span className="eyebrow">{t("caseStudies.hubTeaser.eyebrow")}</span>
-                <h3 className="gateway-casestudy-title">{t("caseStudies.hubTeaser.title")}</h3>
-                <p className="gateway-casestudy-desc">{t("caseStudies.hubTeaser.description")}</p>
+              <HomepageAbstract
+                id="synapse-abstract"
+                className="pt-14 relative"
+                label={t("onboarding.abstract.label")}
+                title={t("onboarding.abstract.title")}
+                metricLabel={t("onboarding.abstract.metricLabel")}
+                metric={t("onboarding.abstract.metric")}
+                blocks={getTr("onboarding.abstract.blocks") as Array<{ label: string; value: string }>}
+              >
                 <div className="gateway-casestudy-actions">
                   <Link
                     to="/case-studies"
@@ -208,7 +213,8 @@ const OnboardingPage = () => {
                     {t("caseStudies.hubTeaser.linkH")}
                   </Link>
                 </div>
-              </FadeUp>
+              </HomepageAbstract>
+
 
               <FadeUp className="gateway-doubt">
                 <p className="gateway-doubt-text">{t("onboarding.gateway.doubt.text")}</p>
