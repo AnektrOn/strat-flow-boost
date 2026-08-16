@@ -501,6 +501,30 @@ export const fr = {
       } as CaseStudyStudy,
       h: {
         slug: "h",
+        abstract: {
+          label: "Abstract",
+          title: "Résumé exécutif",
+          readShort: "Lecture abstract · 30 sec",
+          readLong: "Analyse clinique complète · 8 min",
+          profileLabel: "Profil",
+          profile: "Dirigeante H. · Hôtel-boutique, Indonésie · 15 employés",
+          problemLabel: "Problème",
+          problem:
+            "Épuisement total, aucune expérience de leadership, occupation bloquée à 40%. Dirigeante littéralement enfermée dans une chambre de son propre hôtel.",
+          interventionLabel: "Intervention",
+          intervention:
+            "Diagnostic neuro-opérationnel (2 semaines) + repositionnement de l'identité de marque + identification d'un praticien toxique actif dans l'écosystème.",
+          resultLabel: "Résultat",
+          result: "40% → 85% d'occupation en moins d'une semaine, sans publicité — retombée organique.",
+          breakLabel: "Point de rupture",
+          break:
+            "Le protocole exigeait d'écarter le praticien toxique. Refus de la dirigeante → arrêt immédiat de l'accompagnement par éthique → retour à 55%.",
+          proofLabel: "Ce que ça prouve",
+          proof:
+            "NOMOS n'entretient pas un succès si le dirigeant refuse la décision structurelle. Nous accompagnons ceux qui sont prêts à agir, pas seulement à écouter.",
+          cta: "Voir l'analyse clinique complète",
+        },
+
         hero: {
           eyebrow: "Étude de Cas Clinique — Protocole NOMOS™",
           title: "De 40% à 85% d'Occupation : Ascension Fulgurante et Effondrement par Refus de Purge",
