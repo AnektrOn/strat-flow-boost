@@ -5,6 +5,7 @@ import { Header } from "@/components/Header";
 import Footer from "@/components/Footer";
 import CaseStudyGlossaryPanel from "@/components/CaseStudyGlossaryPanel";
 import CaseStudyToc from "@/components/CaseStudyToc";
+import CaseStudyAbstract from "@/components/CaseStudyAbstract";
 import {
   Sheet,
   SheetContent,
@@ -267,7 +268,7 @@ const CaseStudyDetailPage = () => {
           <CaseStudyAbstract data={study.abstract} open={clinicalOpen} onToggle={toggleClinical} />
         )}
 
-        <div id="case-study-clinical" hidden={!clinicalOpen}>
+        <div id="case-study-clinical" className={`case-study-clinical${study.abstract && !clinicalOpen ? " is-collapsed" : ""}`}>
         <div className="case-study-mobile-bar xl:hidden">
           <CaseStudyToc
             sections={study.sections}
