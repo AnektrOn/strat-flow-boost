@@ -36,8 +36,30 @@ export type CaseStudyGlossary = {
 export const CASE_STUDY_SLUGS = ["c", "l", "h"] as const;
 export type CaseStudySlug = (typeof CASE_STUDY_SLUGS)[number];
 
+export type CaseStudyAbstract = {
+  label: string;
+  title: string;
+  readShort: string;
+  readLong: string;
+  profileLabel: string;
+  profile: string;
+  problemLabel: string;
+  problem: string;
+  interventionLabel: string;
+  intervention: string;
+  resultLabel: string;
+  result: string;
+  breakLabel?: string;
+  break?: string;
+  proofLabel: string;
+  proof: string;
+  cta: string;
+};
+
 export type CaseStudyStudy = {
   slug: string;
+  abstract?: CaseStudyAbstract;
+
   hero: {
     eyebrow: string;
     title: string;
