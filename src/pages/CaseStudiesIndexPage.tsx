@@ -56,7 +56,14 @@ const CaseStudiesIndexPage = () => {
                     <h2 className="gateway-title text-[clamp(1.35rem,0.5rem+2vw,2rem)]">
                       {t(`caseStudies.index.${cardKey}.title`)}
                     </h2>
+                    <p className="case-study-card-metric">{t(`caseStudies.index.${cardKey}.metric`)}</p>
+                    <span
+                      className={`case-study-card-status case-study-card-status--${t(`caseStudies.index.${cardKey}.statusTone`)}`}
+                    >
+                      {t(`caseStudies.index.${cardKey}.status`)}
+                    </span>
                     <p className="gateway-description">{t(`caseStudies.index.${cardKey}.excerpt`)}</p>
+
                     <div className="gateway-cta-wrap">
                       <span className="btn-primary btn-large gateway-cta">{t("caseStudies.index.readCta")}</span>
                     </div>

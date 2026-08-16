@@ -36,8 +36,30 @@ export type CaseStudyGlossary = {
 export const CASE_STUDY_SLUGS = ["c", "l", "h"] as const;
 export type CaseStudySlug = (typeof CASE_STUDY_SLUGS)[number];
 
+export type CaseStudyAbstract = {
+  label: string;
+  title: string;
+  readShort: string;
+  readLong: string;
+  profileLabel: string;
+  profile: string;
+  problemLabel: string;
+  problem: string;
+  interventionLabel: string;
+  intervention: string;
+  resultLabel: string;
+  result: string;
+  breakLabel?: string;
+  break?: string;
+  proofLabel: string;
+  proof: string;
+  cta: string;
+};
+
 export type CaseStudyStudy = {
   slug: string;
+  abstract?: CaseStudyAbstract;
+
   hero: {
     eyebrow: string;
     title: string;
@@ -78,28 +100,38 @@ export const fr = {
       subtitle:
         "Analyses consolidées sous protocole NOMOS™ : diagnostic, phases d'intervention, résultats et témoignages. Le texte évolue ; la structure reste stable.",
       backHub: "← Retour aux portes",
-      readCta: "Lire l'étude complète",
+      readCta: "Voir l'étude complète",
       cardC: {
         label: "Protocole NOMOS™",
         title: "La Restauration de la Souveraineté",
-        subject: "Dirigeante C.",
+        subject: "Dirigeante C. · Immersions transformationnelles, Népal & Bali",
+        metric: "Souveraineté opérationnelle restaurée",
+        status: "Succès consolidé",
+        statusTone: "success",
         excerpt:
           "Dissonance identitaire, goudron cognitif, plafond de cohérence — puis filtre vitré, résonance commerciale et indouchabilité opérationnelle.",
       },
       cardL: {
         label: "Protocole NOMOS™",
         title: "Recalibration du Vaisseau Amiral",
-        subject: "Opérateur L.",
+        subject: "Opérateur L. · Structure d'accompagnement premium",
+        metric: "Seuil d'accès porté à 15 000 €+",
+        status: "Succès consolidé",
+        statusTone: "success",
         excerpt:
           "Dérive neuro-opérationnelle, scanning environnemental, purge des backdoors, régulation SNA et pivot Ultra-Élite.",
       },
       cardH: {
         label: "Protocole NOMOS™",
         title: "De 40% à 85% d'Occupation",
-        subject: "Dirigeante H.",
+        subject: "Dirigeante H. · Hôtel-boutique, Indonésie",
+        metric: "40% → 85% d'occupation en 6 jours",
+        status: "Rupture par refus de décision",
+        statusTone: "rupture",
         excerpt:
           "Identité cognitive du lieu, émanation magnétique, pic à 85% — puis effondrement par refus de purger l'agent pathogène.",
       },
+
     },
     studies: {
       c: {
@@ -469,6 +501,30 @@ export const fr = {
       } as CaseStudyStudy,
       h: {
         slug: "h",
+        abstract: {
+          label: "Abstract",
+          title: "Résumé exécutif",
+          readShort: "Lecture abstract · 30 sec",
+          readLong: "Analyse clinique complète · 8 min",
+          profileLabel: "Profil",
+          profile: "Dirigeante H. · Hôtel-boutique, Indonésie · 15 employés",
+          problemLabel: "Problème",
+          problem:
+            "Épuisement total, aucune expérience de leadership, occupation bloquée à 40%. Dirigeante littéralement enfermée dans une chambre de son propre hôtel.",
+          interventionLabel: "Intervention",
+          intervention:
+            "Diagnostic neuro-opérationnel (2 semaines) + repositionnement de l'identité de marque + identification d'un praticien toxique actif dans l'écosystème.",
+          resultLabel: "Résultat",
+          result: "40% → 85% d'occupation en moins d'une semaine, sans publicité — retombée organique.",
+          breakLabel: "Point de rupture",
+          break:
+            "Le protocole exigeait d'écarter le praticien toxique. Refus de la dirigeante → arrêt immédiat de l'accompagnement par éthique → retour à 55%.",
+          proofLabel: "Ce que ça prouve",
+          proof:
+            "NOMOS n'entretient pas un succès si le dirigeant refuse la décision structurelle. Nous accompagnons ceux qui sont prêts à agir, pas seulement à écouter.",
+          cta: "Voir l'analyse clinique complète",
+        },
+
         hero: {
           eyebrow: "Étude de Cas Clinique — Protocole NOMOS™",
           title: "De 40% à 85% d'Occupation : Ascension Fulgurante et Effondrement par Refus de Purge",
@@ -819,28 +875,38 @@ export const en = {
       subtitle:
         "Consolidated analyses under NOMOS Protocol™: diagnostic, intervention phases, results, and testimonials.",
       backHub: "← Back to the doors",
-      readCta: "Read full study",
+      readCta: "View full study",
       cardC: {
         label: "NOMOS Protocol™",
         title: "Restoration of Sovereignty",
-        subject: "Leader C.",
+        subject: "Leader C. · Transformational immersions, Nepal & Bali",
+        metric: "Operational sovereignty restored",
+        status: "Consolidated success",
+        statusTone: "success",
         excerpt:
           "Identity dissonance, cognitive tar, coherence ceiling — then glass filter, commercial resonance, and operational untouchability.",
       },
       cardL: {
         label: "NOMOS Protocol™",
         title: "Flagship Vessel Recalibration",
-        subject: "Operator L.",
+        subject: "Operator L. · Premium advisory structure",
+        metric: "Access threshold raised to €15,000+",
+        status: "Consolidated success",
+        statusTone: "success",
         excerpt:
           "Neuro-operational drift, environmental scanning, backdoor purge, ANS regulation and Ultra-Elite pivot.",
       },
       cardH: {
         label: "NOMOS Protocol™",
         title: "From 40% to 85% Occupancy",
-        subject: "Leader H.",
+        subject: "Leader H. · Boutique hotel, Indonesia",
+        metric: "40% → 85% occupancy in 6 days",
+        status: "Rupture by refusal to decide",
+        statusTone: "rupture",
         excerpt:
           "Place cognitive identity, magnetic emanation, 85% peak — then collapse by refusing to purge pathogenic agent.",
       },
+
     },
     studies: {
       c: {
@@ -1200,6 +1266,30 @@ export const en = {
       } as CaseStudyStudy,
       h: {
         slug: "h",
+        abstract: {
+          label: "Abstract",
+          title: "Executive summary",
+          readShort: "Abstract read · 30 sec",
+          readLong: "Full clinical analysis · 8 min",
+          profileLabel: "Profile",
+          profile: "Leader H. · Boutique hotel, Indonesia · 15 employees",
+          problemLabel: "Problem",
+          problem:
+            "Total exhaustion, no leadership experience, occupancy stuck at 40%. The founder was literally living locked in one of her own hotel rooms.",
+          interventionLabel: "Intervention",
+          intervention:
+            "Neuro-operational diagnostic (2 weeks) + brand identity repositioning + identification of a toxic practitioner active in the ecosystem.",
+          resultLabel: "Result",
+          result: "40% → 85% occupancy in under a week, with no advertising — organic effect.",
+          breakLabel: "Breaking point",
+          break:
+            "The protocol required removing the toxic practitioner. The founder refused → immediate ethical termination of the engagement → back to 55%.",
+          proofLabel: "What it proves",
+          proof:
+            "NOMOS does not maintain a success when the leader refuses the structural decision. We work with those ready to act, not only to listen.",
+          cta: "View the full clinical analysis",
+        },
+
         hero: {
           eyebrow: "Clinical Case Study — NOMOS Protocol™",
           title: "From 40% to 85% Occupancy: Lightning Ascension & Collapse by Refusal to Purge",

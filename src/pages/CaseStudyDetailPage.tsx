@@ -5,6 +5,7 @@ import { Header } from "@/components/Header";
 import Footer from "@/components/Footer";
 import CaseStudyGlossaryPanel from "@/components/CaseStudyGlossaryPanel";
 import CaseStudyToc from "@/components/CaseStudyToc";
+import CaseStudyAbstract from "@/components/CaseStudyAbstract";
 import {
   Sheet,
   SheetContent,
@@ -171,7 +172,21 @@ const CaseStudyDetailPage = () => {
   const progress = useReadingProgress();
   const [glossaryOpen, setGlossaryOpen] = useState(false);
   const [showBackTop, setShowBackTop] = useState(false);
+  const [clinicalOpen, setClinicalOpen] = useState(false);
   const validSlug = isStudySlug(slug);
+
+  const toggleClinical = () => {
+    setClinicalOpen((prev) => {
+      const next = !prev;
+      if (next) {
+        requestAnimationFrame(() => {
+          document.getElementById("case-study-clinical")?.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      }
+      return next;
+    });
+  };
+
 
   usePageMeta(validSlug ? META_BY_SLUG[slug] : "caseStudies");
 
@@ -234,12 +249,26 @@ const CaseStudyDetailPage = () => {
             <div className="reveal case-study-hero-meta">
               <span className="case-study-badge case-study-badge-protocol">{study.hero.protocol}</span>
               <span className="case-study-badge">{study.hero.entryDoor}</span>
-              <span className="case-study-meta-stat">{readingLabel}</span>
-              <span className="case-study-meta-stat case-study-meta-divider">{sectionsLabel}</span>
+              {study.abstract ? (
+                <>
+                  <span className="case-study-meta-stat">{study.abstract.readShort}</span>
+                  <span className="case-study-meta-stat case-study-meta-divider">{study.abstract.readLong}</span>
+                </>
+              ) : (
+                <>
+                  <span className="case-study-meta-stat">{readingLabel}</span>
+                  <span className="case-study-meta-stat case-study-meta-divider">{sectionsLabel}</span>
+                </>
+              )}
             </div>
           </div>
         </section>
 
+        {study.abstract && (
+          <CaseStudyAbstract data={study.abstract} open={clinicalOpen} onToggle={toggleClinical} />
+        )}
+
+        <div id="case-study-clinical" className={`case-study-clinical${study.abstract && !clinicalOpen ? " is-collapsed" : ""}`}>
         <div className="case-study-mobile-bar xl:hidden">
           <CaseStudyToc
             sections={study.sections}
@@ -291,6 +320,8 @@ const CaseStudyDetailPage = () => {
             />
           </div>
         </section>
+        </div>
+
 
         <section className="case-study-closing section-pad section-dark">
           <div className="container-nomos narrow">
@@ -312,9 +343,18 @@ const CaseStudyDetailPage = () => {
               <p className="case-study-guarantee-label">{study.closing.guaranteeTitle}</p>
               <p>{study.closing.guarantee}</p>
             </div>
+            {study.abstract && (
+              <div className="reveal case-study-closing-metric">
+                <span>{study.abstract.resultLabel}</span>
+                <p>{study.abstract.result}</p>
+              </div>
+            )}
             <button type="button" onClick={() => openAudit("hub")} className="reveal btn-primary btn-large">
               {study.closing.cta}
             </button>
+            <p className="reveal case-study-closing-back">
+              <Link to="/case-studies">{t("caseStudies.detail.backIndex")}</Link>
+            </p>
           </div>
         </section>
       </main>
