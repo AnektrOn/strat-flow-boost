@@ -1,7 +1,7 @@
 export const fr = {
   onboarding: {
     hero: {
-      eyebrow: "Réservé aux fondateurs · 20 000€ – 150 000€/mois",
+      eyebrow: "Pour les fondateurs qui fonctionnent comme un point de défaillance unique.",
       title: "Deux portes.",
       titleLine2: "Deux niveaux.",
       titleAccent: "Une même exigence.",
