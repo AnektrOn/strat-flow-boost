@@ -851,28 +851,38 @@ export const en = {
       subtitle:
         "Consolidated analyses under NOMOS Protocol™: diagnostic, intervention phases, results, and testimonials.",
       backHub: "← Back to the doors",
-      readCta: "Read full study",
+      readCta: "View full study",
       cardC: {
         label: "NOMOS Protocol™",
         title: "Restoration of Sovereignty",
-        subject: "Leader C.",
+        subject: "Leader C. · Transformational immersions, Nepal & Bali",
+        metric: "Operational sovereignty restored",
+        status: "Consolidated success",
+        statusTone: "success",
         excerpt:
           "Identity dissonance, cognitive tar, coherence ceiling — then glass filter, commercial resonance, and operational untouchability.",
       },
       cardL: {
         label: "NOMOS Protocol™",
         title: "Flagship Vessel Recalibration",
-        subject: "Operator L.",
+        subject: "Operator L. · Premium advisory structure",
+        metric: "Access threshold raised to €15,000+",
+        status: "Consolidated success",
+        statusTone: "success",
         excerpt:
           "Neuro-operational drift, environmental scanning, backdoor purge, ANS regulation and Ultra-Elite pivot.",
       },
       cardH: {
         label: "NOMOS Protocol™",
         title: "From 40% to 85% Occupancy",
-        subject: "Leader H.",
+        subject: "Leader H. · Boutique hotel, Indonesia",
+        metric: "40% → 85% occupancy in 6 days",
+        status: "Rupture by refusal to decide",
+        statusTone: "rupture",
         excerpt:
           "Place cognitive identity, magnetic emanation, 85% peak — then collapse by refusing to purge pathogenic agent.",
       },
+
     },
     studies: {
       c: {
