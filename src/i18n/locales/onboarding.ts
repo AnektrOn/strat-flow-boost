@@ -128,6 +128,19 @@ export const en = {
         "Crisis or level up: two intervention protocols for your situation. The 45-minute audit identifies the right door — and, if your profile warrants it, access to EXOCORTEX.",
       cta: "Choose my door",
     },
+    abstract: {
+      label: "Executive abstract",
+      title: "What NOMOS changes in 90 days",
+      metricLabel: "Protocol outcome",
+      metric: "Operational sovereignty reclaimed.",
+      footnote: "Rigorous diagnostic before commitment · 5 leaders per quarter · 1:1 with the founder",
+      blocks: [
+        { label: "For", value: "Founders and CEOs generating €20,000 to €150,000 per month." },
+        { label: "The problem", value: "The business revolves around them. They are the bottleneck." },
+        { label: "The method", value: "Neuro-operational diagnosis + identity recalibration + APEX™ Protocol." },
+        { label: "The proof", value: "5 leaders per quarter. One point of contact: the founder." },
+      ],
+    },
     gateway: {
       intro:
         "Two doors based on where you are: crisis recalibration or identity elevation.",

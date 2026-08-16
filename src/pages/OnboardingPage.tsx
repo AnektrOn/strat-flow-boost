@@ -11,6 +11,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { useEmailDialog } from "@/contexts/EmailDialogContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import ClientReviewsSection from "@/components/ClientReviewsSection";
+import HomepageAbstract from "@/components/HomepageAbstract";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
