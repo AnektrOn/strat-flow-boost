@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { FadeUp } from "@/components/motion/FadeUp";
 
@@ -12,6 +13,9 @@ type Props = {
   metricLabel: string;
   metric: string;
   blocks: AbstractBlock[];
+  children?: ReactNode;
+  id?: string;
+  className?: string;
 };
 
 const HomepageAbstract = ({
@@ -20,11 +24,14 @@ const HomepageAbstract = ({
   metricLabel,
   metric,
   blocks,
+  children,
+  id = "synapse-abstract",
+  className = "section-pad py-16 sm:py-20 relative",
 }: Props) => {
   const { t } = useLanguage();
 
   return (
-    <section id="synapse-abstract" className="section-pad py-16 sm:py-20 relative">
+    <section id={id} className={className}>
       <div className="container-nomos narrow">
         <FadeUp>
           <div className="homepage-abstract">
@@ -48,6 +55,8 @@ const HomepageAbstract = ({
             </dl>
 
             <p className="homepage-abstract-footnote">{t("onboarding.abstract.footnote")}</p>
+
+            {children}
           </div>
         </FadeUp>
       </div>
@@ -56,3 +65,4 @@ const HomepageAbstract = ({
 };
 
 export default HomepageAbstract;
+
