@@ -16,7 +16,7 @@ export const fr = {
       metric: "Souveraineté opérationnelle retrouvée.",
       footnote: "Diagnostic exigeant avant engagement · 5 dirigeants par trimestre · 1:1 avec le fondateur",
       blocks: [
-        { label: "Pour qui", value: "Fondatrices et fondateurs générant 20 000 € à 150 000 € par mois." },
+        { label: "Pour qui", value: "Fondatrices et fondateurs dont le business tourne autour d'eux — et qui sentent que l'entreprise est devenue un goulot d'étranglement personnel." },
         { label: "Le problème", value: "Le business tourne autour d'eux. Ils sont le goulot d'étranglement." },
         { label: "La méthode", value: "Diagnostic neuro-opérationnel + recalibration identitaire + Protocole APEX™." },
         { label: "La preuve", value: "5 dirigeants par trimestre. Un seul interlocuteur : le fondateur." },
@@ -135,7 +135,7 @@ export const en = {
       metric: "Operational sovereignty reclaimed.",
       footnote: "Rigorous diagnostic before commitment · 5 leaders per quarter · 1:1 with the founder",
       blocks: [
-        { label: "For", value: "Founders and CEOs generating €20,000 to €150,000 per month." },
+        { label: "For", value: "Founders whose business revolves around them — and who feel the company has become a personal bottleneck." },
         { label: "The problem", value: "The business revolves around them. They are the bottleneck." },
         { label: "The method", value: "Neuro-operational diagnosis + identity recalibration + APEX™ Protocol." },
         { label: "The proof", value: "5 leaders per quarter. One point of contact: the founder." },
