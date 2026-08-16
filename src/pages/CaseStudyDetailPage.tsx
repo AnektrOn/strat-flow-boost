@@ -234,12 +234,26 @@ const CaseStudyDetailPage = () => {
             <div className="reveal case-study-hero-meta">
               <span className="case-study-badge case-study-badge-protocol">{study.hero.protocol}</span>
               <span className="case-study-badge">{study.hero.entryDoor}</span>
-              <span className="case-study-meta-stat">{readingLabel}</span>
-              <span className="case-study-meta-stat case-study-meta-divider">{sectionsLabel}</span>
+              {study.abstract ? (
+                <>
+                  <span className="case-study-meta-stat">{study.abstract.readShort}</span>
+                  <span className="case-study-meta-stat case-study-meta-divider">{study.abstract.readLong}</span>
+                </>
+              ) : (
+                <>
+                  <span className="case-study-meta-stat">{readingLabel}</span>
+                  <span className="case-study-meta-stat case-study-meta-divider">{sectionsLabel}</span>
+                </>
+              )}
             </div>
           </div>
         </section>
 
+        {study.abstract && (
+          <CaseStudyAbstract data={study.abstract} open={clinicalOpen} onToggle={toggleClinical} />
+        )}
+
+        <div id="case-study-clinical" hidden={!clinicalOpen}>
         <div className="case-study-mobile-bar xl:hidden">
           <CaseStudyToc
             sections={study.sections}
@@ -291,6 +305,8 @@ const CaseStudyDetailPage = () => {
             />
           </div>
         </section>
+        </div>
+
 
         <section className="case-study-closing section-pad section-dark">
           <div className="container-nomos narrow">
