@@ -137,13 +137,8 @@ const OnboardingPage = () => {
             </div>
           </section>
 
-          <HomepageAbstract
-            label={t("onboarding.abstract.label")}
-            title={t("onboarding.abstract.title")}
-            metricLabel={t("onboarding.abstract.metricLabel")}
-            metric={t("onboarding.abstract.metric")}
-            blocks={getTr("onboarding.abstract.blocks") as Array<{ label: string; value: string }>}
-          />
+
+
 
           <section id="synapse-gateway" className="section-pad pt-16 relative">
             <div id="gateway" className="container-nomos max-w-[1280px] relative scroll-mt-24">
