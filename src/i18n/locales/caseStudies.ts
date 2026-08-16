@@ -100,28 +100,38 @@ export const fr = {
       subtitle:
         "Analyses consolidées sous protocole NOMOS™ : diagnostic, phases d'intervention, résultats et témoignages. Le texte évolue ; la structure reste stable.",
       backHub: "← Retour aux portes",
-      readCta: "Lire l'étude complète",
+      readCta: "Voir l'étude complète",
       cardC: {
         label: "Protocole NOMOS™",
         title: "La Restauration de la Souveraineté",
-        subject: "Dirigeante C.",
+        subject: "Dirigeante C. · Immersions transformationnelles, Népal & Bali",
+        metric: "Souveraineté opérationnelle restaurée",
+        status: "Succès consolidé",
+        statusTone: "success",
         excerpt:
           "Dissonance identitaire, goudron cognitif, plafond de cohérence — puis filtre vitré, résonance commerciale et indouchabilité opérationnelle.",
       },
       cardL: {
         label: "Protocole NOMOS™",
         title: "Recalibration du Vaisseau Amiral",
-        subject: "Opérateur L.",
+        subject: "Opérateur L. · Structure d'accompagnement premium",
+        metric: "Seuil d'accès porté à 15 000 €+",
+        status: "Succès consolidé",
+        statusTone: "success",
         excerpt:
           "Dérive neuro-opérationnelle, scanning environnemental, purge des backdoors, régulation SNA et pivot Ultra-Élite.",
       },
       cardH: {
         label: "Protocole NOMOS™",
         title: "De 40% à 85% d'Occupation",
-        subject: "Dirigeante H.",
+        subject: "Dirigeante H. · Hôtel-boutique, Indonésie",
+        metric: "40% → 85% d'occupation en 6 jours",
+        status: "Rupture par refus de décision",
+        statusTone: "rupture",
         excerpt:
           "Identité cognitive du lieu, émanation magnétique, pic à 85% — puis effondrement par refus de purger l'agent pathogène.",
       },
+
     },
     studies: {
       c: {
