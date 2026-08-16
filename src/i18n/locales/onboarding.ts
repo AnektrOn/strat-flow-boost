@@ -120,7 +120,7 @@ export const fr = {
 export const en = {
   onboarding: {
     hero: {
-      eyebrow: "Reserved for founders · €20,000 – €150,000/month",
+      eyebrow: "For founders operating as a single point of failure.",
       title: "Two doors.",
       titleLine2: "Two levels.",
       titleAccent: "One standard.",
