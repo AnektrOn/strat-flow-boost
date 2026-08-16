@@ -136,6 +136,29 @@ export const fr = {
     studies: {
       c: {
         slug: "c",
+        abstract: {
+          label: "Abstract",
+          title: "Résumé exécutif",
+          readShort: "Lecture abstract · 30 sec",
+          readLong: "Analyse clinique complète · 8 min",
+          profileLabel: "Profil",
+          profile:
+            "Dirigeante C. · Immersions et voyages transformationnels haut de gamme (Népal, Bali, Sri Lanka) · structure indépendante",
+          problemLabel: "Problème",
+          problem:
+            "Dispersion opérationnelle et burn-out latent : multiplication d'actions sans architecture, accumulation compulsive de formations, dont 3 600 € investis dans un programme inadapté découvert deux jours après la fin du délai de rétractation.",
+          interventionLabel: "Intervention",
+          intervention:
+            "Diagnostic opérationnel, abandon des méthodes de vente sous pression incompatibles avec sa manière de travailler, puis restructuration des trois offres en un écosystème unique piloté par un positionnement clair et un retour au présentiel (tournée France / Belgique).",
+          resultLabel: "Résultat",
+          result:
+            "3 contrats Népal signés avec acomptes dès le repositionnement, une cliente Sri Lanka réactivée et un flux régulier de nouveaux prospects — sans aucune tactique de closing.",
+          proofLabel: "Ce que ça prouve",
+          proof:
+            "Quand le positionnement du dirigeant est net, la vente se fait par adhésion et non par pression : c'est la clarté, pas l'effort supplémentaire, qui débloque le chiffre.",
+          cta: "Voir l'analyse clinique complète",
+        },
+
         hero: {
           eyebrow: "Étude de Cas Clinique — Protocole NOMOS™",
           title: "La Restauration de la Souveraineté",
@@ -324,6 +347,29 @@ export const fr = {
       } as CaseStudyStudy,
       l: {
         slug: "l",
+        abstract: {
+          label: "Abstract",
+          title: "Résumé exécutif",
+          readShort: "Lecture abstract · 30 sec",
+          readLong: "Analyse clinique complète · 8 min",
+          profileLabel: "Profil",
+          profile:
+            "Opérateur L. · Structure d'accompagnement premium · performance commerciale nominale, équipe et associé historique en place",
+          problemLabel: "Problème",
+          problem:
+            "Résultats corrects mais épuisement critique : activité mentale jusqu'à 2h du matin, décisions repoussées, signaux physiques d'usure, et une collaboratrice toxique siphonnant les ressources internes pour monter une structure parallèle.",
+          interventionLabel: "Intervention",
+          intervention:
+            "Audit de l'environnement de travail, sortie de l'ancien associé et rupture nette avec la collaboratrice toxique, protocole de récupération nerveuse, puis refonte complète de l'offre.",
+          resultLabel: "Résultat",
+          result:
+            "Seuil d'accès porté à 15 000 €+ par cycle d'immersion, fin de la formation de masse, décisions tranchées immédiatement et disparition des signaux d'épuisement.",
+          proofLabel: "Ce que ça prouve",
+          proof:
+            "La capacité de décision se restaure en retirant les charges — associés, collaborateurs et offres inadaptés — pas en ajoutant des tactiques de croissance.",
+          cta: "Voir l'analyse clinique complète",
+        },
+
         hero: {
           eyebrow: "Étude de Cas — Protocole NOMOS™",
           title: "Recalibration Systémique du Vaisseau Amiral",
@@ -911,6 +957,29 @@ export const en = {
     studies: {
       c: {
         slug: "c",
+        abstract: {
+          label: "Abstract",
+          title: "Executive summary",
+          readShort: "Abstract read · 30 sec",
+          readLong: "Full clinical analysis · 8 min",
+          profileLabel: "Profile",
+          profile:
+            "Leader C. · High-end transformational immersions and travel (Nepal, Bali, Sri Lanka) · independent business",
+          problemLabel: "Problem",
+          problem:
+            "Operational dispersion and latent burnout: endless actions with no architecture, compulsive course buying, including €3,600 spent on a misaligned program discovered two days after the withdrawal window closed.",
+          interventionLabel: "Intervention",
+          intervention:
+            "Operational diagnostic, removal of high-pressure sales methods incompatible with how she works, then restructuring of the three offers into a single ecosystem driven by clear positioning and a return to in-person work (France / Belgium tour).",
+          resultLabel: "Result",
+          result:
+            "3 Nepal contracts signed with deposits right after the repositioning, one Sri Lanka client reactivated, and a steady inflow of new prospects — with no closing tactics.",
+          proofLabel: "What it proves",
+          proof:
+            "When a founder's positioning is sharp, sales happen by adhesion rather than pressure: clarity, not extra effort, unlocks revenue.",
+          cta: "View the full clinical analysis",
+        },
+
         hero: {
           eyebrow: "Clinical Case Study — NOMOS Protocol™",
           title: "Restoration of Sovereignty",
@@ -1093,6 +1162,29 @@ export const en = {
       } as CaseStudyStudy,
       l: {
         slug: "l",
+        abstract: {
+          label: "Abstract",
+          title: "Executive summary",
+          readShort: "Abstract read · 30 sec",
+          readLong: "Full clinical analysis · 8 min",
+          profileLabel: "Profile",
+          profile:
+            "Operator L. · Premium coaching structure · nominal commercial performance, team and legacy partner in place",
+          problemLabel: "Problem",
+          problem:
+            "Decent results but critical exhaustion: mental processing until 2am, postponed decisions, physical wear signals, and a toxic collaborator draining internal resources to build a parallel structure.",
+          interventionLabel: "Intervention",
+          intervention:
+            "Audit of the working environment, exit of the legacy partner and clean break with the toxic collaborator, nervous-system recovery protocol, then a full offer redesign.",
+          resultLabel: "Result",
+          result:
+            "Access threshold raised to €15,000+ per immersion cycle, end of mass training, decisions settled immediately, and exhaustion signals gone.",
+          proofLabel: "What it proves",
+          proof:
+            "Decision capacity is restored by removing loads — partners, collaborators and misaligned offers — not by adding growth tactics.",
+          cta: "View the full clinical analysis",
+        },
+
         hero: {
           eyebrow: "Case Study — NOMOS Protocol™",
           title: "Systemic Recalibration of the Flagship Vessel",
