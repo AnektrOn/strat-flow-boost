@@ -171,7 +171,21 @@ const CaseStudyDetailPage = () => {
   const progress = useReadingProgress();
   const [glossaryOpen, setGlossaryOpen] = useState(false);
   const [showBackTop, setShowBackTop] = useState(false);
+  const [clinicalOpen, setClinicalOpen] = useState(false);
   const validSlug = isStudySlug(slug);
+
+  const toggleClinical = () => {
+    setClinicalOpen((prev) => {
+      const next = !prev;
+      if (next) {
+        requestAnimationFrame(() => {
+          document.getElementById("case-study-clinical")?.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      }
+      return next;
+    });
+  };
+
 
   usePageMeta(validSlug ? META_BY_SLUG[slug] : "caseStudies");
 
