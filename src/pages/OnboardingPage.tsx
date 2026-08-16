@@ -11,6 +11,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { useEmailDialog } from "@/contexts/EmailDialogContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import ClientReviewsSection from "@/components/ClientReviewsSection";
+import HomepageAbstract from "@/components/HomepageAbstract";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -135,6 +136,14 @@ const OnboardingPage = () => {
               </div>
             </div>
           </section>
+
+          <HomepageAbstract
+            label={t("onboarding.abstract.label")}
+            title={t("onboarding.abstract.title")}
+            metricLabel={t("onboarding.abstract.metricLabel")}
+            metric={t("onboarding.abstract.metric")}
+            blocks={getTr("onboarding.abstract.blocks") as Array<{ label: string; value: string }>}
+          />
 
           <section id="synapse-gateway" className="section-pad pt-16 relative">
             <div id="gateway" className="container-nomos max-w-[1280px] relative scroll-mt-24">

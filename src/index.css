@@ -2127,3 +2127,98 @@
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+
+/* ===== Homepage abstract — punchy executive summary ===== */
+.homepage-abstract {
+  position: relative;
+  z-index: 10;
+  border: 1px solid hsl(var(--border));
+  border-radius: 1.25rem;
+  background: hsl(var(--background) / 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: clamp(1.75rem, 1.2rem + 2.2vw, 3rem);
+}
+#synapse-abstract {
+  position: relative;
+  z-index: 10;
+  background: linear-gradient(to bottom, hsl(var(--background) / 0) 0%, hsl(var(--background) / 0.75) 15%, hsl(var(--background)) 100%);
+}
+.homepage-abstract-head {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.homepage-abstract-label {
+  display: inline-block;
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: hsl(var(--primary));
+  margin-bottom: 0.45rem;
+}
+.homepage-abstract-title {
+  font-family: var(--font-display, inherit);
+  font-size: clamp(1.5rem, 1rem + 1.6vw, 2.25rem);
+  line-height: 1.15;
+  margin: 0;
+}
+.homepage-abstract-metric {
+  margin: 1.75rem 0;
+  padding: clamp(1.5rem, 1rem + 2vw, 2.25rem) clamp(1.5rem, 1rem + 2.5vw, 2.5rem);
+  border: 1px solid hsl(var(--primary) / 0.5);
+  border-radius: 1rem;
+  background: hsl(var(--primary) / 0.1);
+  text-align: center;
+}
+.homepage-abstract-metric-label {
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: hsl(var(--primary));
+  margin-bottom: 0.5rem;
+}
+.homepage-abstract-metric-value {
+  font-family: var(--font-display, inherit);
+  font-size: clamp(1.8rem, 1rem + 2.8vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: hsl(var(--foreground));
+}
+.homepage-abstract-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .homepage-abstract-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+.homepage-abstract-row {
+  border-left: 2px solid hsl(var(--primary) / 0.45);
+  padding-left: 0.9rem;
+}
+.homepage-abstract-row dt {
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 0.3rem;
+}
+.homepage-abstract-row dd {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: hsl(var(--foreground) / 0.92);
+}
+.homepage-abstract-footnote {
+  margin-top: 1.75rem;
+  text-align: center;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: hsl(var(--muted-foreground));
+}
