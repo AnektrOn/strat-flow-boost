@@ -2130,10 +2130,19 @@
 
 /* ===== Homepage abstract — punchy executive summary ===== */
 .homepage-abstract {
+  position: relative;
+  z-index: 10;
   border: 1px solid hsl(var(--border));
   border-radius: 1.25rem;
-  background: hsl(var(--foreground) / 0.04);
+  background: hsl(var(--background) / 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   padding: clamp(1.75rem, 1.2rem + 2.2vw, 3rem);
+}
+#synapse-abstract {
+  position: relative;
+  z-index: 10;
+  background: linear-gradient(to bottom, hsl(var(--background) / 0) 0%, hsl(var(--background) / 0.75) 15%, hsl(var(--background)) 100%);
 }
 .homepage-abstract-head {
   text-align: center;
