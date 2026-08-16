@@ -343,9 +343,18 @@ const CaseStudyDetailPage = () => {
               <p className="case-study-guarantee-label">{study.closing.guaranteeTitle}</p>
               <p>{study.closing.guarantee}</p>
             </div>
+            {study.abstract && (
+              <div className="reveal case-study-closing-metric">
+                <span>{study.abstract.resultLabel}</span>
+                <p>{study.abstract.result}</p>
+              </div>
+            )}
             <button type="button" onClick={() => openAudit("hub")} className="reveal btn-primary btn-large">
               {study.closing.cta}
             </button>
+            <p className="reveal case-study-closing-back">
+              <Link to="/case-studies">{t("caseStudies.detail.backIndex")}</Link>
+            </p>
           </div>
         </section>
       </main>
