@@ -135,7 +135,7 @@ export const en = {
       metric: "Operational sovereignty reclaimed.",
       footnote: "Rigorous diagnostic before commitment · 5 leaders per quarter · 1:1 with the founder",
       blocks: [
-        { label: "For", value: "Founders and CEOs generating €20,000 to €150,000 per month." },
+        { label: "For", value: "Founders whose business revolves around them — and who feel the company has become a personal bottleneck." },
         { label: "The problem", value: "The business revolves around them. They are the bottleneck." },
         { label: "The method", value: "Neuro-operational diagnosis + identity recalibration + APEX™ Protocol." },
         { label: "The proof", value: "5 leaders per quarter. One point of contact: the founder." },
