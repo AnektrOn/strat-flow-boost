@@ -17,7 +17,7 @@ export const fr = {
       footnote: "Diagnostic exigeant avant engagement · 5 dirigeants par trimestre · 1:1 avec le fondateur",
       blocks: [
         { label: "Pour qui", value: "Fondatrices et fondateurs dont le business tourne autour d'eux — et qui sentent que l'entreprise est devenue un goulot d'étranglement personnel." },
-        { label: "Le problème", value: "Le business tourne autour d'eux. Ils sont le goulot d'étranglement." },
+        { label: "Le problème", value: "Chaque décision remonte à eux : la croissance s'arrête là où leur bande passante s'arrête." },
         { label: "La méthode", value: "Diagnostic neuro-opérationnel + recalibration identitaire + Protocole APEX™." },
         { label: "La preuve", value: "5 dirigeants par trimestre. Un seul interlocuteur : le fondateur." },
       ],
@@ -136,7 +136,7 @@ export const en = {
       footnote: "Rigorous diagnostic before commitment · 5 leaders per quarter · 1:1 with the founder",
       blocks: [
         { label: "For", value: "Founders whose business revolves around them — and who feel the company has become a personal bottleneck." },
-        { label: "The problem", value: "The business revolves around them. They are the bottleneck." },
+        { label: "The problem", value: "Every decision routes back to them: growth stops where their bandwidth stops." },
         { label: "The method", value: "Neuro-operational diagnosis + identity recalibration + APEX™ Protocol." },
         { label: "The proof", value: "5 leaders per quarter. One point of contact: the founder." },
       ],
