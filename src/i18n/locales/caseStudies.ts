@@ -1266,6 +1266,30 @@ export const en = {
       } as CaseStudyStudy,
       h: {
         slug: "h",
+        abstract: {
+          label: "Abstract",
+          title: "Executive summary",
+          readShort: "Abstract read · 30 sec",
+          readLong: "Full clinical analysis · 8 min",
+          profileLabel: "Profile",
+          profile: "Leader H. · Boutique hotel, Indonesia · 15 employees",
+          problemLabel: "Problem",
+          problem:
+            "Total exhaustion, no leadership experience, occupancy stuck at 40%. The founder was literally living locked in one of her own hotel rooms.",
+          interventionLabel: "Intervention",
+          intervention:
+            "Neuro-operational diagnostic (2 weeks) + brand identity repositioning + identification of a toxic practitioner active in the ecosystem.",
+          resultLabel: "Result",
+          result: "40% → 85% occupancy in under a week, with no advertising — organic effect.",
+          breakLabel: "Breaking point",
+          break:
+            "The protocol required removing the toxic practitioner. The founder refused → immediate ethical termination of the engagement → back to 55%.",
+          proofLabel: "What it proves",
+          proof:
+            "NOMOS does not maintain a success when the leader refuses the structural decision. We work with those ready to act, not only to listen.",
+          cta: "View the full clinical analysis",
+        },
+
         hero: {
           eyebrow: "Clinical Case Study — NOMOS Protocol™",
           title: "From 40% to 85% Occupancy: Lightning Ascension & Collapse by Refusal to Purge",
