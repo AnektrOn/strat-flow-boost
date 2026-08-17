@@ -5,6 +5,7 @@ import {
   useEffect,
   useMemo,
   useState,
+  type Context,
   type ReactNode,
 } from "react";
 import { translations, type Locale } from "@/i18n/translations";
@@ -31,7 +32,15 @@ type LanguageContextValue = {
   tr: Translations;
 };
 
-const LanguageContext = createContext<LanguageContextValue | null>(null);
+declare global {
+  // Keep one context identity when Vite replaces this module during development.
+  var __nomosLanguageContext: Context<LanguageContextValue | null> | undefined;
+}
+
+const LanguageContext =
+  globalThis.__nomosLanguageContext ?? createContext<LanguageContextValue | null>(null);
+
+globalThis.__nomosLanguageContext = LanguageContext;
 
 function getNested(obj: Record<string, unknown>, path: string): unknown {
   const keys = path.split(".");
